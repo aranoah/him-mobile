@@ -1,0 +1,574 @@
+@import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+html, body {
+	color:#4a4a4a;
+	font-size:11pt;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background:#eeeeee;  
+}
+
+input:focus {
+	outline:0;
+	-webkit-highlight:none;
+}
+
+a {
+	color:#4a4a4a;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#000;
+}
+
+/* General classes ================================== */
+
+.inlineparent > * {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.cellparent {
+	display:table;
+}
+
+.cellparent > * {
+	display:table-cell;
+}
+
+.container {
+	width:1024px;
+	margin:0 auto;
+}
+
+.button {
+	padding:10px 20px;
+	box-sizing:border-box;
+	cursor:pointer;
+	background:#277dde;
+	box-shadow:inset 0 0 2px rgba(255,255,255,0.4), 0 0 3px rgba(0,0,0,0.5);
+    border-radius:5px;
+}
+
+/* IDs for main page ================================== */
+
+
+/* EVERYTHING INSIDE HEADER =========================== */
+
+#header {
+	background:#1d1d1d;
+	color:#fff;
+}
+
+#logoArea {
+	width:300px;
+	height:85px;
+}
+
+#logoArea > * {
+	vertical-align:top;
+}
+
+#logo {
+	background:url(../img/logo.png) no-repeat center center;
+	background-size:45px 45px;
+	height:85px;
+	width:85px;
+}
+
+#logoName {
+	margin-top:15px;
+}
+
+#tag {
+	font-size:80%;
+	margin-top:-25px;
+}
+
+#iconArea {
+	width:300px;
+	text-align:right;
+	height:85px;
+	float:right;
+}
+
+.headerIcon {
+	height:85px;
+	width:23px;
+	margin-right:20px;
+	position:relative;
+}
+
+.headerIcon > img {
+	position:absolute;
+	top:50%;
+	margin-top:-50%;
+	lefT:0;
+}
+
+/*  UTILITY ============================================ */
+
+#utility {
+	height:330px;
+	background:url(../img/rest.jpg) no-repeat center center;
+	background-size:cover;
+	padding-top:70px;
+}
+
+#utility .container {
+	vertical-align:middle;
+	margin:auto;
+	height:260px;
+}
+
+#rightUtility { 
+	float:right;
+	width:400px;
+	text-align:right;
+}
+
+#leftUltility {
+	width:600px;
+}
+
+#searchTabs {
+	padding-left:60px;
+}
+
+#searchTabs > div {
+	background:#000;
+	background:rgba(0,0,0,0.6);
+	box-shadow:0 0 3px rgba(255,255,255,0.5);
+	padding:5px 10px;
+	margin-right:10px;
+	border-radius:5px 5px 0 0;
+	color:#fff;
+	cursor:pointer;
+}
+
+#searchTabs > div.active {
+	color:#000;
+	background:#fff;
+}
+
+#searchTabs > div.cat:hover {
+	background: #fff;
+	color: #000;
+}
+
+#searchBar {
+	position:relative;
+}
+
+#searchInput {
+	background:#fff;
+	border:0;
+	padding:15px 30px;
+	border-radius:50px;
+	font-size:20px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+#searchButton {
+	width:40px;
+	height:40px;
+	position:absolute;
+	right:10px;
+	top:10px;
+	cursor:pointer;
+	border-radius:30px;
+	background-color:#b3b3b3;
+	background-image: url(../img/go.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+#searchButton:hover {
+	background-color:#4a4a4a;
+}
+
+#searchBottomLinks {
+	margin:10px 30px;
+	padding:5px 10px;
+	background:#000;
+	box-shadow:0 0 3px rgba(255,255,255,0.5);
+	background:rgba(0,0,0,0.6);
+	display:inline-block;
+	color:#fff;
+}
+
+#searchBottomLinks a {
+	color:#fff;
+}
+
+#searchBottomLinks a:hover {
+	text-decoration:underline;
+}
+
+#showItOff {
+	display:inline-block;
+	padding:50px;
+	background:#000;
+	background:rgba(0,0,0,0.6);
+	box-shadow:0 0 3px rgba(255,255,255,0.5);
+	color:#fff;
+	text-align:center;
+}
+
+#showItOff > h1, #showItOff > h3 {
+	padding:0;
+	margin:0;
+}
+
+#getstarted {
+	margin-top:20px;
+}
+
+#tickerShow {
+	width:550px;
+	color:#fff;
+    margin-top: 30px;
+}
+
+#tickerShow a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:700;
+}
+
+#tickerControl {
+	width:50px;
+}
+
+#tickerBox {
+	background:#000;
+	background:rgba(0,0,0,0.7);
+	padding:0 10px;
+	height: 60px;
+	overflow:hidden;
+}
+
+.tick {
+	margin:10px 0;
+	height:40px;
+}
+
+.tick .pic {
+	width:40px;
+	height:40px;
+}
+
+.tick .text {
+	width:480px;
+    text-indent: 10px;
+}
+
+.tick .title {
+	color:#999;
+}
+
+.tick .desc {
+	font-size:0.8em;
+	color:#a4cdd7;
+}
+
+.pic {
+    background:url(../img/service.png) no-repeat center center;
+    background-size:cover;
+}
+
+#tickerMore {
+	text-align: right;
+}
+
+.liveService {
+	background: #000;
+	background:rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: 13px;
+    padding:5px 10px;
+	margin-right: 10px;
+    border-radius:0 0 5px 5px;
+	cursor: pointer;
+}
+
+.liveService:hover {
+	background: #fff;
+	color: #000;
+	
+}
+
+#tickerControl {
+	float: right;
+	
+}
+
+#tickerUp, #tickerDown {
+	margin-left: 10px;
+	width: 15px;
+	height: 15px;
+}
+
+#tickerUp {
+	background: url(../img/tickerup.png) no-repeat center center;margin-top: -85px;
+}
+
+#tickerDown {
+	background: url(../img/tickerdown.png) no-repeat center center;
+	margin-top: 25px;
+}
+
+
+/*lower...*/
+
+#left {
+    width: 700px;
+    height:100%;
+    display:inline-block;
+    border-right: 1px solid #dfdfdf;
+}
+
+.trendContainer {
+	margin-right: 15px;
+	width: 150px;
+}
+
+.trend {
+	height: 100px;
+    position:relative;
+	margin-right: 5px;
+	border-radius: 6px;
+	background: #000;
+}
+
+.trendPic {
+	position: relative;
+	z-index: 2;
+    height:100%;
+    background:#fff;
+    border-radius:5px;
+    margin-right:7px;
+	box-shadow: 0 0 5px rgba(0,0,0,.45);
+}
+
+.trendRating {
+    position:absolute;
+    width:100%;
+    height:85%;
+	bottom: 0;
+	border-radius: 5px;
+    z-index:1;
+}
+
+.trendName {
+	padding: 10px;
+	text-align: center;
+}
+
+#right {
+    display:inline-block;
+    float: right;
+    width: 280px;
+    height:100%;
+}
+
+#loginRegularScreen {
+    color:#4a4a4a; 
+    font-size:13px;
+}
+
+#loginRegularScreen a {
+    font-size:12px;
+}
+
+#loginRegularScreen input {
+    margin:10px 0;
+    padding:10px;
+    width:100%;
+    background: #fff;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0,0,0,.45);
+    box-sizing: border-box;
+}
+
+#loginButton {
+    float:right;
+    display:inline-block;   
+    background:#4a4a4a;
+    color:#fff;
+    border-radius:3px;
+    padding:10px 20px;
+    font-weight:bold;
+}
+
+#loginButton:hover {
+    cursor:pointer;
+}
+
+.review {
+	margin-bottom: 20px;
+}
+
+.reviewContainer {
+    background:#000;
+    color:#fff;
+    padding:10px;
+    border-radius:5px;
+    margin-right:20px;
+}
+
+.reviewContainer > * {
+    vertical-align:middle;
+}
+
+.reviewContainer a {
+    color:#fff;  
+}
+
+.pic, .reviewedItemPic {
+}
+
+.reviewBody {
+    font-size: 12px;
+    vertical-align: top;
+    padding:0 10px;
+}
+
+.actions {
+    text-align:right;
+    margin-right:60px;
+}
+
+.twitterShare, .facebookShare {
+    width:20px;
+    height:20px;
+    padding:0 5px;
+}
+
+.facebookShare {
+    background:url(../img/fb.png) no-repeat center center  
+}
+
+.twitterShare {
+    background:url(../img/twitter.png) no-repeat center center  
+}
+
+.agree {
+    background:#606060;
+    color:#fff;
+    padding:5px 10px;
+    text-align:left;
+    border-radius:0 0 5px 5px;
+}
+
+#dottedLine {
+	margin: 20px 50px 0 0;
+}
+
+#dottedLine hr {
+	width: 100%;
+	border-top: 1px solid #b0b0b0;
+}
+
+#promotion {
+	width:280px;
+	height:250px;
+	background:#fff;
+	box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+
+.ratingContainer {
+	height: 100px;
+    position:relative;
+	border-radius: 20px;
+	background: #444;
+	width:10px;
+	margin-right: 50px;
+	z-index: 1;
+}
+
+.ratingbar {
+	position: absolute;
+	background: #3ea20f;
+	height: 85%;
+	width: 10px;
+	bottom: 0;
+	border-radius: 20px;
+	z-index: 2;
+}
+
+.ratingbar:before {
+	position: absolute;
+	top: -6px;
+	left: 5px;
+	content: "";
+	border-right: 10px solid #000;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	height: 0;
+	width: 0;
+}
+
+.ratingbar:after {
+	position: absolute;
+	top: -13px;
+	left: 13px;
+	content: attr(data-rating);
+	padding:3px 5px;
+	border-radius: 5px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+}
+
+.news {
+	font-size: 13px;
+	color: #fff;
+	width: 280px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.Newstitle {
+	background: #afafaf;
+	padding: 10px;border-radius: 5px 0 0 5px;
+	width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.moreNews {
+	width: 60px;
+	background: #6c6c6c;
+	padding: 10px;border-radius:0 5px 5px 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+#footer {
+	background: #000;
+	color: #fff;
+	margin-top:30px; 
+}
+
+#footer .container {
+	position: relative;
+}
+
+#leftFoot, #rightFoot {
+	padding: 20px;
+}
+
+#rightFoot {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 0;
+}
