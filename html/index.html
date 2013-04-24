@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
+		<div id="warning">
+			<span id="changeLoc">Your location is found to be <b>BANGALORE</b>. Click here to change.</span> <span id="warnClose">&times;</span>
+		</div>
 		<div id="header">
 			<div class="container inlineparent">
 				<div id="logoArea" class="inlineparent">
@@ -30,20 +34,24 @@
 				<div id="leftUltility">
 					<div id="searchContainer">
 						<div id="searchTabs" class="inlineparent">
-							<div class="active">Malls</div>
+							<div class="cat">Malls</div>
 							<div class="cat">Hotels</div>
 							<div class="cat">Restaurants</div>
 							<div class="cat">More..</div>
 						</div>
 						<div id="searchBar">
-							<input id="searchInput" placeholder="Search for a mall" />
+							<input id="searchInput" placeholder="Search for everything in Bangalore" />
 							<div id="searchButton"></div>
 						</div>
-						<div id="searchBottomLinks">
-							<a href="#">Advanced search</a> | <a href="#">Register your service</a>
+						<div class="inlineparent">
+							<div class="searchBottomLinks">
+								<a href="#">Advanced search</a> | <a href="#">Register your service</a>
+							</div><div class="searchBottomLinks" style="float:right;background:#fff;color:#000">
+								<input id="location" value="bangalore" />
+							</div>
 						</div>
 					</div>
-					<div id="ticker" class="inlineparent">
+					<div id="ticker" class="cellparent">
 						<div id="tickerShow">
 							<div id="tickerBox">
 								<div class="tick inlineparent" id="tick">
@@ -53,7 +61,7 @@
 										<div class="desc">I have a cab running from Delhi to Noida. Contact me @johnFrancis to pool in</div>
 									</div>
 								</div>
-								<div class="tick inlineparent" id="tick1">
+								<div class="tick inlineparent">
 									<div class="pic"></div>
 									<div class="text">
 										<div class="title"><a href="#"> Francis</a> has a live service to offer</div>
@@ -105,14 +113,49 @@
 				</div>
 			</div>
 		</div>
+		<div id="smallShow" class="cellparent">
+			<div>Got your own business ? Show it off! Go viral in your place. </div>
+			<div class="button">GET STARTED</div>
+		</div>
 		<div id="lower">
 			<div class="container">
+				<div id="right">
+					<div id="rightTop">
+						<div id="loginRegularScreen" class="inlineParent">
+							<h3>LOGIN <span style="float:right;">SIGNUP</span></h3>
+							<input type="text" placeholder="username" />
+							<input type="password" placeholder="password" />
+							<div style="display:inline-block;">
+								<a href="#">Forgot password?</a>
+							</div>
+							<div id="loginButton">LOGIN</div>
+						</div>
+						<div>
+							<h5>PARTNERS</h5>
+							<div id="promotion">
+								
+							</div>
+						</div>
+					</div>
+					<div id="newsEvents">
+						<h5>NEWS &amp; EVENTS</h5>
+						<div class="news inlineparent" data-date="yesterday">
+							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">Today</div>
+						</div>
+						<div class="news inlineparent" data-date="today">
+							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">Yesterday</div>
+						</div>
+						<div class="news inlineparent" data-date="25/7/1991">
+							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">25/7/2013</div>
+						</div>
+						<div class="news inlineparent" data-date="20/2/2012">
+							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">20/2/2012</div>
+						</div>
+					</div>
+				</div>
 				<div id="left">
 					<div id="afterLocation">
 						<h2 class="trendHead" style="display: inline-block;">Check out these</h2>
-						<div style="margin: 25px 25px 0 0;font-size:13px;color:#b9b9b9;display: inline-block;float: right">
-							You are currently near <b style="color:#4a4a4a;">LOCATION NAME</b> (click to change)
-						</div>
 						<div class="trendBoxScroll inlineparent">
 							<div class="trendContainer">
 								<div class="trend">
@@ -246,39 +289,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="right">
-					<div id="loginRegularScreen" class="inlineParent">
-						<h3>LOGIN</h3>
-						<input type="text" placeholder="username" />
-						<input type="password" placeholder="password" />
-						<div style="display:inline-block;">
-							<a href="#">Forgot password?</a><br />
-							<a href="#">Sign up</a>
-						</div>
-						<div id="loginButton">LOGIN</div>
-					</div>
-					<div>
-						<h5>PARTNERS</h5>
-						<div id="promotion">
-							
-						</div>
-					</div>
-					<div id="news&events">
-						<h5>News and Events</h5>
-						<div class="news inlineparent" data-date="yesterday">
-							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">Today</div>
-						</div>
-						<div class="news inlineparent" data-date="today">
-							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">Yesterday</div>
-						</div>
-						<div class="news inlineparent" data-date="25/7/1991">
-							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">25/7/2013</div>
-						</div>
-						<div class="news inlineparent" data-date="20/2/2012">
-							<div class="Newstitle">New event in mantri mall killing people.</div><div class="moreNews">20/2/2012</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 		<div id="footer">
@@ -287,10 +298,10 @@
 					<div>About</div> | <div>Contact Us</div>
 				</div>
 				<div id="rightFoot" class="inlineparent">
-					<div class="foot color">connected by</div>
+					<div class="foot color">connect by</div>
 					<div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
 					<div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
-					<div class="foot color">2013  |  Aranoah Technologies</div>
+					<div class="foot color">&copy; 2013  |  Aranoah Technologies</div>
 				</div>
 			</div>
 		</div>

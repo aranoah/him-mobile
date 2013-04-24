@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
 	var int;
+	
+	var local = $("#location").val();
 
 	$('#tickerUp').on('click', function () {
 		clearInterval(int);
@@ -44,5 +46,13 @@ $(document).ready(function () {
 			$('#tick').animate({ marginTop: number }, 200);
 		}
 
+	});
+	
+	$("#location").focus(function() {
+		$(this).val("");
+	}).blur(function() {
+		if($(this).val() == "") {
+			$(this).val(local);
+		}
 	});
 });
