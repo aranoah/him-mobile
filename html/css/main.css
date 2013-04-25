@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background:#eeeeee;  
+    background:#eeeeee;
 }
 
 input:focus {
@@ -45,6 +45,7 @@ a:hover {
 .container {
 	width:1024px;
 	margin:0 auto;
+	box-sizing:border-box;
 }
 
 .button {
@@ -121,8 +122,8 @@ a:hover {
 }
 
 #iconArea {
-	width:300px;
 	text-align:right;
+	margin-right: 20px;
 	height:85px;
 	float:right;
 }
@@ -160,11 +161,12 @@ a:hover {
 #rightUtility { 
 	float:right;
 	width:400px;
-	text-align:right;
+	text-align:center;
 }
 
 #leftUltility {
 	width:600px;
+	padding-left:20px;
 }
 
 #searchTabs {
@@ -398,7 +400,8 @@ a:hover {
 /*  LOWER ============================================ */
 
 #left {
-    width: 700px;
+    width: 680px;
+	padding-left:20px;
     height:100%;
     display:inline-block;
     border-right: 1px solid #dfdfdf;
@@ -450,6 +453,7 @@ a:hover {
     display:inline-block;
     float: right;
     width: 280px;
+	padding-right:20px;
     height:100%;
 }
 
@@ -475,7 +479,7 @@ a:hover {
 
 #loginButton {
     float:right;
-    display:inline-block;   
+    display:inline-block;
     background:#4a4a4a;
     color:#fff;
     border-radius:3px;
@@ -647,6 +651,8 @@ a:hover {
 
 #footer .container {
 	position: relative;
+	padding:0 20px;
+	box-sizing:border-box;
 }
 
 #leftFoot, #rightFoot {
@@ -657,12 +663,11 @@ a:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding-right: 0;
 }
 
 /*  RESPONSIVENES ============================================ */
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
 	
 	#left {
 		border:0;
@@ -740,11 +745,26 @@ a:hover {
 	}
 	
 	.trendContainer {
-		width:auto;	
+		width: 120px;
 	}
 	
 	.news.inlineparent > div {
 		display:table-cell;
 	}
 	
+}
+
+@media (max-Width: 640px) {
+	#rightTop {
+		width:320px;
+	}
+	body {
+		width:640px;
+	}
+	.container {
+		width:640px;
+	}
+	#smallShow {
+		width:640px;
+	}
 }
