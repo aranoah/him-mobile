@@ -157,6 +157,33 @@ a:hover {
 	font-size: 13px;
 }
 
+/*contentHead*/
+
+#contentHead {
+	padding: 10px 0;
+	margin-top: 5px;
+	background: url(../img/line1.png) repeat-x center center;
+}
+
+#message {
+	font-size: 15px;
+	color: #a6a6a6;
+	background: #eee;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+#linkImages {
+	float: right;
+	background: #eee;
+	padding-left: 20px;
+}
+
+.links {
+	padding: 0 15px;
+	font-size: 11px;
+}
+
 /*  UTILITY ============================================ */
 
 #utility {
@@ -410,6 +437,55 @@ a:hover {
 	box-shadow:0;
 	border-radius:0;
 	text-align:center;
+}
+
+/*  navBar ============================================ */
+
+.items {
+	padding: 10px;
+	cursor: pointer;
+	color: #a8a8a8;
+}
+
+#mainContent {
+	height: 100%;
+}
+
+.items.active {
+	color: #a8a8a8;
+	background: none;
+	font-weight: bold;
+}
+
+.items:hover {
+	background: none;
+	color: #000;
+}
+
+
+.items.more {
+	background: url(../img/more.png) no-repeat right center;
+	padding-right: 20px;
+}
+
+.place {
+	cursor: pointer;
+	padding: 10px 40px 10px 20px;
+	text-align: left;
+	color: #fff;
+	background: #2e8cbd url(../img/down.png) no-repeat  100px center;
+}
+
+.second input {
+	margin-right: 20px;
+	border: 0;
+	background: transparent;
+	color: #fff;	
+	cursor: pointer;
+	padding: 10px 40px 10px 20px;
+	text-align: left;
+	color: #fff;
+	background: #2e8cbd url(../img/search.png) no-repeat  195px center;
 }
 
 
