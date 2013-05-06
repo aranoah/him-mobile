@@ -48,16 +48,10 @@
 #mapSelector {
 	position: absolute;
 	top: 265px;
-	left: 902px;
+	right: -5px;
 	background: url(../img/mapSelector.png) no-repeat center center;
 	width: 14px;
 	height: 22px;
-}
-
-#content {
-	position: relative;
-	z-index: 200;	
-	box-shadow: 0 5px 5px rgba(0,0,0,.14);
 }
 
 #searchBar {
@@ -79,14 +73,14 @@
 	color: #fff;
 }
 
-#nav {
-	background: #fff;
-	font-size: 13px;
-}
-
 .items {
 	padding: 10px 20px;
 	color: #7e7e7e;
+}
+
+.items.more {
+	background: url(../img/more.png) no-repeat 65px center;
+	padding-right:35px;
 }
 
 .items.active {
@@ -96,13 +90,10 @@
 
 .items:hover {
 	cursor: pointer;
-	background: #e4e4e4;
+	background-color: #e4e4e4;
 	color: #000;
 }
 
-.items.more {
-	background: url(../img/more.png) no-repeat right center;
-}
 
 #place {
 	cursor: pointer;
@@ -113,19 +104,25 @@
 	background: #2e8cbd url(../img/down.png) no-repeat  100px center;
 }
 
-#mainContent {
+#Content {
 	margin-top: 180px;
 	background:#fff;
 	position: relative;
 	box-shadow: 0 -5px 5px rgba(0,0,0,.14);
-	padding: 60px 0;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .tiles {
+	text-align: left;
 	width: 440px;
 	font-size: 13px;
 	margin-top: 40px;
 	margin-right: 70px;
+}
+
+.tiles:nth-child(2n) {
+	margin-right:0;
 }
 
 #footer {
@@ -185,7 +182,6 @@
 #searchImg {
 	background: #7e7e7e;
 	width: 96px;
-	height: 96px;
 }
 
 #searchItems {

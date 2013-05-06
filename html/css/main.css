@@ -6,6 +6,9 @@
 html, body {
 	color:#4a4a4a;
 	font-size:11pt;
+	position: absolute;
+	top: 0;left: 0;right: 0;
+	min-height: 100%;
 	font-family: 'Noto Sans', sans-serif;
 }
 
@@ -91,6 +94,7 @@ a:hover {
 
 /* EVERYTHING INSIDE HEADER =========================== */
 
+
 #header {
 	background:#1d1d1d;
 	color:#fff;
@@ -140,6 +144,17 @@ a:hover {
 	top:50%;
 	margin-top:-50%;
 	lefT:0;
+}
+
+#toolBar {
+	position: relative;
+	z-index: 200;	
+	box-shadow: 0 5px 5px rgba(0,0,0,.14);
+}
+
+#nav {
+	background: #fff;
+	font-size: 13px;
 }
 
 /*  UTILITY ============================================ */
@@ -246,7 +261,8 @@ a:hover {
 }
 
 #location {
-	background:transparent url(../img/search.png) no-repeat left center;
+	background:transparent url(../img/search_black.png) no-repeat left center;
+	background-size:contain;
 	border:0;
 	color:#000;
 	padding: 0 0 0 25px;
@@ -611,6 +627,11 @@ a:hover {
 	font-size: 12px;
 }
 
+#lower {
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+}
+
 .news {
 	font-size: 13px;
 	color: #fff;
@@ -644,6 +665,9 @@ a:hover {
 /*  FOOTER ============================================ */
 
 #footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 	background: #000;
 	color: #fff;
 	margin-top:30px; 
@@ -657,6 +681,7 @@ a:hover {
 
 #leftFoot, #rightFoot {
 	padding: 20px;
+	padding-right: 0;
 }
 
 #rightFoot {
