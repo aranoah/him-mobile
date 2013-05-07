@@ -2,6 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
+*:focus {
+	outline: 0;
+}
 
 html, body {
 	color:#4a4a4a;
@@ -660,6 +663,7 @@ a:hover {
 }
 
 .ratingContainer {
+	
 	height: 100px;
     position:relative;
 	border-radius: 20px;
@@ -669,7 +673,7 @@ a:hover {
 	z-index: 1;
 }
 
-.ratingbar {
+.ratingbar, .ratingbarLeft {
 	position: absolute;
 	background: #3ea20f;
 	height: 85%;
@@ -692,6 +696,7 @@ a:hover {
 }
 
 .ratingbar:after {
+	font-size: 0.8em;
 	position: absolute;
 	top: -13px;
 	left: 13px;
@@ -701,6 +706,30 @@ a:hover {
 	background: #000;
 	color: #fff;
 	font-size: 12px;
+}
+
+.ratingbarLeft:before {
+	position: absolute;
+	top: -6px;
+	left: -8px;
+	content: "";
+	border-left: 10px solid #000;
+	border-top:5px solid transparent;
+	border-bottom:5px solid transparent;
+	height: 0;
+	width: 0;
+}
+
+.ratingbarLeft:after {
+	position: absolute;
+	top: -13px;
+	left: -30px;
+	content: attr(data-rating);
+	padding:3px 5px;
+	border-radius: 5px;
+	background: #000;
+	color: #fff;
+	font-size: 0.8em;
 }
 
 #lower {

@@ -17,10 +17,86 @@
 }
 
 #textarea {
+	border: 1px solid #e1e1e1;
+}
+
+#inputBox {
+	position: relative;
+	padding: 0;
+	z-index: 2;
+	vertical-align: top;
+}
+
+#inputBox > textarea {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 0;
+	margin: 0;
 	color: #cacaca;
 	font-size: 25px;
 	text-indent: 10px;
-	border: 1px solid #e1e1e1;
+	padding: 0;
+}
+
+#sugsBox {
+	position: absolute;
+	top: 107px;
+	z-index: 20;
+	border: 1px solid #bcbcbc;
+}
+
+.sugs {
+	padding: 10px;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.sugs:last-child{
+	border:0; 
+}
+.sugs:hover {
+	background: #4d4d4d;
+	cursor: pointer;
+}
+
+.sugsText {
+	font-size: 12px;
+	vertical-align: top;
+	padding: 0 10px;
+}
+
+.text1 {
+	color: #000;
+}
+
+.sugs:hover .text2 {
+	color: #acacac;
+}
+
+.sugs:hover .text1 {
+	color: #fff;
+}
+
+.text2 {
+	color: #6f6f6f;
+}
+
+.sugsPic {
+	width: 50px;
+	height: 50px;
+	background: #a8a8a8;	
+}
+
+#thumb {
+	background: #fff;
+	width: 180px;
+}
+
+#omniPic {
+	background: url(../img/omnibox.png) no-repeat center center;
+	height: 87px;
+	width: 140px;
 }
 
 #title {
@@ -29,21 +105,52 @@
 }
 
 #rating {
+	position: relative;
 }
 
 #rate {
-	height: 109px;
+	height: 107px;
 	background: #666666;
 	border-radius: 20px;
 	width: 8px;
-	margin-right: 2px;
+	margin-right: 5px;
 }
 
+#tooltip {
+	position: relative;
+	
+}
+
+#tooltip:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	right: 20px;
+	border-top: 5px solid #2e8cbd;
+	border-bottom: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	display: inline-block;
+}
+
+#tooltip:after {
+	position: absolute;
+	content: "Rate the place!";
+	top: -35px;
+	right: 10px;
+	color: #fff;
+	padding: 5px 10px;
+	background: #2e8cbd;
+	font-size: .8em;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+
+
 #textarea  {
-	height: 102px;
+	height: 107px;
 	width: 100%;
 	background: #eee;
-	padding: 5px 0  0;
 	margin-top: 5px;
 }
 
@@ -156,7 +263,7 @@
 }
 
 .calDates  {
-	background: #dbdbdb;
+	background: #e1e1e1;
 	text-align: center;
 }
 
