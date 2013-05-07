@@ -7,10 +7,6 @@
 	box-sizing: border-box;
 }
 
-#footer {
-	position: static;
-}
-
 #profilePic {
 	width: 130px;
 }
@@ -49,7 +45,6 @@
 	background: #eee;
 	padding: 5px 0  0;
 	margin-top: 5px;
-	text-align: left;
 }
 
 .links {
@@ -59,4 +54,135 @@
 
 #message {
 	padding-left: 0;
+}
+
+#dash {
+	margin: 20px 0;
+	padding: 20px 0
+}
+
+#updateLeft {
+	width: 690px;
+	padding-right: 10px;
+}
+
+#calendarRight {
+	padding-left: 20px;
+	width: 304px;
+	float: right;
+}
+
+.updateBox {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.updatePic {
+	width: 50px;
+	height: auto;
+}
+
+.updatePic .pic {
+	width: 50px;
+	height: 50px;
+	background: #646464;
+}
+
+.updateContent {
+	vertical-align: top;
+	padding:0 0 10px 10px;
+}
+
+.part1 {
+	color: #646464;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.part2 {
+	color: #ababab;
+	float: right;
+	font-size: 12px;
+}
+
+.updateBody {
+	height: 100px;
+	width: 100%;
+	background: #fff;
+	margin: 5px 0;
+}
+
+.actions {
+	margin-right: 0;
+	color: #808080;
+	font-size: 13px;
+}
+
+.calendarHead {
+	background: url(../img/line1.png) repeat-x center center;
+	color: #a6a6a6;
+}
+
+.calTitle {
+	font-size: 15px;
+	background: #eee;
+	padding-right: 10px;
+}
+
+#year {
+	font-size: 12px;
+	float: right;
+	background: #eee;
+	padding-left: 10px;
+}
+
+.calendarDetails {
+	width: 100%;
+	margin-top: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.calDetails {
+	height: 40px;
+	font-size: 12px;
+	color: #6d6d6d;
+	border-left: 1px solid #bcbcbc;
+}
+
+.months {
+	padding-left: 5px;
+}
+
+.calDates  {
+	background: #dbdbdb;
+	text-align: center;
+}
+
+.calDates > span {
+	font-size: 0.8em;
+	padding:5px
+}
+
+.calDates.select {
+	background: #fff;
+}
+
+#planItems {
+	padding-top: 20px;
+	font-size: 0.8em;
+}
+
+.itemsDone, .itemsUndone {
+	padding: 5px;
+}
+
+.itemsDone {
+	background: #e1e1e1;
+	color: #a5a5a5;
+}
+
+.itemsUndone {
+	color: #000;
 }
