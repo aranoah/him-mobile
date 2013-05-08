@@ -1,0 +1,73 @@
+.search input {
+	border: 0;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 40px 5px 10px;
+	text-align: left;
+	display: block;
+	background: #d3d3d3 url(../img/search.png) no-repeat 175px center;
+	background-size: auto 50%;
+	width: 150px;
+}
+
+#leftNav {
+	border: 0;
+}
+
+.navs.active {
+	border: 0;
+}
+
+#rightBar {
+	vertical-align: initial;
+}
+
+#contactHead {
+	background: #fff;
+}
+
+.groupPic {
+	width: 40px;
+	height: 40px;
+	background: #d1d1d1;
+	margin: 0 15px;
+}
+
+#contactTitle {
+	font-size: 14px;
+	color: #3e3e3e;
+}
+
+#members {
+	color: #a6a6a6;
+	font-size: 12px;
+	float: right;
+	padding: 12px;
+}
+
+.contactItems {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+.pic {
+	width: 40px;
+	height: 40px;
+	background: #3b3b3b;
+}
+
+.contactname {
+	vertical-align: middle;
+	padding: 0 8px;
+}
+
+.name {
+	font-size: 15px;
+	color: #3b3b3b;
+}
+
+.nameRate {
+	font-size: 12px;
+	color: #c3c3c3;
+}

@@ -34,56 +34,6 @@
 	border-left: 3px solid #7e7e7e;
 	background: #fff;
 }
-
-.shade {
-	position: absolute;
-	width: 20px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 50;
-}
-
-#topShade {
-	background: url(../img/top_shade.png) no-repeat right top;
-	height: 50px;
-	width: 20px;position: absolute;
-	top: 0;
-}
-
-#middleShade {
-	position: absolute;
-	width: 19px;
-	top: 50px;
-	bottom: 50px;
-	right: 0;
-	background: url(../img/shade_repeat.png) repeat-y ;
-}
-
-#bottomShade {
-	background: url(../img/bottom_shade.png) no-repeat right bottom;
-	height: 50px;
-	bottom: 0;
-	width: 20px;position: absolute;
-}
-
-.Head {
-	background: url(../img/line1.png) repeat-x center center;
-	font-size: 12px;
-	width: 100%;
-}
-
-#link {
-	float: right;
-	background: #eee;
-	padding-left: 20px;
-	color: #bcbcbc;
-}
-
-#rightBar {
-	vertical-align: top;
-}
-
 .title {
 	font-size: 12px;
 	color: #7e7e7e;
@@ -117,9 +67,13 @@
 }
 
 .mail {
-	padding: 10px 0 10px 20px;
+	padding: 10px 0 0 20px;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+.mail * {
+	vertical-align: middle;
 }
 
 .senderImg {
@@ -208,7 +162,7 @@
 
 .preview {
 	font-size: 13px;
-	padding: 12px;
+	padding: 8px;
 	color: #86b4c3;
 	overflow: hidden;
 	text-overflow: ellipsis;
