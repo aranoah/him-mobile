@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/result.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -36,8 +37,7 @@
 				</div>
 				<div class="trans">&nbsp;</div>
 			</div>
-			
-			<div id="toolBar">
+			<div class="toolBar">
 				<div id="searchBar">
 					<div class="container">
 						<div id="search">
@@ -45,22 +45,39 @@
 						</div>
 					</div>
 				</div>
-				<div id="nav">
+				<div class="nav">
 					<div class="container inlineparent">
-						<div id="item" class="inlineparent">
+						<div class="item inlineparent">
 							<div class="items active">All</div>
 							<div class="items">Restaurants</div>
 							<div class="items">Hotels</div>
 							<div class="items">Stores</div>
 							<div class="items more">More</div>
 						</div>
-						<div id="place">Bangalore</div>
+						
+						<div class="place1">Bangalore</div>
+						<div class="place1" style="backgroun:none;padding:3px 10px 0;margin-right:20px;height: 35px;"><img height="30px" src="img/map.png" /></div>
 					</div>
 				</div>
 			</div>
 			<div id="Content">
+				<div class="toolBar">
+					<div class="nav">
+						<div class="container inlineparent">
+							<div class="item inlineparent sort">
+								<div class="items active">Sort by Area</div>
+								<div class="items">Sort by </div>
+								<div class="items">sort by</div>
+								<div class="items">sort by</div>
+								<div class="items more">More</div>
+							</div>
+							<div class="place1" style="background: #444;padding: 10px 15px">Apply Changes</div>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;">&nbsp;</div>
 				<div class="container">
-					<div class="inlineparent" style="text-align:center;">
+					<div class="inlineparent">
 						<div class="tiles">
 							<div class="contentDeatils cellparent">
 								<div style="vertical-align: middle">
@@ -79,13 +96,86 @@
 												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
 											</p>
 										</div><div class="visited">
-											+ 5 more people visited this
+											+ 5 visits
 										</div>
 									</div>
 								</div>
 								<div id="others">
-									<div style="background: url(img/chat.png) no-repeat center center;height: 15px;width: 16px;"></div>&nbsp;
-									<div style="background: url(img/msg.png) no-repeat center center;height: 15px;width: 16px;"></div>
+									<div class="chat"></div>
+									<div class="msg"></div>
+								</div>
+							</div>
+							<div class="xtra inlineparent">
+								<div class="extra"><b>9:00 AM to 4:50 PM</b> :</div>
+								<div class="extra">ATM</div>
+								<div class="extra">FUN</div>
+								<div class="extra">FOOD COURT</div>
+								<div class="extra">PVR</div>
+								<div class="extra">INOX</div>
+								<div class="extra">PARKING</div>
+							</div>
+						</div><div class="tiles">
+							<div class="contentDeatils cellparent">
+								<div style="vertical-align: middle">
+									<div class="ratingContainer">
+										<div class="ratingbar" data-rating="0.3"></div>
+									</div>
+								</div>
+								<div id="stuff" class="cellparent">
+									<div id="searchImg"></div>
+									<div id="searchItems">
+										<div style="font-size: 12px;color: #9d9c9c;">
+											<span style="color: #000;font-weight: bold">Orion mall</span>
+											 in Rajajinagar, Bangalore
+										</div><div style="font-size: 11px;color: #5d8ca4;">
+											<p>
+												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+											</p>
+										</div><div class="visited">
+											+ 5 visits
+										</div>
+									</div>
+								</div>
+								<div id="others">
+									<div class="chat"></div>
+									<div class="msg"></div>
+								</div>
+							</div>
+							<div class="xtra inlineparent">
+								<div class="extra"><b>9:00 AM to 4:50 PM</b> :</div>
+								<div class="extra">ATM</div>
+								<div class="extra">FUN</div>
+								<div class="extra">FOOD COURT</div>
+								<div class="extra">PVR</div>
+								<div class="extra">INOX</div>
+								<div class="extra">PARKING</div>
+							</div>
+						</div>
+						<div class="tiles">
+							<div class="contentDeatils cellparent">
+								<div style="vertical-align: middle">
+									<div class="ratingContainer">
+										<div class="ratingbar" data-rating="0.3"></div>
+									</div>
+								</div>
+								<div id="stuff" class="cellparent">
+									<div id="searchImg"></div>
+									<div id="searchItems">
+										<div style="font-size: 12px;color: #9d9c9c;">
+											<span style="color: #000;font-weight: bold">Orion mall</span>
+											 in Rajajinagar, Bangalore
+										</div><div style="font-size: 11px;color: #5d8ca4;">
+											<p>
+												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+											</p>
+										</div><div class="visited">
+											+ 5 visits
+										</div>
+									</div>
+								</div>
+								<div id="others">
+									<div class="chat"></div>
+									<div class="msg"></div>
 								</div>
 							</div>
 							<div class="xtra inlineparent">
@@ -115,13 +205,13 @@
 												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
 											</p>
 										</div><div class="visited">
-											+ 5 more people visited this
+											+ 5 visits
 										</div>
 									</div>
 								</div>
 								<div id="others">
-									<div style="background: url(img/chat.png) no-repeat center center;height: 15px;width: 16px;"></div>&nbsp;
-									<div style="background: url(img/msg.png) no-repeat center center;height: 15px;width: 16px;"></div>
+									<div class="chat"></div>
+									<div class="msg"></div>
 								</div>
 							</div>
 							<div class="xtra inlineparent">
@@ -151,13 +241,13 @@
 												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
 											</p>
 										</div><div class="visited">
-											+ 5 more people visited this
+											+ 5 visits
 										</div>
 									</div>
 								</div>
 								<div id="others">
-									<div style="background: url(img/chat.png) no-repeat center center;height: 15px;width: 16px;"></div>&nbsp;
-									<div style="background: url(img/msg.png) no-repeat center center;height: 15px;width: 16px;"></div>
+									<div class="chat"></div>
+									<div class="msg"></div>
 								</div>
 							</div>
 							<div class="xtra inlineparent">
@@ -187,13 +277,13 @@
 												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
 											</p>
 										</div><div class="visited">
-											+ 5 more people visited this
+											+ 5 visits
 										</div>
 									</div>
 								</div>
 								<div id="others">
-									<div style="background: url(img/chat.png) no-repeat center center;height: 15px;width: 16px;"></div>&nbsp;
-									<div style="background: url(img/msg.png) no-repeat center center;height: 15px;width: 16px;"></div>
+									<div class="chat"></div>
+									<div class="msg"></div>
 								</div>
 							</div>
 							<div class="xtra inlineparent">
@@ -205,78 +295,7 @@
 								<div class="extra">PARKING</div>
 							</div>
 						</div>
-						<div class="tiles">
-							<div class="contentDeatils cellparent">
-								<div style="vertical-align: middle">
-									<div class="ratingContainer">
-										<div class="ratingbar" data-rating="0.3"></div>
-									</div>
-								</div>
-								<div id="stuff" class="cellparent">
-									<div id="searchImg"></div>
-									<div id="searchItems">
-										<div style="font-size: 12px;color: #9d9c9c;">
-											<span style="color: #000;font-weight: bold">Orion mall</span>
-											 in Rajajinagar, Bangalore
-										</div><div style="font-size: 11px;color: #5d8ca4;">
-											<p>
-												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
-											</p>
-										</div><div class="visited">
-											+ 5 more people visited this
-										</div>
-									</div>
-								</div>
-								<div id="others">
-									<div style="background: url(img/chat.png) no-repeat center center;height: 15px;width: 16px;"></div>&nbsp;
-									<div style="background: url(img/msg.png) no-repeat center center;height: 15px;width: 16px;"></div>
-								</div>
-							</div>
-							<div class="xtra inlineparent">
-								<div class="extra">ATM</div>
-								<div class="extra">FUN</div>
-								<div class="extra">FOOD COURT</div>
-								<div class="extra">PVR</div>
-								<div class="extra">INOX</div>
-								<div class="extra">PARKING</div>
-							</div>
-						</div>
-						<div class="tiles">
-							<div class="contentDeatils cellparent">
-								<div style="vertical-align: middle">
-									<div class="ratingContainer">
-										<div class="ratingbar" data-rating="0.3"></div>
-									</div>
-								</div>
-								<div id="stuff" class="cellparent">
-									<div id="searchImg"></div>
-									<div id="searchItems">
-										<div style="font-size: 12px;color: #9d9c9c;">
-											<span style="color: #000;font-weight: bold">Orion mall</span>
-											 in Rajajinagar, Bangalore
-										</div><div style="font-size: 11px;color: #5d8ca4;">
-											<p>
-												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
-											</p>
-										</div><div class="visited">
-											+ 5 more people visited this
-										</div>
-									</div>
-								</div>
-								<div id="others">
-									<div style="background: url(img/chat.png) no-repeat center center;height: 15px;width: 16px;"></div>&nbsp;
-									<div style="background: url(img/msg.png) no-repeat center center;height: 15px;width: 16px;"></div>
-								</div>
-							</div>
-							<div class="xtra inlineparent">
-								<div class="extra">ATM</div>
-								<div class="extra">FUN</div>
-								<div class="extra">FOOD COURT</div>
-								<div class="extra">PVR</div>
-								<div class="extra">INOX</div>
-								<div class="extra">PARKING</div>
-							</div>
-						</div>
+						<div class="button">More</div>
 					</div>
 				</div>
 			</div>

@@ -65,12 +65,17 @@
 	font-size: 20px;
 	box-sizing: border-box;
 	padding: 20px 0 20px 50px;
+	
 }
 
 #search input {
 	background: transparent;
 	border: 0;
-	color: #fff;
+	color: #fff;text-shadow: 0 1px 1px rgba(0,0,0,.45);
+}
+
+.item.sort {
+	font-size: 0.9em;
 }
 
 .items {
@@ -88,10 +93,6 @@
 	color: #000;
 }
 
-.contentDeatils {
-	padding: 15px;
-}
-
 .items:hover .contentDeatils {
 	cursor: pointer;
 	background-color: #e4e4e4;
@@ -99,11 +100,10 @@
 }
 
 
-#place {
+.place1 {
 	cursor: pointer;
 	float: right;
 	padding: 10px 40px 10px 20px;
-	text-align: left;
 	color: #fff;
 	background: #2e8cbd url(../img/down.png) no-repeat  100px center;
 }
@@ -119,15 +119,17 @@
 
 .tiles {
 	text-align: left;
-	width: 440px;
+	width: 490px;
 	font-size: 13px;
 	margin-top: 40px;
-	
-	margin-right: 70px;
+	margin-right: 40px;
 }
 
 .contentDeatils {
 	border-radius:5px; 
+	padding: 10px;
+	position:relative;
+	z-index:1;
 }
 
 .tiles:hover .contentDeatils {
@@ -139,18 +141,20 @@
 .xtra {
 	border-radius:0 0 5px 5px;
 	margin: 0 2px;
-	color: #7e7e7e
+	color: #7e7e7e;
+	position:relative;
+	z-index:0;
 }
 
 .tiles:hover .xtra {
 	cursor: pointer;
 	background: #525252;
 	color: #fff;
-	box-shadow: 0 2px 5px rgba(0,0,0,.67);
 }
 
 .tiles:nth-child(2n) {
 	margin-right:0;
+	float: right;
 }
 
 #footer {
@@ -161,7 +165,7 @@
     position:relative;
 	border-radius: 20px;
 	background: #9b9b9b;
-	width:10px;
+	width:8px;
 	z-index: 1;
 	margin-right: 10px;
 	height: 80px;
@@ -171,7 +175,7 @@
 	position: absolute;
 	background: #b22222;
 	height: 25%;
-	width: 10px;
+	width: 8px;
 	bottom: 0;
 	border-radius: 20px;
 	z-index: 2;
@@ -203,7 +207,7 @@
 }
 
 #stuff {
-	padding:0  15px;
+	padding: 0 15px 0 5PX;
 	vertical-align: top;
 }
 
@@ -226,9 +230,13 @@
 }
 
 .extra {
-	padding: 5px 10px;
+	padding: 5px 0 5px 10px;
 	font-size: 10px;
 	cursor: pointer;
+}
+
+.extra b {
+	font-size:13px
 }
 
 .visited {
@@ -240,3 +248,29 @@
 	display: inline-block;
 }
 
+.visited:hover {
+	border: 1px solid #9b9b9b;
+}
+
+.chat {
+	background: url(../img/chat.png) no-repeat center center;
+	height: 15px;
+	width: 16px;
+}
+
+.msg {
+	background: url(../img/msg.png) no-repeat center center;
+	height: 15px;
+	width: 16px;
+	margin-top: 5px;
+}
+
+.button {
+	display:block;
+	margin-top: 30px;
+	color: #fff;
+	background: #2e8cbd;
+	font-weight:bold;
+	padding: 10px 20px ;
+	box-shadow: 0 0 0; 
+}

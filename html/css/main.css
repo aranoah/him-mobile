@@ -149,13 +149,13 @@ a:hover {
 	lefT:0;
 }
 
-#toolBar {
+.toolBar {
 	position: relative;
 	z-index: 200;	
 	box-shadow: 0 5px 5px rgba(0,0,0,.14);
 }
 
-#nav {
+.nav {
 	background: #fff;
 	font-size: 13px;
 }
@@ -642,6 +642,11 @@ a:hover {
     text-align:left;
 	cursor:pointer;
     border-radius:0 0 5px 5px;
+	font-size:0.8em; 
+}
+
+.agree img {
+	padding-left: 10px;
 }
 
 .agree:hover {
@@ -664,12 +669,11 @@ a:hover {
 }
 
 .ratingContainer {
-	
 	height: 100px;
     position:relative;
 	border-radius: 20px;
 	background: #444;
-	width:10px;
+	width:8px;
 	margin-right: 50px;
 	z-index: 1;
 }
@@ -678,7 +682,7 @@ a:hover {
 	position: absolute;
 	background: #3ea20f;
 	height: 85%;
-	width: 10px;
+	width: 8px;
 	bottom: 0;
 	border-radius: 20px;
 	z-index: 2;
@@ -777,6 +781,7 @@ a:hover {
 	background: #000;
 	color: #fff;
 	margin-top:30px; 
+	font-size: 0.8em;
 }
 
 #footer .container {
