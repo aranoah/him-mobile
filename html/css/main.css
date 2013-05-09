@@ -669,7 +669,7 @@ a:hover {
 }
 
 .ratingContainer {
-	height: 100px;
+	height: 90px;
     position:relative;
 	border-radius: 20px;
 	background: #444;
@@ -786,7 +786,6 @@ a:hover {
 
 #footer .container {
 	position: relative;
-	padding:0 20px;
 	box-sizing:border-box;
 }
 

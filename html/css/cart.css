@@ -1,0 +1,182 @@
+.storename {
+	font-size: 2em;
+	color: #2e8cbd;
+	background: #eee;
+	padding-right: 20px;
+}
+
+.store {
+	margin-bottom: 30px;
+}
+
+.checkBox {
+	padding-left: 20px;
+	float: right;
+	background: #eee;
+	margin-top: 5px;
+}
+
+.checkoutBox {
+	background: #2e8cbd;
+	font-size: 0.8em;
+	color: #fff;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.cartTable {
+	width: 100%;
+}
+
+.heading {
+	
+	text-align: center;
+	font-size: 13px;
+	color: #000;
+	padding-bottom: 10px;
+}
+
+.white {
+	background: #fff;
+}
+
+.itemPic {
+	background-repeat: no-repeat;
+	background-position:center center; 
+	background-size:cover; 
+}
+
+.description {
+	padding: 5px 10px;
+	text-align: justify;
+}
+
+.desText1 {
+	font-size: 12px;
+	color: #2e8cbd;
+}
+
+.desText2 {
+	font-size: 11px;
+	color: #bbb;
+}
+
+.quantity {
+	background: #d0d0d0;
+}
+
+.qty input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 0;
+	text-align: center;
+}
+
+.cost {
+	color:  #2e8cbd;
+	font-size: 22px;
+	text-align: center;
+}
+
+.action {
+	text-align:right; 
+	padding-right: 20px;
+}
+
+.correct {
+	background: #2e8cbd url(../img/correct.png) no-repeat center center;
+	height: 15px;
+	width: 15px;
+	padding: 8px;
+	margin-right: 5px;
+}
+
+.inCorrect {
+	background: #000 url(../img/incorrect.png) no-repeat center center;
+	height: 15px;
+	width: 15px;
+	padding: 8px;
+}
+
+.coupon input {
+	padding: 5px 10px;
+	border: 0;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.couponName {
+	font-size: 12px;
+	border-bottom: 1px solid #c6c6c6;
+	color: #000;
+	margin-left: 5px;
+}
+
+.item1 {
+	font-size: 11px;
+	color: #fff;
+	border-radius: 3px;
+	margin: 10px 5px 0 0;
+	background: #808080;
+	padding: 2px 8px;
+	vertical-align: middle
+}
+
+.couponClose {
+	background: #3c3c3c;
+	padding: 2px 8px;
+	font-size: 13px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.doc {
+	padding: 10px;
+	color: #777;
+	font-size: 13px;
+}
+
+.uploadBox {
+	margin-right: 20px;
+}
+
+.upload {
+	color: #fff;
+	font-size: 12px;
+	background: #2e8cbd;
+	padding: 5px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.discountItems {
+	color:#a0a0a0;
+	text-align: left;
+} 
+
+.count {
+	font-size: 20px;
+	text-align: right
+}
+
+.dis {
+	font-size: 13px;
+	text-align: right;
+}
+
+.tot {
+	font-size: 30px;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+.totalp {
+	font-size: 25px;
+	color: #2ebd6b;
+	font-weight: bold;
+}
+
+.rite {
+	float: right;
+}
