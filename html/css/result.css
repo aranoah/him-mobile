@@ -265,6 +265,19 @@
 	margin-top: 5px;
 }
 
+.join {
+	background: url(../img/join.gif) no-repeat center center;
+	height: 15px;
+	width: 16px;
+}
+
+.mapicon {
+	background: url(../img/map.gif) no-repeat center center;
+	height: 22px;
+	width: 16px;
+	margin-bottom: 10px;
+}
+
 .button {
 	display:block;
 	margin-top: 30px;
