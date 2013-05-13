@@ -16,9 +16,7 @@ html, body {
 #register {
 	width: 550px;
 	margin-right: 100px;
-	background: url(../img/line.png);
-	background-repeat: repeat-x;
-	background-position-y: center;
+	background: url(../img/line.png) repeat-x center center;
 }
 
 .reg {
@@ -93,6 +91,7 @@ html, body {
 	box-sizing: border-box;
 	border: 0;box-shadow: 0 1px 3px rgba(0,0,0,.2);
 	border-radius: 2px;
+	-moz-box-sizing: border-box;
 }
 
 .inputField input:focus {
