@@ -1,0 +1,186 @@
+#miniContainer {
+	width: 960px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#content {
+	padding: 10px;
+}
+
+.payment {
+	font-size: 2em;
+	background: #eee;
+	padding-right: 20px;
+	color: #929292;
+}
+
+.payment span {
+	color: #2e8cbd;
+}
+
+.payoption {
+	padding-left: 20px;
+	float: right;
+	background: #eee;
+	margin-top: 5px;
+	color: #929292;
+}
+
+.det2, .edit {
+	cursor: pointer;
+}
+
+.cardDetails {
+	padding: 20px 0;
+	margin: 10px 0;
+	width: 100%;
+	font-size: 12px;
+	color: #fff;
+}
+
+.det1 {
+	height: 180px;
+	box-shadow: 0 0px 5px rgba(0,0,0,.17);
+	background: #fff;
+	font-size: 12px;
+	padding:10px 20px;
+}
+
+.personDetails {
+	width: 100%;
+	margin: 10px 0 20px 0;
+}
+
+.titles {
+	width: 100px;
+	color: #000;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.inputs {
+	text-align: left;
+}
+
+.inputs input {
+	width: 100%;
+	border: 1px solid #d6d6d6;
+	padding: 3px;
+}
+
+.card.cash {
+	width: 180px;
+}
+
+.card.person {
+	padding: 0 40px;
+	vertical-align: top;
+}
+
+.card.store {
+	width: 200px;
+}
+
+.det2 {
+	padding: 10px;
+	color: #fff;
+	background: #878787;
+	text-align: center;
+}
+
+.det2.payBy {
+	background: #2e8cbd;
+}
+
+.cart {
+	font-size: 13px;
+}
+
+.edit {
+	background: #3c3c3c;
+	color: #fff;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.cartDeatils {
+	font-size: 13px;
+	padding: 10px 0;
+}
+
+.cartItems {
+	background: #eee;
+	padding-right: 20px;
+	color: #5c5c5c;
+}
+
+.cartItems span {
+	color: #b6b6b6;
+}
+
+.cartprice {
+	padding-left: 20px;
+	float: right;
+	background: #eee;
+	color: #898989;
+}
+
+.total {
+	padding-top: 10px;
+	color: #2e8cbd;
+	font-size: 16px;
+}
+
+#deliver {
+	width: 100%;
+	font-size: 13px;
+	margin: 20px 0;
+}
+
+.deliverDetails {
+	padding: 10px 0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.deliverName {
+	width: 80px;
+}
+
+.deliverInputs input {
+	border: 0;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.red {
+	color: #ea2020;
+}
+
+#deliverAddress {
+	width: auto;
+	height:140px;
+	background: #fff;
+	margin: 15px 0 0 0 ;
+}
+
+#billaddress {
+	float: right;
+	padding:5px 10px;
+	color: #fff;
+	font-size: 11px;
+	background: #c7c7c7
+}
+
+#field {
+	padding: 0 10px;
+	background: #fff;
+	height: 20px;
+}
+
+.button {
+	box-shadow: 0 0 0 #000;
+}
