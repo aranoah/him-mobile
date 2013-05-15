@@ -98,10 +98,14 @@
 }
 
 .edit {
-	background: #3c3c3c;
+	background:#3c3c3c;
 	color: #fff;
 	padding: 5px;
 	font-size: 12px;
+}
+
+.edit:hover {
+	background: #878787;
 }
 
 .cartDeatils {
@@ -156,6 +160,10 @@
 	margin-bottom: 10px;
 }
 
+ input:focus {
+	outline: 1px solid #bcbcbc;
+}
+
 .red {
 	color: #ea2020;
 }
@@ -172,15 +180,28 @@
 	padding:5px 10px;
 	color: #fff;
 	font-size: 11px;
-	background: #c7c7c7
+	background: #c7c7c7;
+	cursor: pointer;
+}
+
+#billaddress:hover {
+	background: #878787;
 }
 
 #field {
-	padding: 0 10px;
 	background: #fff;
 	height: 20px;
 }
 
 .button {
 	box-shadow: 0 0 0 #000;
+}
+
+.textarea {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 10px ;
 }

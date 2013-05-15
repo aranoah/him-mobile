@@ -207,8 +207,9 @@
 }
 
 #stuff {
-	padding: 0 15px 0 5PX;
+	padding: 0 15px 0 5px;
 	vertical-align: top;
+	width: 100%;
 }
 
 #searchImg {

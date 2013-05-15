@@ -1,0 +1,185 @@
+#reg {
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 0px 5px rgba(0,0,0,.17);
+}
+
+#regPic {
+	width: 180px;
+	background: #eee;
+	text-align: center;
+	vertical-align: bottom;
+	box-shadow:inset 0 0 5px rgba(0,0,0,.45);
+	
+}
+
+#regDetails {
+	vertical-align: top;
+}
+
+#regInputs {
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+#businessName input {
+	font-size: 20px;
+	color: #2e8cbd;
+}
+
+#bs::-webkit-input-placeholder{
+    color:#2e8cbd;
+}
+
+#bs:-moz-placeholder {
+    color:#fff;
+}
+
+.selected {
+	color: #fff;
+	background: #878787;
+}
+
+.selected::-webkit-input-placeholder{
+    color:#fff;
+}
+
+.selected:-moz-placeholder {
+    color:#fff;
+}
+
+#businessName, #businessAddress {
+	margin-bottom: 17px;
+}
+
+#regInputs input {
+	padding: 5px;
+	width: 100%;
+	border: 0;
+	outline: 1px solid #eee;
+}
+
+#add {
+	font-size: 12px;
+	color: #737373;
+	font-weight: 600;
+	margin-top: -30px;
+	cursor: pointer;
+}
+
+#regMap {
+	width: 500px;
+}
+
+#timingDetails{
+	width: 350px;
+}
+
+#contactDetails {
+	padding: 0 20px;
+}
+
+.timingBox {
+	margin-bottom: 5px;
+}
+
+.head {
+	font-size: 13px;
+	color: #a5a5a5;
+}
+
+#title2 {
+	float: right;
+	color: #000;
+}
+
+#timeBox {
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border: 1px solid #b0b0b0;
+	cursor: pointer;
+}
+
+#timecheck {
+	width: 8px;
+	height: 8px;
+	background: #5ad31f;
+	margin: 5px 0 0 5px;
+}
+
+.body {
+	padding: 20px 0;
+}
+
+.box {
+	background: #fff;
+	cursor: pointer;
+}
+
+.mnt {
+	padding: 5px 8px;
+	color: #2e8cbd;
+	font-size: 12px;
+}
+
+.day {
+	padding: 0 0 0 5px;
+	font-weight: 600;
+	color: #000;
+	font-size: 12px;
+}
+
+.time {
+	width: 70px;
+	color: #fff;
+}
+
+.close {
+	background: #c4c4c4 url(../img/close.png) no-repeat center center;
+	float: right;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.default {
+	background: #9a9a9a;
+	color: #fff;
+	border: 0;
+	width: 100%;
+	padding: 5px 8px;
+	font-size: 12px;
+	cursor: pointer
+}
+
+#right {
+	background: url(../img/right.png) no-repeat center center;
+	height: 14px;
+	width: 9px;
+	padding: 0 5px;
+	float: left;
+	
+}
+
+#right1 {
+	padding: 0 5px;
+	height: 14px;
+	width: 9px;
+	background: url(../img/right1.png) no-repeat center center;
+	float: right;
+}
+
+.active {
+	outline: 2px solid #2e8cbd;
+}
+
+.doc {
+	background: #2e8cbd;
+}
+
+.foc {
+	color: #2e8cbd;
+}
+
+
+	
