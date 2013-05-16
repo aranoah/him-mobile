@@ -72,15 +72,12 @@
 }
 
 #timingDetails{
-	width: 350px;
+	width: 360px;
 }
 
 #contactDetails {
-	padding: 0 20px;
-}
-
-.timingBox {
-	margin-bottom: 5px;
+	padding: 0 40px;
+	width: 260px;
 }
 
 .head {
@@ -108,78 +105,158 @@
 	margin: 5px 0 0 5px;
 }
 
+.timingBox {
+	margin-bottom: 2px;
+}
+
 .body {
 	padding: 20px 0;
 }
 
 .box {
 	background: #fff;
-	cursor: pointer;
+	font-size: 12px;
+	width: 310px;
+	vertical-align: top;
 }
 
-.mnt {
-	padding: 5px 8px;
+.boxItems {
+	font-size: 12px;
+	padding: 3px 6px;
 	color: #2e8cbd;
-	font-size: 12px;
-}
-
-.day {
-	padding: 0 0 0 5px;
-	font-weight: 600;
-	color: #000;
-	font-size: 12px;
+	vertical-align: top
 }
 
 .time {
-	width: 70px;
+	width: 60px;
+	background: #878787;
 	color: #fff;
-}
-
-.close {
-	background: #c4c4c4 url(../img/close.png) no-repeat center center;
-	float: right;
-	padding: 5px 10px;
-	cursor: pointer;
 }
 
 .default {
-	background: #9a9a9a;
-	color: #fff;
-	border: 0;
 	width: 100%;
-	padding: 5px 8px;
-	font-size: 12px;
-	cursor: pointer
+	border: 0;
+	outline: 0;
+	text-align: center;
+	background: transparent;
+	color: #fff;
+	font-size: 11px;
 }
 
-#right {
-	background: url(../img/right.png) no-repeat center center;
-	height: 14px;
-	width: 9px;
-	padding: 0 5px;
-	float: left;
-	
+.day {
+	color: #6f6f6f;
+	padding: 0;
+	padding-left: 10px;
 }
 
-#right1 {
-	padding: 0 5px;
-	height: 14px;
-	width: 9px;
-	background: url(../img/right1.png) no-repeat center center;
+.day.done {
+	color: #000;
+	font-weight: bold;
+}
+
+.timeControl {
 	float: right;
+	height: 23px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
-.active {
+.close {
+	background: #c4c4c4
+}
+
+.timingBox.active .box {
 	outline: 2px solid #2e8cbd;
 }
 
-.doc {
+.timingBox.active .time {
 	background: #2e8cbd;
 }
 
-.foc {
+.timingBox.active .day {
 	color: #2e8cbd;
 }
 
+.closed .close {
+	background: #e26363;
+}
 
-	
+.closed .day {
+	color: #e26363;
+}
+
+#social {
+	background: #fff;
+	border: 1px solid #cdcdcd;
+	display: inline-block;
+}
+
+.socialItems {
+	margin-bottom: 10px;
+}
+
+.socialImg {
+	padding-right: 10px;
+}
+
+.socialInputs input {
+	border: 0;
+	background: #eee;
+	outline: 1px solid #cdcdcd;
+}
+
+#himLink {
+	background: #2e8cbd;
+	padding:5px;
+}
+
+#himLink input {
+	border: 0;
+	background: transparent;
+	padding-left: 15px;
+	font-size: 11px;
+	color: #fff;
+}
+
+.selected::-webkit-input-placeholder{
+    color:#fff;
+}
+
+.selected:-moz-placeholder {
+    color:#fff;
+}
+
+#facility {
+	border: 1px solid #cdcdcd;
+}
+
+#facility input {
+	border: 0;
+	padding: 5px 8px;
+	width: 294px;
+}
+
+#button {
+	background: #cdcdcd;
+	padding: 5px 8px;
+}
+
+#facli {
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	display: inline-block;
+	background: #fff;
+	margin: 10px 0;
+	font-size: 10px;
+}
+
+#facli span {
+	padding:2px 5px;
+	color: #4f4f4f;
+}
+
+#shut {
+	background: #2e8cbd;
+	margin: 0 5px;
+	padding:2px 5px;
+}
