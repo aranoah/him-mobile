@@ -129,7 +129,7 @@
 
 .time {
 	width: 60px;
-	background: #878787;
+	background: #c4c4c4;
 	color: #fff;
 }
 
@@ -259,4 +259,28 @@
 	background: #2e8cbd;
 	margin: 0 5px;
 	padding:2px 5px;
+}
+
+#timeZone {
+	font-size: 12px;
+	margin: 15px 0;
+}
+
+#ztitle {
+	color: #636363;
+}
+
+#zone {
+	background: #fff;
+	margin-left: 5px;
+}
+
+#zone1 {
+	padding:5px 5px 5px 10px;
+	width: 233px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border: 0;
+	color: #363636;
 }

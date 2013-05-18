@@ -7,8 +7,31 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
 		<script type="text/javascript" src="js/popup.js"></script>
+		<script type="text/javascript" src="js/magnific.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.open-popup-link').magnificPopup({
+				  type:'inline',
+				  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+				});
+			});
+		</script>
+		<style>
+			.white-popup {
+			  position: relative;
+			  background: #FFF;
+			  padding: 20px;
+			  width: auto;
+			  border-radius: 5px;
+			  max-width: 400px;
+			  margin: 20px auto;
+			}
+		</style>
 	</head>
 	<body>
+		<div id="test-popup" class="white-popup mfp-hide">
+			Here goes our content
+		</div>
 		<div id="header">
 			<div class="container inlineparent">
 				<div id="logoArea" class="inlineparent">
@@ -83,13 +106,13 @@
 									<div id="searchImg"></div>
 									<div id="searchItems">
 										<div style="font-size: 12px;color: #9d9c9c;">
-											<span style="color: #000;font-weight: bold;">Orion mall</span>
+											<span style="color: #000;font-weight: bold;">Orion mall5</span>
 											 in Rajajinagar, Bangalore
 										</div><div style="font-size: 11px;color: #5d8ca4;">
 											<p>
 												This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
 											</p>
-										</div><div class="visited">
+										</div><div class="visited open-popup-link" data-mfp-src="#test-popup">
 											+ 5 visits
 										</div>
 									</div>
