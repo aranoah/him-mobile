@@ -4,7 +4,9 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/business.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/timing.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -104,13 +106,13 @@
 						</div>
 					</div>
 					<div id="regMap">
-						<iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 219px;border: 0"></iframe>
+						<!--<iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 219px;border: 0"></iframe>-->
 					</div>
 				</div>
 				<div id="timing" class="cellparent" style="width: 100%;">
 					<div id="timingDetails">
 						<div class="head inlineparent">
-							<div id="title">Timing details</div>
+							<div id="title">Timing details <br /><span style="font-size:0.8em">(Click to fill and right click to erase)</span></div>
 							<div id="title2" class="inlineparent">
 								<div><b>24 &#215; 7</b></div>&nbsp;
 								<div id="timeBox">
@@ -118,19 +120,72 @@
 								</div>
 							</div>
 						</div>
-						<div class="body">
+						<div class="body" oncontextmenu="return false;">
 							<div class="cellparent timingBox active" style="width: 100%">
-								<div class="box inlineparent ">
-									<div class="boxItems">from</div><div class="boxItems time">
-										<input class="default change" type="text" value="11:30 AM">
-									</div><div class="boxItems">to</div><div class="boxItems time">
-										<input class="default change" type="text" value="12:30 AM">
-									</div><div class="boxItems timeControl close"> 
-										<img src="img/close.png"/>
-									</div><div class="boxItems timeControl">
-										<img src="img/right1.png"/>
-									</div><div class="boxItems timeControl" style="margin-left: 20px;">
-										<img src="img/right.png"/>
+								<div class="box">
+									<div class="cellparent boxInner">
+										<div class="scale">
+											<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+										</div>
+										<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment active">
+											</div><div class="fragment active">
+											</div><div class="fragment active">
+											</div><div class="fragment active">
+											</div><div class="fragment active">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment active">
+											</div><div class="fragment active">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment active">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+										
+										<div class="timeControlContainer">
+											<div class="boxItems timeControl close"> 
+												<img src="img/close.png"/>
+											</div><div class="boxItems timeControl">
+												<img src="img/right1.png"/>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="boxItems day done">MON</div>
