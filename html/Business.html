@@ -15,10 +15,9 @@
 					<div id="logo"></div>
 					<div id="logoText">
 						<h1 id="logoName">Here I am</h1>
-						<div id="tag">simplifying life and businesses</div>
 					</div>
 				</div>
-				<div id="iconArea" class="inlineparent">
+				<div id="iconArea" class="cellparent">
 					<div class="headerIcon"><img src="img/android.png" /></div>
 					<div class="headerIcon"><img src="img/phone.png" /></div>
 					<div class="headerIcon"><img src="img/cart.png" /></div>
@@ -115,8 +114,8 @@
 							<div id="title">Timing details <br /><span style="font-size:0.8em">(Click to fill and right click to erase)</span></div>
 							<div id="title2" class="inlineparent">
 								<div><b>24 &#215; 7</b></div>&nbsp;
-								<div id="timeBox">
-									<div id="timecheck"></div>
+								<div class="timeBox">
+									<div class="timecheck"></div>
 								</div>
 							</div>
 						</div>
@@ -132,21 +131,6 @@
 											</div><div class="fragment">
 											</div><div class="fragment">
 											</div><div class="fragment">
-											</div><div class="fragment active">
-											</div><div class="fragment active">
-											</div><div class="fragment active">
-											</div><div class="fragment active">
-											</div><div class="fragment active">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment">
-											</div><div class="fragment active">
-											</div><div class="fragment active">
 											</div><div class="fragment">
 											</div><div class="fragment">
 											</div><div class="fragment">
@@ -157,7 +141,22 @@
 											</div><div class="fragment">
 											</div><div class="fragment">
 											</div><div class="fragment">
-											</div><div class="fragment active">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
 											</div><div class="fragment">
 											</div><div class="fragment">
 											</div><div class="fragment">
@@ -338,6 +337,10 @@
 									<input class="selected" type="email" placeholder="Choose HM url"/>
 								</div>
 							</div>
+							<div id="sharing">
+								<div id="shareTitle"><b>your sharing URL is </b><span>: (click to copy)</span></div>
+								<div id="shareUrl">http:/hereiamconnect.com/<br>BusinessName</div>
+							</div>
 						</div>
 					</div>
 					<div id="facilities">
@@ -350,14 +353,163 @@
 									<img src="img/button.png" style="height: 12px;width: 12px;">
 								</div>
 							</div>
-							<div id="facli" class="inlineparent">
-								<span>ATM</span>
-								<div id="shut">
-									<img src="img/shut.png" style="height: 7px;width: 7px;"/>
+							<div id="facilityBox">
+								<div id="facli" class="inlineparent">
+									<span>ATM</span>
+									<div id="shut">
+										<img src="img/shut.png" style="height: 7px;width: 7px;"/>
+									</div>
+								</div>
+							</div>
+							<div id="branding">
+								<div class="brandItems inlineparent">
+									<div id="brandTitle" style="width: 200px"><b>Branding</b><br> <span style="color: #bbb;">Are you part of a brand identity ?let us know more</span></div>
+									<div class="inlineparent" style="float: right">
+										<span style="color: #7b7b7b;font-size: 10px;padding: 0 5px;	">CHAIN STORE</span>
+										<div class="timeBox">
+											<div class="timecheck"></div>
+										</div>
+									</div>
+								</div>
+								<div class="brandItems cellparent">
+									<div class="brandName">Name</div>
+									<div class="brandInput">
+										<input type="text">
+									</div>
+								</div>
+								<div class="brandItems cellparent">
+									<div class="brandName">Description</div>
+									<div class="brandInput">
+										<textarea style="padding: 3px;height: 60px;"></textarea>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="storeplan cellparent" style="width: 100%;">
+					<div id="store inlineparent">
+						<div id="storeHead" class="inlineparent">
+							<div class="geo">Geography of your store</div>
+							<div id="georight">You can upload your floor plan here to help your customers know better about the geography of your store.</div>
+						</div>
+						<div id="storeContent" class="inlineparent">
+							<div class="floorplan">
+								<div class="geoImg">
+									<div class="upload">Upload an image</div>
+								</div>
+								<div class="inlineparent floor">
+									<span style="color: #666;">Floor 1 :</span>
+									<div class="desc">
+										<input type="text" placeholder="Describe the image">
+									</div>
+								</div>
+							</div>
+							<div class="floorplan">
+								<div class="geoImg">
+									<div class="upload">Upload an image</div>
+								</div>
+								<div class="inlineparent floor">
+									<span style="color: #666;">Floor 1 :</span>
+									<div class="desc">
+										<input type="text" placeholder="Describe the image">
+									</div>
+								</div>
+							</div>
+							<div class="floorplan">
+								<div class="geoImg">
+									<div class="upload">Upload an image</div>
+								</div>
+								<div class="inlineparent floor">
+									<span style="color: #666;">Floor 1 :</span>
+									<div class="desc">
+										<input type="text" placeholder="Describe the image">
+									</div>
+								</div>
+							</div>
+							<div class="floorplan">
+								<div class="geoImg">
+									<div class="upload">Upload an image</div>
+								</div>
+								<div class="inlineparent floor">
+									<span style="color: #666;">Floor 1 :</span>
+									<div class="desc">
+										<input type="text" placeholder="Describe the image">
+									</div>
+								</div>
+							</div>
+							<div id="addfloor">ADD a<br> floor</div>
+						</div>
+					</div>
+				</div>
+				<div class="storeplan cellparent" style="width: 100%;">
+					<div id="storeleft">
+						<div class="geo">Link your business</div>
+						<div id="lyb">Find and link your business to a registered market or a mall below:</div>
+						<div id="marketSearch" class="inlineparent">
+							<div id="mtitle">Market/Mall <span>(autosearch)</span></div>
+							<div id="minput" style="width: 337px;margin-left: 10px">
+								<input type="text"/>
+							</div>
+						</div>
+						<div style="background: #d3d3d3;height: 115px;width: 100%;"></div>
+					</div>
+					<div id="storeright">
+						<div class="geo">Billing/Account setup</div>
+						<div id="billing" class="inlineparent">
+							<div class="billItems">Free plan</div>
+							<div class="billItems active">$4/month</div>
+						</div>
+						<div class="paymentServices">
+							<div class="ptitle">Payment service :</div>
+							<div class="pitems inlineparent">
+								<div class="paymentItems inlineparent">
+									<div class="timeBox">
+										<div class="timecheck"></div>
+									</div>
+									<div class="toc">All major credit cards</div>
+								</div>
+								<div class="paymentItems inlineparent">
+									<div class="timeBox">
+										<div class="timecheck"></div>
+									</div>
+									<div class="toc">Internet banking</div>
+								</div>
+								<div class="paymentItems inlineparent">
+									<div class="timeBox">
+										<div class="timecheck"></div>
+									</div>
+									<div class="toc">PayPal</div>
+								</div>
+							</div>
+						</div>
+						<div class="paymentServices">
+							<div class="ptitle">Business features :</div>
+							<div class="pitems inlineparent">
+								<div class="paymentItems inlineparent">
+									<div class="timeBox">
+										<div class="timecheck"></div>
+									</div>
+									<div class="toc">Order management</div>
+								</div>
+								<div class="paymentItems inlineparent">
+									<div class="timeBox">
+										<div class="timecheck"></div>
+									</div>
+									<div class="toc">Chat facility</div>
+								</div>
+								<div class="paymentItems inlineparent">
+									<div class="timeBox">
+										<div class="timecheck"></div>
+									</div>
+									<div class="toc">Toll free number</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="storeplan" style="padding-bottom: 60px;border: 0">
+					<div class="button submit">Submit all changes</div>
 				</div>
 			</div>
 		</div>

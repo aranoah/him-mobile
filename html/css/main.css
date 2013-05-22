@@ -10,6 +10,7 @@
 input, textarea {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+    resize: none;
 }
 
 html, body {
@@ -111,7 +112,7 @@ a:hover {
 
 #logoArea {
 	width:300px;
-	height:85px;
+	height:45px;
 }
 
 #logoArea > * {
@@ -120,13 +121,13 @@ a:hover {
 
 #logo {
 	background:url(../img/logo.png) no-repeat center center;
-	background-size:45px 45px;
-	height:85px;
-	width:85px;
+	background-size:25px 25px;
+	height:45px;
+	width:45px;
 }
 
 #logoName {
-	margin-top:15px;
+	font-size: 1.2em;
 }
 
 #tag {
@@ -135,24 +136,16 @@ a:hover {
 }
 
 #iconArea {
-	text-align:right;
 	margin-right: 20px;
-	height:85px;
+	height:45px;
 	float:right;
 }
 
 .headerIcon {
-	height:85px;
+	height:45px;
 	width:23px;
-	margin-right:20px;
-	position:relative;
-}
-
-.headerIcon > img {
-	position:absolute;
-	top:50%;
-	margin-top:-50%;
-	lefT:0;
+	padding-left: 20px;
+	vertical-align: middle;
 }
 
 .toolBar {
@@ -673,12 +666,13 @@ a:hover {
 }
 
 #dottedLine {
-	margin: 20px 50px 0 0;
+	margin: 20px 30px 0 0;
 }
 
 #dottedLine hr {
+	border: 0;
 	width: 100%;
-	border-top: 1px solid #b0b0b0;
+	border-top: 1px solid #ddd;
 }
 
 #promotion {

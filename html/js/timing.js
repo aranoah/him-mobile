@@ -31,6 +31,7 @@ $(document).ready(function(){
 		bindTiming();
 	}).mouseleave(function() {
 		enable = false;
+		bindTiming();
 	});
 	
 });
@@ -96,7 +97,7 @@ function bindTiming() {
 			append.children('.timeText').text(aftertim);
 			aftr.html(append);
 			timeout = setTimeout(function() {
-				$(".rightTime, .leftTime").remove();
+				$(".rightTime, .leftTime").fadeOut(200, function(){$(this).remove();});
 			}, 1000)
 		}
 	});

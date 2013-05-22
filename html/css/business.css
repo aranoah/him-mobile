@@ -1,3 +1,8 @@
+#register{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d5d5d5;	
+}
+
 #reg {
 	padding: 20px;
 	background: #fff;
@@ -55,8 +60,7 @@
 #regInputs input {
 	padding: 5px;
 	width: 100%;
-	border: 0;
-	outline: 1px solid #eee;
+	border: 1px solid #eee;
 }
 
 #add {
@@ -69,6 +73,11 @@
 
 #regMap {
 	width: 500px;
+}
+
+#timing, .storeplan {
+	margin-top: 20px;
+	border-bottom: 1px solid #d5d5d5;
 }
 
 #timingDetails{
@@ -90,7 +99,7 @@
 	color: #000;
 }
 
-#timeBox {
+.timeBox {
 	width: 18px;
 	height: 18px;
 	background: #fff;
@@ -98,7 +107,7 @@
 	cursor: pointer;
 }
 
-#timecheck {
+.timecheck {
 	width: 8px;
 	height: 8px;
 	background: #5ad31f;
@@ -213,13 +222,13 @@
 }
 
 .socialImg {
-	padding-right: 10px;
+	margin-right: 5px;
 }
 
 .socialInputs input {
-	border: 0;
 	background: #eee;
-	outline: 1px solid #cdcdcd;
+	border: 1px solid #cdcdcd;
+	text-indent: 5px;
 }
 
 #himLink {
@@ -263,7 +272,6 @@
 	border-radius: 3px;
 	display: inline-block;
 	background: #fff;
-	margin: 10px 0;
 	font-size: 10px;
 }
 
@@ -339,38 +347,40 @@ user-select: none;
 
 .fragment {
 	display:inline-block;
-	border-right:1px solid rgba(0, 0, 0, 0.1);
+	border-right:1px solid rgba(0, 0, 0, 0.05);
 	height:23px;
 	-o-box-sizing:content-box;
 	position:relative;
 	width:4px;
 }
 
-.fragment:nth-child(6n) {
-	border-right:1px solid rgba(0, 0, 0, 0.3);
+.fragment:nth-child(6n), .fragment.active:nth-child(6n) {
+	border-right:1px solid rgba(0, 0, 0, 0.15);
+	width:4px;
 }
+
+.fragment:nth-child(6n)
 
 .fragment:hover {
 	background:#ddd;
 }
 
 .fragment.active {
-	background:rgb(47, 118, 199);
+	background:rgb(243, 243, 21);
 	border:0;width:5px;
 }
 
 .fragment.active.fragfirst {
-	
+	background:rgba(47, 118, 199, 0.3);
 }
 
 .fragment.active.fraglast {
-	
+	background:rgba(47, 118, 199, 0.3);
 }
 
 .leftTime, .rightTime {
 	position:absolute;
-	word-spacing:normal;
-	letter-spacing:normal;
+	line-height:normal;
 	font-size:10px;
 	margin-top:-10px;
 	top:50%;
@@ -402,7 +412,194 @@ user-select: none;
 
 .timeText {
 	background:#000;
-	padding:8px 6px;
+	padding:2px 3px;
+	vertical-align:top;
 	word-spacing:normal;
 	letter-spacing:normal;
+}
+
+#sharing {
+	padding-top: 10px;
+}
+
+#shareTitle, #brandTitle {
+	font-size: 12px;
+	color: #2e8cbd;
+}
+
+#shareTitle span, #brandTitle span {
+	color: #838383;
+	font-size: 11px;
+}
+
+#shareUrl {
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 15px;
+	color: #fff;
+	background: #b6b6b6;
+}
+
+#facilityBox {
+	padding: 5px;
+	margin: 10px 0;
+	background: #e4e4e4;
+	height: 100px;
+}
+
+.brandItems {
+	padding-top: 10px;
+	width: 100%;
+}
+
+.brandName {
+	width: 100px;
+	font-size: 12px;
+	color: #7b7b7b;
+}
+
+.brandInput input, .brandInput textarea {
+	border: 1px solid #cdcdcd;
+	font-size: 11px;
+	padding: 5px;
+	width: 100%;
+} 
+
+.storeplan {
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+#storeleft {
+	width: 50%;
+	padding-right: 20px;
+}
+
+#storeContent {
+	padding: 10px 0;
+}
+
+.geo {
+	font-size: 13px;
+	color: #2e8cbd;
+}
+
+.geoImg {
+	z-index: 10;
+	position: relative;
+	width: 200px;
+	height: 40px;
+	background: #d6d6d6;
+	padding-top: 160px;
+}
+
+.upload {
+	cursor: pointer;
+	padding:5px 10px;
+	color: #666;
+	margin: 0 15px;
+	background: #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#georight {
+	color: #b6b6b6;
+	float: right;
+}
+
+.floorplan {
+	margin-right: 20px;
+}
+
+#addfloor {
+	color: #b6b6b6;
+	cursor: pointer;
+	padding: 8px;
+	background: #fff;
+	border: 1px solid #cdcdcd;
+}
+
+.floor span {
+	padding: 5px 8px;
+}
+
+.desc input {
+	border: 1px solid #cdcdcd;
+	padding: 5px 8px;
+	background: #fff;
+	color: #b6b6b6;
+	width: 137px;
+	z-index: 2;
+}
+
+#storeright {
+	text-align: left;
+	padding-left: 20px;
+}
+
+#lyb {
+	font-size: 11px;
+	color: #acacac;
+}
+
+#marketSearch {
+	padding: 10px 0;
+}
+
+#mtitle {
+	font-size: 12px;
+	color: #717171;
+}
+
+#mtitle span {
+	color: #b6b6b6;
+}
+
+#minput input {
+	border: 1px solid #cdcdcd;
+	width: 100%;
+	padding: 3px 8px;
+}
+
+#billing {
+	border-bottom: 1px solid #fff;
+	margin: 10px 0;
+}
+
+.billItems {
+	color: #b9b9b9;
+	padding: 5px 8px;
+	cursor: pointer;
+}
+
+.billItems.active {
+	color: #2e8cbd;
+	background: #fff;
+}
+
+.paymentServices {
+	padding-top: 10px;
+	color: #6c6c6c;
+}
+
+.pitems {
+	padding: 10px 0;
+	color: #7b7b7b;
+}
+
+.paymentItems {
+	padding-right: 10px;
+}
+
+.toc {
+	padding-left: 10px;
+}
+
+.submit {
+	font-size: 15px;
+	float: right;
+	color: #fff;
+	box-shadow: 0 0 #000;
+	padding-left: 80px;
 }
