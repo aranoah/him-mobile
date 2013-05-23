@@ -40,7 +40,7 @@
 }
 
 #sugsBox {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top: 107px;
 	z-index: 20;
