@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container inlineparent">
+				<div id="logoArea" class="inlineparent">
+					<div id="logo"></div>
+					<div id="logoText">
+						<h1 id="logoName">Here I am</h1>
+					</div>
+				</div>
+				<div id="iconArea" class="cellparent">
+					<div class="headerIcon"><img src="img/android.png" /></div>
+					<div class="headerIcon"><img src="img/phone.png" /></div>
+					<div class="headerIcon"><img src="img/cart.png" id="cart"/></div>
+				</div>
+			</div>
+		</div>
+		<div class="toolBar">
+			<div class="nav">
+				<div class="container inlineparent">
+					<div id="item" class="inlineparent">
+						<div style="font-weight: bold;color: #a8a8a8;padding-left: 10px;">Select your updates :</div>
+						<div class="items">Malls</div>
+						<div class="items">Restaurants</div>
+						<div class="items">Hotels</div>
+						<div class="items">Stores</div>
+						<div class="items more">More</div>
+					</div>
+					<div class="inlineparent" style="float: right">
+						<div class=" second">
+							<input type="text" value="search Malls in Bangalore">
+						</div>
+						<div class="place">Bangalore</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="mainContent">
+				<div id="contentHead" class="inlineparent">
+					<div id="message">MANAGE BUSINESS</div>
+					<div id="linkImages" class="inlineparent">
+						<div class="links">
+							<img src="img/message.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/contacts.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/diary.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/calendar.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/fav.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/history.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/settings.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/events.png" alt="M" />
+						</div>
+						<div class="links" style="padding-right: 0">
+							<img src="img/todo.png" alt="M" />
+						</div>
+					</div>
+				</div>
+				<div id="prodDetails">
+					<div id="prodTitle">Adding a product to <span style="color: #2e8cbd">Narayana Stores</span></div>
+					<div id="prodContent" class="cellparent" style="width: 100%;">
+						<div id="prodLeft">
+							<div id="publish" class="inlineparent">
+								<div id="pubDetails">Publish details</div>
+								<div id="pubClick">click to publish</div>
+							</div>
+							<div id="leftContent">
+								<div id="prodName">
+									<input type="text" value="Click to edit product name" placeholder="Click to edit product name">
+								</div>
+								<div id="prodPriceDetails" class="inlineparent" style="margin-right:5px;border-bottom: 1px solid #f6f6f6">
+									<div class="prodPrice inlineparent">
+										<div class="rupees">Rs.</div>
+										<div class="priceInput">
+											<input type="text" value="12343" placeholder="12343">
+										</div>
+										<div id="perP">per piece</div>
+									</div>
+									<div id="piecesDetails" class="inlineparent">
+										<div class="pieces inlineparent" style="padding-right: 20px">
+											<div style="margin-right: 5px">
+												<div class="timeBox"></div>
+											</div>
+											<div id="pieceD"><input type="text" value="155" placeholder="155" style="width: 50px;color: #2e8cbd;font-weight: bold;padding: 0 5px">
+												 pieces per lot</div>
+										</div>
+										<div class="pieces inlineparent">
+											<div style="margin-right: 5px">
+												<div class="timeBox">
+													<div class="timecheck"></div>
+												</div>
+											</div>
+											<div id="single">Single</div>
+										</div>
+									</div>
+								</div>
+								<div id="sellerBuyer" class="inlineparent">
+									<div id="slug" style="width: 300px;	margin-right: 12px;">
+										<input type="text" value="Slug name" placeholder="Slug name">
+									</div>
+									<div id="manufacturer" style="width: 300px">
+										<input type="text" value="Manufacturer name" placeholder="Manufacturer name">
+									</div>
+								</div>
+								<div id="description">
+									<div id="des">Description</div>
+									<div id="desArea"></div>
+								</div>
+								<div class="property">
+									<div class="propertyHead"><span>Keywords</span> <br/>add relevant keywords so that your product appears in search results</div>
+									<div class="propertyInput" style="margin: 8px 5px 8px 0">
+										<input type="text">
+									</div>
+								</div>
+								<div class="property" style="padding-top: 0">
+									<div class="propertyHead">
+										<span>Global product map</span> 
+										<br/>Click to map your product on a global scale! Associate your product to the global product database!</div>
+									<div class="propertyInput" style="margin: 8px 5px 8px 0">
+										<input type="text">
+									</div>
+								</div>
+								<div class="property" style="padding-top: 0">
+									<div class="propertyHead">
+										<span>Add properties to your product</span> 
+										<br/>Add properties to the product so that you can start adding different versions with minor changes like color, quantity etc.</div>
+									<div class="propertyInput" style="margin: 8px 5px 8px 0">
+										<input type="text">
+									</div>
+								</div>
+								<div class="property" style="padding-top: 0;padding-bottom: 0;">
+									<div class="propertyHead">
+										<span>Add variants</span> 
+										<br/>Add properties to the product so that you can start adding different versions with minor changes like color, quantity etc.</div>
+									<div id="propertyVariants" class="cellparent" style="width: 100%">
+										<div id="variant" style="width: 50%">
+											<div id="variantHead">Click to edit variant name</div>
+											<table id="editVariant" cellspacing="0";cellpadding="0">
+												<tr class="select">
+													<td>
+														<div class="propName">Prop name</div>
+													</td>
+													<td>
+														<div class="propValue">
+															<input type="text" value="prop value" placeholder="prop value">
+														</div>
+													</td>
+													<td>
+														<div class="propClose" style="text-align: center">
+															<img src="img/close.png">
+														</div>
+													</td>
+												</tr>
+												<tr class="disselect">
+													<td>
+														<div class="propName">Prop name</div>
+													</td>
+													<td>
+														<div class="propValue">
+															<input type="text" value="prop value" placeholder="prop value">
+														</div>
+													</td>
+													<td>
+														<div class="propClose" style="text-align: center">
+															<img src="img/close.png">
+														</div>
+													</td>
+												</tr>
+												<tr class="select">
+													<td>
+														<div class="propName">Prop name</div>
+													</td>
+													<td>
+														<div class="propValue">
+															<input type="text" value="prop value" placeholder="prop value">
+														</div>
+													</td>
+													<td>
+														<div class="propClose" style="text-align: center">
+															<img src="img/close.png">
+														</div>
+													</td>
+												</tr>
+												<tr class="disselect">
+													<td>
+														<div class="propName">Prop name</div>
+													</td>
+													<td>
+														<div class="propValue">
+															<input type="text" value="prop value" placeholder="prop value">
+														</div>
+													</td>
+													<td>
+														<div class="propClose" style="text-align: center">
+															<img src="img/close.png">
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div class="propertybutton">
+											+ Add another variant
+										</div>
+									</div>
+								</div>
+								<div class="prodPrice inlineparent" style="padding-top: 0">
+									<div class="rupees">Rs.</div>
+									<div class="priceInput">
+										<input type="text" value="343" placeholder="343">
+									</div>
+								</div>
+							</div>
+							<div id="saveButtons" class="inlineparent">
+								<div class="button save" style="margin-right: 20px;">Save and add more</div>
+								<div class="button close">Save and close</div>
+						</div>
+						</div>
+						<div id="prodRight" style="padding-left: 40px;">
+							<div id="prodPic">Product picture & gallery</div>
+							<div id="prodPicContainer">
+								<div id="pic"></div>
+								<div id="anotherPic" class="inlineparent">
+									<div style="padding: 10px;">
+										<div id="apic"></div>
+									</div>
+									<div id="addpic"></div>
+								</div>
+								<div id="file" class="inlineparent">
+									<div id="choosefile">
+										<div class="visible">Choose file</div>
+										<div class="fileHidden">
+											<input class="transparent_class" type="file"/>
+										</div>
+									</div>
+									<div id="picLinks" class="inlineparent" style="float: right;padding-top: 12px;">
+										<div id="correct">
+											<img src="img/correct.gif"/>
+										</div>
+										<div id="close">
+											<img src="img/close.gif"/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="editCategories">
+								<div id="catHead" class="inlineparent" style="padding: 5px 0">
+									<div id="catTitle">Select and/or edit categories</div>
+									<div id="catSelect" style="float: right;margin-top: 5px;">
+										<img src="img/select.png"/>
+									</div>
+								</div>
+								<div id="categories">
+									<div class="cat inlineparent">
+										<div class="category">Category 1</div>
+										<div class="editButton">&bull;&bull;&bull;</div>
+										<div style="clear: both;display: block;padding: 0"></div>
+									</div>
+									<div class="cat inlineparent active">
+										<div class="category">Category 2</div>
+										<div class="editButton inlineparent">
+											<div class="edit" style="padding-right: 8px">&bull;&bull;&bull;</div>
+											<div style="padding-left: 8px;">
+												<img src="img/edit_down.png"/>
+											</div>
+										</div>
+										<div style="clear: both;display: block;padding: 0"></div>
+									</div>
+									<div class="subCat inlineparent">
+										<div class="img">
+											<img src="img/slide.png"/>
+										</div>
+										<div class="subCategory">Sub category</div>
+										<div class="editButton subEdit">&bull;&bull;&bull;</div>
+									</div>
+									<div class="subCat inlineparent">
+										<div class="img">
+											<img src="img/slide.png"/>
+										</div>
+										<div class="subCategory">Sub category 1</div>
+										<div class="editButton inlineparent">
+											<div class="edit" style="padding-right: 8px">&bull;&bull;&bull;</div>
+											<div style="padding-left: 8px;">
+												<img src="img/edit_down.png"/>
+											</div>
+										</div>
+										<div style="clear: both;display: block;padding: 0"></div>
+									</div>
+									<div class="subCat1 inlineparent">
+										<div class="img">
+											<img src="img/slide.png"/>
+										</div>
+										<div class="subCategory">Sub category 1</div>
+										<div class="editButton subEdit">&bull;&bull;&bull;</div>
+									</div>
+									<div class="subCat1 inlineparent">
+										<div class="img">
+											<img src="img/slide.png"/>
+										</div>
+										<div class="subCategory">Sub category 1</div>
+										<div class="editButton subEdit">&bull;&bull;&bull;</div>
+									</div>
+								</div>
+							</div>
+							<div id="couponDetails">
+								<div id="couponHead">Coupons</div>
+								<div id="couponContent"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container inlineparent">
+				<div id="leftFoot" class="inlineparent" style="padding-left: 0">
+					<div>About</div> | <div>Contact Us</div>
+				</div>
+				<div id="rightFoot" class="inlineparent">
+					<div class="foot color">connected by</div>
+					<div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot color">2013  |  Aranoah Technologies</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+

@@ -99,21 +99,6 @@
 	color: #000;
 }
 
-.timeBox {
-	width: 18px;
-	height: 18px;
-	background: #fff;
-	border: 1px solid #b0b0b0;
-	cursor: pointer;
-}
-
-.timecheck {
-	width: 8px;
-	height: 8px;
-	background: #5ad31f;
-	margin: 5px 0 0 5px;
-}
-
 .timingBox {
 	margin-bottom: 2px;
 	position:relative;
