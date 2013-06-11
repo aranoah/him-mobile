@@ -14,8 +14,22 @@ function n(n){
 
 $(document).ready(function(){
 	
+	$(document).mouseup(function (e)
+	{
+		var container = $("#timingDetails");
+		if (container.has(e.target).length === 0)
+		{
+			$(".timingBox.active").removeClass('active');
+		}
+	});
+	
 	bindTiming();
 	$('.timingFragmentContainer').mousedown(function(e) {
+		var checker = $(this).parent().parent().parent();
+		if(!checker.hasClass('active')) {
+			checker.siblings('.active').removeClass('active');
+			checker.addClass('active');
+		}
 		var code = ( e.keyCode ? e.keyCode : e.which );
 		enable = true;
 		if(code == 3) {
@@ -69,20 +83,20 @@ function bindTiming() {
 	$(".fragment.active").click(function(){
 		if(!(!$(this).prev().hasClass('active') && !$(this).next().hasClass('active'))) {
 			$(".rightTime, .leftTime").remove();
-			var befor;
-			var aftr;
+			var befor = $(this);
+			var aftr = $(this);
 			var befortim;
 			var aftrtim;
 			var i;
 			for(i = $(this).index();i >=0; i--) {
-				if($('.fragment').eq(i).hasClass('fragfirst')) {
-					befor = $('.fragment').eq(i);
+				befor = befor.prev();
+				if(befor.hasClass('fragfirst')) {
 					break;
 				}
 			}
 			for(i = $(this).index();i <=47; i++) {
-				if($('.fragment').eq(i).hasClass('fraglast')) {
-					aftr = $('.fragment').eq(i);
+				aftr = aftr.next();
+				if(aftr.hasClass('fraglast')) {
 					break;
 				}
 			}

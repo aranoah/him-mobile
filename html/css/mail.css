@@ -3,7 +3,6 @@
 }
 
 #content {
-	padding: 20px 0;
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
@@ -22,10 +21,6 @@
 	margin: 10px 0;
 }
 
-.navs.active {
-	border-left: 3px solid #7e7e7e;
-	background: #fff;
-}
 .title {
 	font-size: 12px;
 	color: #7e7e7e;
@@ -63,6 +58,7 @@
 	width: 100%;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	margin-bottom: 5px;
 }
 
 .mail * {
@@ -70,6 +66,7 @@
 }
 
 .senderImg {
+	display: block;
 	width: 32px;
 	height: 32px;
 	background: url(../img/sheldon.png) no-repeat center center;
@@ -134,8 +131,8 @@
 
 .view {
 	padding: 0 10px;
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-left: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7;
 }
 
 .old .view {
@@ -208,8 +205,9 @@
 }
 
 #composeMail {
+	display: none;
 	width: 600px;
-	bottom: 59px;
+	bottom: 35px;
 	position: fixed;
 	z-index: 600;
 	right:285px;
@@ -255,4 +253,56 @@
 	color: #fff;
 	box-shadow: 0 0 0 #000;
 	border-radius: 0;
+}
+
+.mailViewContainer {
+	padding-bottom: 2px;
+	margin-bottom: 25px;
+}
+
+.mailViewSubject {
+	width: 711px;
+	border-bottom: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7; 
+}
+
+.mailViewLinks {
+	background: #f7f7f7;
+	border-top:2px solid #2e8cbd; 
+	margin-top: -2px;
+	padding: 3px 10px 5px;
+}
+
+.mailViewLinkImages img {
+	padding: 5px;
+}
+
+.mailViewText {
+	padding: 0 8px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #2e8cbd;
+}
+
+.mailViewContent {
+	font-size: 11px;
+	color: #818181;
+	padding: 15px;
+	text-align: justify;
+}
+
+.mailViewXtra {
+	height: 100px;
+	margin: 5px 0;
+	background: #f7f7f7;
+}
+
+.reply {
+	position: absolute;
+	right: 0;
+	margin: 3px 10px;
+	box-shadow: 0 0 0 #000;
+	color: #fff;
+	padding:5px 10px;
+	border-radius: 0 0 3px 3px;
 }

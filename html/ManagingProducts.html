@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/ManagingProducts.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container inlineparent">
+				<div id="logoArea" class="inlineparent">
+					<div id="logo"></div>
+					<div id="logoText">
+						<h1 id="logoName">Here I am</h1>
+					</div>
+				</div>
+				<div id="iconArea" class="cellparent">
+					<div class="headerIcon"><img src="img/android.png" /></div>
+					<div class="headerIcon"><img src="img/phone.png" /></div>
+					<div class="headerIcon">
+						<img src="img/cart.png" id="cart" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="toolBar">
+			<div class="nav">
+				<div class="container inlineparent">
+					<div id="item" class="inlineparent">
+						<div style="font-weight: bold;color: #a8a8a8;padding-left: 10px;">Select your updates :</div>
+						<div class="items">Malls</div>
+						<div class="items">Restaurants</div>
+						<div class="items">Hotels</div>
+						<div class="items">Stores</div>
+						<div class="items more">More</div>
+					</div>
+					<div class="inlineparent" style="float: right">
+						<div class=" second">
+							<input type="text" value="search Malls in Bangalore">
+						</div>
+						<div class="place">Bangalore</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="mainContent">
+				<div id="contentHead" class="inlineparent">
+					<div id="message">Your Message</div>
+					<div id="linkImages" class="inlineparent">
+						<div class="links">
+							<img src="img/message.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/contacts.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/diary.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/calendar.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/fav.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/history.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/settings.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/events.png" alt="M" />
+						</div>
+						<div class="links" style="padding-right: 0">
+							<img src="img/todo.png" alt="M" />
+						</div>
+					</div>
+				</div>
+				<div id="content" style="padding-left: 10px;margin-top: 10px;">
+					<div id="manageProducts">
+						<div class="MpHead inlineparent">
+							<div class="MpTitle inlineparent">
+								<div class="mainTitle">Manage your products</div>
+								<div class="minTitle">( <span class="active">show alphabetically</span> | <span>show by date added</span> | <span>show by most sold</span> )</div>
+							</div>
+							<div class="inlineparent" style="float: right;">
+								<div class="searchProduct">
+									<input type="text" value="Search product" placeholder="Search product">
+								</div>
+								<div class="drop">
+									<img src="img/drop.png" />
+								</div>
+							</div>
+						</div>
+						<div id="MpHead2" class="inlineparent">
+							<div id="filter">
+								<div id="filterInput">
+									<input type="text" value="Filter by category" placeholder="Filter by category">
+								</div>
+								<div id="listing">Listing&nbsp;&nbsp;<b style="color: #6e6e6e">20 - 30</b>&nbsp;&nbsp;of<b style="color: #6e6e6e">&nbsp;&nbsp;23434&nbsp;&nbsp;</b>products									found</div>
+							</div>
+							<div class="button addProduct">Add a Product</div>
+						</div>
+						<div id="productDetails">
+							<div class="prodDetails inlineparent active">
+								<div class="border"></div><div class="sold">
+									<span class="soldItem">999 sold</span><br />
+									<span class="soldleft"><b style="color: #6c6c6c;">10293 left</b> (5 buffer)</span>
+								</div>
+								<div class="prodName">
+									<span class="prodTitle">Product name here</span>
+									<span class="prodXtra">(slugName)</span>
+								</div>
+								<div class="costs">
+									<div class="cost inlineparent">
+										<div class="prodPrice">Rs. 33454.23</div> <span class="prodXtra priceXtra">(999 sold)</span>
+										<div class="close" style="vertical-align: top;padding-left: 10px;">
+											<img src="img/cls.png">
+										</div>
+									</div>
+									<div class="coupons inlineparent">
+										<div class="coupon">3 coupons active</div> |
+										<div class="category" style="position: relative">
+											<div class="categoryTitle">4 categories</div>
+											<div id="catBox">
+												<div class="catBoxItems inlineparent">
+													<div class="catBoxTitle">Category 22</div>
+													<div class="catBoxClose">
+														<img src="img/catBox.png"/>
+													</div>
+												</div>
+												<div class="catBoxItems inlineparent">
+													<div class="catBoxTitle">Category 22</div>
+													<div class="catBoxClose">
+														<img src="img/catBox.png"/>
+													</div>
+												</div>
+												<div class="catBoxItems inlineparent">
+													<div class="catBoxTitle">Category 22</div>
+													<div class="catBoxClose">
+														<img src="img/catBox.png"/>
+													</div>
+												</div>
+												<div class="catBoxItems inlineparent">
+													<div class="catBoxTitle">Category 22</div>
+													<div class="catBoxClose">
+														<img src="img/catBox.png"/>
+													</div>
+												</div>
+												<div id="addCat">
+													<div id="addNew">Add new category</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style="clear: both;display: block;"></div>
+							</div>
+							<div class="prodDetails inlineparent">
+								<div class="border"></div><div class="sold">
+									<span class="soldItem">999 sold</span><br />
+									<span class="soldleft"><b style="color: #6c6c6c;">10293 left</b> (5 buffer)</span>
+								</div>
+								<div class="prodName">
+									<span class="prodTitle">Product name here</span>
+									<span class="prodXtra">(slugName)</span>
+								</div>
+								<div class="costs">
+									<div class="cost inlineparent">
+										<div class="prodPrice">Rs. 33454.23</div> <span class="prodXtra priceXtra">(999 sold)</span>
+										<div class="close" style="vertical-align: top;padding-left: 10px;">
+											<img src="img/cls.png">
+										</div>
+									</div>
+									<div class="coupons inlineparent">
+										<div class="coupon">3 coupons active</div> |
+										<div class="category">4 categories</div>
+									</div>
+								</div>
+							</div>
+							<div class="prodDetails inlineparent">
+								<div class="border"></div><div class="sold">
+									<span class="soldItem">999 sold</span><br />
+									<span class="soldleft"><b style="color: #6c6c6c;">10293 left</b> (5 buffer)</span>
+								</div>
+								<div class="prodName">
+									<span class="prodTitle">Product name here</span>
+									<span class="prodXtra">(slugName)</span>
+								</div>
+								<div class="costs">
+									<div class="cost inlineparent">
+										<div class="prodPrice">Rs. 33454.23</div> <span class="prodXtra priceXtra">(999 sold)</span>
+										<div class="close" style="vertical-align: top;padding-left: 10px;">
+											<img src="img/cls.png">
+										</div>
+									</div>
+									<div class="coupons inlineparent">
+										<div class="coupon">3 coupons active</div> |
+										<div class="category">4 categories</div>
+									</div>
+								</div>
+							</div>
+							<div class="prodDetails inlineparent">
+								<div class="border"></div><div class="sold">
+									<span class="soldItem">999 sold</span><br />
+									<span class="soldleft"><b style="color: #6c6c6c;">10293 left</b> (5 buffer)</span>
+								</div>
+								<div class="prodName">
+									<span class="prodTitle">Product name here</span>
+									<span class="prodXtra">(slugName)</span>
+								</div>
+								<div class="costs">
+									<div class="cost inlineparent">
+										<div class="prodPrice">Rs. 33454.23</div> <span class="prodXtra priceXtra">(999 sold)</span>
+										<div class="close" style="vertical-align: top;padding-left: 10px;">
+											<img src="img/cls.png">
+										</div>
+									</div>
+									<div class="coupons inlineparent">
+										<div class="coupon">3 coupons active</div> |
+										<div class="category">4 categories</div>
+									</div>
+								</div>
+							</div>
+							<div class="prodDetails inlineparent">
+								<div class="border"></div><div class="sold">
+									<span class="soldItem">999 sold</span><br />
+									<span class="soldleft"><b style="color: #6c6c6c;">10293 left</b> (5 buffer)</span>
+								</div>
+								<div class="prodName">
+									<span class="prodTitle">Product name here</span>
+									<span class="prodXtra">(slugName)</span>
+								</div>
+								<div class="costs">
+									<div class="cost inlineparent">
+										<div class="prodPrice">Rs. 33454.23</div> <span class="prodXtra priceXtra">(999 sold)</span>
+										<div class="close" style="vertical-align: top;padding-left: 10px;">
+											<img src="img/cls.png">
+										</div>
+									</div>
+									<div class="coupons inlineparent">
+										<div class="coupon">3 coupons active</div> |
+										<div class="category">4 categories</div>
+									</div>
+								</div>
+							</div>
+							<div class="prodDetails inlineparent">
+								<div class="border"></div><div class="sold">
+									<span class="soldItem">999 sold</span><br />
+									<span class="soldleft"><b style="color: #6c6c6c;">10293 left</b> (5 buffer)</span>
+								</div>
+								<div class="prodName">
+									<span class="prodTitle">Product name here</span>
+									<span class="prodXtra">(slugName)</span>
+								</div>
+								<div class="costs">
+									<div class="cost inlineparent">
+										<div class="prodPrice">Rs. 33454.23</div> <span class="prodXtra priceXtra">(999 sold)</span>
+										<div class="close" style="vertical-align: top;padding-left: 10px;">
+											<img src="img/cls.png">
+										</div>
+									</div>
+									<div class="coupons inlineparent">
+										<div class="coupon">3 coupons active</div> |
+										<div class="category">4 categories</div>
+									</div>
+								</div>
+							</div>
+							<div id="showall" class="inlineparent">
+								<div id="show" class="inlineparent">
+									<div class="showItems">Show</div>
+									<div class="showItems">10</div>
+									<div class="showItems active">20</div>
+									<div class="showItems">30</div>
+									<div class="showItems">40</div>
+									<div class="showItems">50</div>
+									<div class="showItems">all</div>
+								</div>
+								<div id="all" class="inlineparent">
+									<div class="allItems">previous</div> |
+									<div class="allItems pagination inlineparent">
+										<div class="pageItems active">1</div>
+										<div class="pageItems">2</div>
+										<div class="pageItems">3</div>
+										<div class="pageItems">4</div>
+										<div class="pageItems">...</div>
+										<div class="pageItems">56</div>
+									</div> |
+									<div class="allItems">next</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="manageCategories">
+						<div class="MpHead inlineparent">
+							<div class="MpTitle inlineparent">
+								<div class="mainTitle">Manage your categories</div>
+								<div class="minTitle">( <span class="active">show alphabetically</span> | <span>show by date added</span> | <span>show by most sold</span> )</div>
+							</div>
+							<div class="inlineparent" style="float: right;">
+								<div class="searchProduct">
+									<input type="text" value="Search category" placeholder="Search category">
+								</div>
+								<div class="drop">
+									<img src="img/drop.png" />
+								</div>
+							</div>
+						</div>
+						<div id="categoryDetails">
+							<div class="Subcat active">
+								<div class="catDetails inlineparent">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+								<div class="subCatDetails">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+								<div class="subCatDetails">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+							</div>
+							<div class="Subcat">
+								<div class="catDetails inlineparent">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+								<div class="subCatDetails">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+								<div class="subCatDetails">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+							</div>
+							<div class="Subcat">
+								<div class="catDetails inlineparent">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+								<div class="subCatDetails">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+								<div class="subCatDetails">
+									<div class="catName inlineparent">
+										<div class="catImg">
+											<img src="img/cat.png" />
+										</div>
+										<div class="catTitle">Category name here</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container inlineparent">
+				<div id="leftFoot" class="inlineparent" style="padding-left: 0">
+					<div>About</div> | <div>Contact Us</div>
+				</div>
+				<div id="rightFoot" class="inlineparent">
+					<div class="foot color">connected by</div>
+					<div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot color">2013  |  Aranoah Technologies</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

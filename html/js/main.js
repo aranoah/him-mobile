@@ -88,5 +88,9 @@ $(document).ready(function () {
 	$('#cart').on('click', function () {
 		$('.cartContainer').slideToggle(500);
 	});
+
+	$('.categoryTitle').on('click', function () {
+		$('#catBox').slideToggle(500);
+	});
 	
 });

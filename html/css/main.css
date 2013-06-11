@@ -112,7 +112,6 @@ a:hover {
 
 #logoArea {
 	width:300px;
-	height:45px;
 }
 
 #logoArea > * {
@@ -139,6 +138,23 @@ a:hover {
 	margin-right: 20px;
 	height:45px;
 	float:right;
+}
+
+.userDetails {
+	margin-right: 20px;
+	float:right;
+	padding:6px 10px 10px;
+}
+
+.userName {
+	font-size: 13px;
+	color: #fff;
+}
+
+.logout a {
+	color:#a4cdd7;
+	font-size: 11px;
+	text-decoration: underline;
 }
 
 .headerIcon {
@@ -240,6 +256,15 @@ a:hover {
 }
 
 /*contentHead*/
+
+.searchBox {
+	background: #fff;
+	padding: 5px 8px;
+	color: #000;
+	margin-bottom: 10px;
+	border:0;
+	width:100%;
+}
 
 #contentHead {
 	padding: 10px 0;
@@ -886,7 +911,7 @@ a:hover {
 /*  FOOTER ============================================ */
 
 #footer {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	bottom: 0;
 	background: #000;

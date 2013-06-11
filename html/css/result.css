@@ -154,7 +154,6 @@
 
 .tiles:nth-child(2n) {
 	margin-right:0;
-	float: right;
 }
 
 #footer {
@@ -292,6 +291,7 @@
 
 #message, #linkImages {
 	background: #fff;
+	vertical-align: top;
 }
 
 #yourPosition {

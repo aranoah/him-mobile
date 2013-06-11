@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
-		<div id="composeMail">
+		<div id="composeMail" style="display: none">
 			<div id="ctitle" class="inlineparent">
 				<div id="newMail">Compose new mail</div>
 				<div id="clink">
@@ -102,6 +102,7 @@
 					<div id="leftBar">
 						<div style="position: relative;height: 100%">
 							<div id="leftNav">
+								<input class="searchBox" type="text" placeholder="Search mail" />
 								<div class="button comp">Compose mail</div>
 								<div class="navs active">Inbox</div>
 								<div class="navs">Sent items</div>
@@ -143,12 +144,42 @@
 											<div class="normalSelect"></div>
 										</div>
 									</div>
+									<div class="mailViewContainer"  style="display: none">
+										<div class="mailViewHead cellparent" style="padding: 0 3px 0 5px">
+											<div class="mailViewSubject inlineparent">
+												<div class="mailViewLinks inlineparent">
+													<div class="mailViewLinkImages">
+														<img src="img/reply.png">
+													</div>
+													<div class="mailViewLinkImages">
+														<img src="img/frwd.png">
+													</div>
+													<div class="mailViewLinkImages">
+														<img src="img/mail_close.png">
+													</div>
+												</div>
+												<div class="mailViewText">Emergency</div>
+											</div>
+											<div class="normalSelectHolder mailViewSelector">
+												<div class="normalSelect"></div>
+											</div>
+										</div>
+										<div class="mailViewContent">
+											<p style="margin: 0">
+												You have received this email. This is some text. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.													Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh														vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae													erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat												 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum												nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+											</p>
+										</div>
+										<div class="mailViewXtra"></div>
+										<div class="mailViewReply" style="position: relative;">
+												<div class="reply button">Reply</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="cellparent mail">
 								<div class="senderImg"></div>
 								<div class="bubble">
-									<div class="cellparent">
+									<div class="cellparent"  style="display: none">
 										<div class="sender">Sheldon Cooper</div>
 										<div class="view">
 											<div class="cellparent" style="width: 100%">
@@ -159,6 +190,36 @@
 										</div>
 										<div class="normalSelectHolder">
 											<div class="normalSelect"></div>
+										</div>
+									</div>
+									<div class="mailViewContainer">
+										<div class="mailViewHead cellparent" style="padding: 0 3px 0 5px">
+											<div class="mailViewSubject inlineparent">
+												<div class="mailViewLinks inlineparent">
+													<div class="mailViewLinkImages">
+														<img src="img/reply.png">
+													</div>
+													<div class="mailViewLinkImages">
+														<img src="img/frwd.png">
+													</div>
+													<div class="mailViewLinkImages">
+														<img src="img/mail_close.png">
+													</div>
+												</div>
+												<div class="mailViewText">Emergency</div>
+											</div>
+											<div class="normalSelectHolder mailViewSelector">
+												<div class="normalSelect"></div>
+											</div>
+										</div>
+										<div class="mailViewContent">
+											<p style="margin: 0">
+												You have received this email. This is some text. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.													Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh														vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae													erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat												 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum												nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+											</p>
+										</div>
+										<div class="mailViewXtra"></div>
+										<div class="mailViewReply" style="position: relative;">
+												<div class="reply button">Reply</div>
 										</div>
 									</div>
 								</div>
@@ -177,6 +238,36 @@
 										</div>
 										<div class="normalSelectHolder">
 											<div class="normalSelect"></div>
+										</div>
+									</div>
+									<div class="mailViewContainer" style="display: none">
+										<div class="mailViewHead cellparent" style="padding: 0 3px 0 5px">
+											<div class="mailViewSubject inlineparent">
+												<div class="mailViewLinks inlineparent">
+													<div class="mailViewLinkImages">
+														<img src="img/reply.png">
+													</div>
+													<div class="mailViewLinkImages">
+														<img src="img/frwd.png">
+													</div>
+													<div class="mailViewLinkImages">
+														<img src="img/mail_close.png">
+													</div>
+												</div>
+												<div class="mailViewText">Emergency</div>
+											</div>
+											<div class="normalSelectHolder mailViewSelector">
+												<div class="normalSelect"></div>
+											</div>
+										</div>
+										<div class="mailViewContent">
+											<p style="margin: 0">
+												You have received this email. This is some text. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.													Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh														vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae													erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat												 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum												nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+											</p>
+										</div>
+										<div class="mailViewXtra"></div>
+										<div class="mailViewReply" style="position: relative;">
+												<div class="reply button">Reply</div>
 										</div>
 									</div>
 								</div>
