@@ -113,8 +113,7 @@
 	background:#fff;
 	position: relative;
 	box-shadow: 0 -5px 5px rgba(0,0,0,.14);
-	padding-bottom: 30px;
-	margin-bottom: 50px;
+	padding-bottom: 60px;
 }
 
 .tiles {
@@ -316,4 +315,19 @@
 	top: 20px;
 	left: 11px;
 	content: "";
+}
+
+#resultRight {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	left: 490px;
+	height: 100%;
+	padding-left: 20px;
+}
+
+#rightContent {
+	height: 100%;
+	width: inherit;
+	background: #e4e4e4;
 }

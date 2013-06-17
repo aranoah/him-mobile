@@ -5,16 +5,27 @@
 		<link rel="stylesheet" href="css/result.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
 		<script type="text/javascript" src="js/popup.js"></script>
 		<script type="text/javascript" src="js/magnific.js"></script>
 		<script>
-			$(document).ready(function () {
-				$('.open-popup-link').magnificPopup({
-				  type:'inline',
-				  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-				});
-			});
+  	$(document).ready(function () {
+
+  		$("#resultRight").height($(window).height() - 80);
+
+  		$('.open-popup-link').magnificPopup({
+  			type: 'inline',
+  			midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  		});
+
+  		$(window).scroll(function () {
+  			if ($(window).scrollTop() > 337) {
+  				$("#resultRight").css({ position: "fixed" });
+  			} else {
+  				$("#resultRight").css({ position: "absolute" });
+  			}
+  		});
+  	});
 		</script>
 		<style>
 			.white-popup {
@@ -85,7 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="Content">
+			<div id="Content" style="position: relative">
 				<div class="container">
 					<div id="contentHead" class="inlineparent">
 						<div id="message">Sort By</div>
@@ -93,7 +104,9 @@
 					</div>
 				</div>
 				<div class="container" style="position:relative;">
-					<div id="resultPreview"></div>
+					<div id="resultRight">
+						<div id="rightContent"></div>
+					</div>
 					<div class="inlineparent" style="width:490px">
 						<div class="tiles">
 							<div class="contentDeatils cellparent">
@@ -323,5 +336,6 @@
 				</div>
 			</div>
 		</div>
+						
 	</body>
 </html>

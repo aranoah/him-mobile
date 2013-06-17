@@ -33,9 +33,10 @@
 	cursor: pointer;
 }
 
-#leftContent {
+.leftContent {
 	background: #fff;
 	border-top: 3px solid #2e8cbd;
+	margin-bottom: 20px;
 }
 
 #prodName {
@@ -54,7 +55,7 @@
 .prodPrice {
 	color: #2ebd50;
 	font-size: 15px;
-	padding: 15px;
+	padding:5px 15px 15px;
 }
 
 .priceInput input {
@@ -82,7 +83,6 @@
 
 #sellerBuyer {
 	padding: 15px;
-	border-bottom: 1px solid #f6f6f6;
 }
 
 #slug input {
@@ -103,7 +103,6 @@
 
 #description {
 	padding: 10px;
-	border-bottom: 1px solid #f6f6f6;
 }
 
 #des {
@@ -192,7 +191,6 @@
 #saveButtons {
 	float: right;
 	color: #fff;
-	padding-top: 20px;
 }
 
 .button.save, .button.close {
@@ -239,6 +237,7 @@
 	position: absolute;
 	right: 0;
 	z-index: 5;
+	cursor: pointer;
 }
 
 #choosefile {
@@ -370,4 +369,46 @@
 	height: 200px;
 	background: #cecece;
 	margin: 10px 0;
+}
+
+.pricingName, .stockName {
+	font-size: 11px;
+	color: #555;
+	padding: 0 5px;
+}
+
+.stockInput input {
+	width: 80px;
+	padding: 3px 5px;
+	color: #555;
+	border: 1px solid #eaeaea;
+}
+
+h2 {
+	padding:10px 10px 10px 15px;
+	color: #727272;
+	margin: 0; 
+}
+
+#advancedStock {
+	background: #dadada;
+	padding: 10px;
+}
+
+#advancedStockDetails > div {
+	margin: 0 8px;
+}
+
+#stockAdd {
+	width: 15px;
+	height: 15px;
+	background: #fff url(../img/stockadd.png) no-repeat center center;
+	border-radius: 3px;
+}
+
+.stockRef input {
+	background: #fff;
+	border: 0;
+	padding: 5px 8px;
+	color: #b0b0b0;
 }

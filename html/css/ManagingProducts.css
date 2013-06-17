@@ -1,6 +1,5 @@
 .MpHead {
-	padding: 10px 0 5px 0;
-	margin-top: 5px;
+	margin-bottom: 5px;
 	background: url(../img/line1.png) repeat-x center center;
 }
 
@@ -59,6 +58,7 @@
 }
 
 .prodDetails {
+	clear: both;
 	background: #f7f7f7;
 	margin-bottom: 3px;
 }
@@ -307,11 +307,8 @@
 	color: #fff;
 }
 
-.prodDetails.active .categoryTitle {
+.prodDetails.active .cou {
 	position: relative;
-	background: #fff;
 	padding: 5px 8px;
 	z-index: 20;
-	border: 1px solid rgba(0,0,0,.1);
-	border-bottom: 1px solid #fff;
 }

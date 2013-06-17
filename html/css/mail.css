@@ -172,8 +172,8 @@
 }
 
 .normalSelect {
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	background: #1eb3de;
 	border: 1px solid #a8a8a8;
 	margin: 0 10px;
@@ -268,8 +268,8 @@
 
 .mailViewLinks {
 	background: #f7f7f7;
-	border-top:2px solid #2e8cbd; 
-	margin-top: -2px;
+	border-top:1px solid #2e8cbd; 
+	margin-top: -1px;
 	padding: 3px 10px 5px;
 }
 
@@ -298,6 +298,7 @@
 }
 
 .reply {
+	font-size: 12px;
 	position: absolute;
 	right: 0;
 	margin: 3px 10px;
@@ -305,4 +306,5 @@
 	color: #fff;
 	padding:5px 10px;
 	border-radius: 0 0 3px 3px;
+	text-transform: uppercase;
 }

@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/dash.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -21,15 +22,28 @@
 					<div class="headerIcon"><img src="img/cart.png" id="cart"/></div>
 				</div>-->
 				<div class="userDetails inlineparent">
-					<div class="txt">
-						<div class="userName">UserName</div>
-						<div class="logout">
-							<a href="#">Logout</a>
+					<div id="userLinks">
+						<div class="cellparent" style="width: 100%">
+							<div>
+								<div class="userImg" style="background-image: url(img/profile.png);width: 80px;height: 80px;border-radius:80px;	border: 5px solid rgba(255,255,255,.4);												background-position: center center;	background-repeat: no-repeat;background-size: auto 200%;"></div>
+								</div>
+							<div style="vertical-align: top">
+								<div class="logout">
+									<a class="link" href="#">User Dashboard</a>
+								</div>
+								<div class="logout">
+									<a class="link" href="#">Admin Dashboard</a>
+								</div>
+								<div class="logout">
+									<a class="link" href="#">Logout</a>
+								</div>
+								<div class="logout" style="margin-bottom: 5px;">
+									<a class="link" href="#">Settings</a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="userImg">
-						<img src="img/sheldon.png">
-					</div>
+					<div class="userImg" style="background-image: url(img/profile.png)"></div>
 				</div>
 			</div>
 		</div>
@@ -248,7 +262,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cellparent updateBox" style="width: 100%">
+					<div class="cellparent updateBox" style="width: 100%;border: 0;">
 						<div class="updatePic">
 							<div class="pic"></div>
 						</div>

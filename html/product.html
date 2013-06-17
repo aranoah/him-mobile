@@ -5,6 +5,17 @@
 		<link rel="stylesheet" href="css/product.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+  	tinymce.init({
+  		selector: "textarea",	
+  		 menubar : false,
+		   resize: false,
+		   height:140,
+		theme_advanced_statusbar_location :  "none"
+  		});
+		</script>
 	</head>
 	<body>
 		<div id="header">
@@ -84,47 +95,71 @@
 								<div id="pubDetails">Publish details</div>
 								<div id="pubClick">click to publish</div>
 							</div>
-							<div id="leftContent">
+							<div class="leftContent">
 								<div id="prodName">
 									<input type="text" value="Click to edit product name" placeholder="Click to edit product name">
 								</div>
-								<div id="prodPriceDetails" class="inlineparent" style="margin-right:5px;border-bottom: 1px solid #f6f6f6">
-									<div class="prodPrice inlineparent">
-										<div class="rupees">Rs.</div>
-										<div class="priceInput">
-											<input type="text" value="12343" placeholder="12343">
+								<div class="cellparent" style="padding: 10px 0;width: 100%">
+									<div id="pricing" class="inlineparent" style="padding-left: 5px;vertical-align: middle;">
+										<div class="inlineparent" style="padding: 0 10px;">
+											<div class="timeBox">
+												<div class="timecheck"></div>
+											</div>
+											<div class="pricingName">Advanced pricing</div>
 										</div>
-										<div id="perP">per piece</div>
+										<div class="inlineparent" style="padding: 0 10px;">
+											<div class="timeBox"></div>
+											<div class="pricingName">Advanced stock management</div>
+										</div>
 									</div>
-									<div id="piecesDetails" class="inlineparent">
-										<div class="pieces inlineparent" style="padding-right: 20px">
-											<div style="margin-right: 5px">
-												<div class="timeBox"></div>
+									<div id="stock" class="inlineparent" style="float: right;padding-right: 10px;"> 
+										<div class="stockDetails inlineparent" style="padding: 0 10px;padding-right: 5px">
+											<div class="stockName">Stock :</div>
+											<div class="stockInput">
+												<input type="text"/>
 											</div>
-											<div id="pieceD"><input type="text" value="155" placeholder="155" style="width: 50px;color: #2e8cbd;font-weight: bold;padding: 0 5px">
-												 pieces per lot</div>
 										</div>
-										<div class="pieces inlineparent">
-											<div style="margin-right: 5px">
-												<div class="timeBox">
-													<div class="timecheck"></div>
-												</div>
+										<div class="stockDetails inlineparent" style="padding: 0 10px;">
+											<div class="stockName">Price(Rs) :</div>
+											<div class="stockInput">
+												<input type="text"/>
 											</div>
-											<div id="single">Single</div>
 										</div>
 									</div>
 								</div>
+								<h2>Advanced stock</h2>
+								<div id="advancedStock">
+									<div id="advancedStockDetails" class="inlineparent">
+										<div id="stockAdd"></div>
+										<div class="stockRef">
+											<input type="text" value="Stock reference ID"/>
+										</div>
+										<div class="stockRef">
+											<input type="text" value="Available quantity"/>
+										</div>
+										<div class="stockRef">
+											<input type="text" value="Price of stock in Rs."/>
+										</div>
+									</div>
+									<div class="stockId"></div>
+								</div>
+							</div>
+							<div class="leftContent" style="border: 0">
 								<div id="sellerBuyer" class="inlineparent">
 									<div id="slug" style="width: 300px;	margin-right: 12px;">
 										<input type="text" value="Slug name" placeholder="Slug name">
 									</div>
-									<div id="manufacturer" style="width: 300px">
+									<div id="manufacturer" style="width: 300px;float: right;margin-right: 5px;}">
 										<input type="text" value="Manufacturer name" placeholder="Manufacturer name">
 									</div>
 								</div>
 								<div id="description">
 									<div id="des">Description</div>
-									<div id="desArea"></div>
+									<div id="desArea">
+										<form method="post">
+											<textarea></textarea>
+										</form>
+									</div>
 								</div>
 								<div class="property">
 									<div class="propertyHead"><span>Keywords</span> <br/>add relevant keywords so that your product appears in search results</div>
@@ -223,7 +258,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="prodPrice inlineparent" style="padding-top: 0">
+								<div class="prodPrice inlineparent"">
 									<div class="rupees">Rs.</div>
 									<div class="priceInput">
 										<input type="text" value="343" placeholder="343">

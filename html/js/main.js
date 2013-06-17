@@ -89,8 +89,30 @@ $(document).ready(function () {
 		$('.cartContainer').slideToggle(500);
 	});
 
-	$('.categoryTitle').on('click', function () {
+	$('.cou').on('click', function () {
 		$('#catBox').slideToggle(500);
+		
+		hilight_css = {"border":"1px solid rgba(0,0,0,.1)",
+               "background-color":"#fff"};
+		$(this).css(hilight_css); 
 	});
-	
+
+	$('.userImg').on('click', function () {
+		$('#userLinks').slideToggle(300);
+	});
+
+	/*$(".bubble").click(function(){
+		
+    if ( $(".bubble").hasClass('.mailBox') )   
+		$(".bubble").addClass('.mailViewContainer').removeClass('.mailBox');
+		else if ( $(".bubble").hasClass('.mailViewContainer') )   
+		$(".bubble").addClass('.mailBox').removeClass('.mailViewContainer');
+	})
+
+	$(".bubble").on('click', function () 
+         {
+             $(".mailBox").slideUp(300); 
+             $(".mailViewContainer").slideDown(500);
+         });*/
+
 });
