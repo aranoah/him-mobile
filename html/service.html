@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<link rel="stylesheet" href="css/service.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+		<script type="text/javascript" src="js/timing.js"></script>
+		<script type="text/javascript">
+	  tinymce.init({
+		  selector: "textarea",	
+		   menubar : false,
+		   height:270,
+		   statusbar : false,
+			 resize: false,
+		  theme_advanced_statusbar_location :  "none"
+		  });
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container inlineparent">
+				<div id="logoArea" class="inlineparent">
+					<div id="logo"></div>
+					<div id="logoText">
+						<h1 id="logoName">Here I am</h1>
+					</div>
+				</div>
+				<div id="iconArea" class="cellparent">
+					<div class="headerIcon"><img src="img/android.png" /></div>
+					<div class="headerIcon"><img src="img/phone.png" /></div>
+					<div class="headerIcon"><img src="img/cart.png" id="cart" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="toolBar">
+			<div class="nav">
+				<div class="container inlineparent">
+					<div id="item" class="inlineparent">
+						<div style="font-weight: bold;color: #a8a8a8;padding-left: 10px;">Select your updates :</div>
+						<div class="items">Malls</div>
+						<div class="items">Restaurants</div>
+						<div class="items">Hotels</div>
+						<div class="items">Stores</div>
+						<div class="items more">More</div>
+					</div>
+					<div class="inlineparent" style="float: right">
+						<div class=" second">
+							<input type="text" value="search Malls in Bangalore">
+						</div>
+						<div class="place">Bangalore</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="mainContent">
+				<div id="contentHead" class="inlineparent">
+					<div id="message">MANAGE BUSINESS</div>
+					<div id="linkImages" class="inlineparent">
+						<div class="links">
+							<img src="img/message.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/contacts.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/diary.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/calendar.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/fav.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/history.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/settings.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/events.png" alt="M" />
+						</div>
+						<div class="links" style="padding-right: 0">
+							<img src="img/todo.png" alt="M" />
+						</div>
+					</div>
+				</div>
+				<div id="prodDetails">
+					<div id="prodTitle">Adding a Service to <span style="color: #2e8cbd">Narayana Stores</span></div>
+					<div id="prodContent" class="cellparent" style="width: 100%;">
+						<div id="prodLeft">
+							<div id="publish" class="inlineparent">
+								<div id="pubDetails">Publish details</div>
+								<div id="pubClick">click to publish</div>
+							</div>
+							<div class="leftContent">
+								<div id="prodName">
+									<input type="text" value="Click to edit service name" placeholder="Click to edit service name">
+								</div>
+								<div id="sellerBuyer" class="inlineparent">
+									<div class="slug" style="width: 325px;margin-bottom: 20px;">
+										<input type="text" value="Slug name" placeholder="Slug name">
+									</div>
+									<div class="manufacturer" style="width: 325px;float: right;margin-right: 5px;margin-bottom: 20px;}">
+										<input type="text" value="Service person" placeholder="Service person">
+									</div>
+									<div class="slug service" style="width: 325px">
+										<input type="text" value="Time duration of each slot (a custom time selector widget)" placeholder="Time duration of each slot (a custom time													selector widget)">
+									</div>
+									<div class="manufacturer service" style="width: 325px;float: right;margin-right: 5px;}">
+										<input type="text" value="Type of service (autocomplete)" placeholder="Type of service (autocomplete)">
+									</div>
+								</div>
+								<div class="property" style="padding-bottom: 5px">
+									<div class="propertyHead">
+										<span class="propertTitle">Details of service</span> <br />add relevant keywords so that your product appears in search results
+									</div>
+								</div>
+								<div id="docPrescription" style="padding-top: 0;border: 0;">
+									<div id="prescription" class="inlineparent" style="background: #fff;border: 1px solid #eaeaea;">
+										<div class="blue inlineparent">
+											<div class="bluetext">Prescription</div>
+											<div class="bluextra inlineparent">
+												<div class="blueNxt">&bull;&bull;&bull;</div>
+											</div>
+											<div class="blueclose">
+												<img src="img/blueclose.png">
+											</div>
+										</div>
+										<div class="blue inlineparent">
+											<div class="bluetext">Prescription</div>
+											<div class="bluextra inlineparent">
+												<div class="blueNxt">&bull;&bull;&bull;</div>
+											</div>
+											<div class="blueclose">
+												<img src="img/blueclose.png">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="description">
+									<div id="des">Description</div>
+									<div id="desArea" style="height: 300px">
+										<form method="post">
+											<textarea></textarea>
+										</form>
+									</div>
+								</div>
+								<div class="property" style="border-bottom: 1px solid #f6f6f6;">
+									<div class="propertyHead"><span class="propertTitle">Keywords</span> <br />add relevant keywords so that your product appears in search results</div>
+									<div class="propertyInput" style="margin: 8px 5px 8px 0">
+										<input type="text">
+									</div>
+								</div>
+								<div id="timingDetails" style="width: auto;padding: 20px;padding-bottom: 0">
+									<div class="head inlineparent">
+										<div id="title">Timing selection : <br><span style="font-size:0.8em">(Click to fill and right click to erase)</span></div>
+										<div id="title2" class="inlineparent">
+											<div style="color: #ababab;font-size: 11px;">24 hour service ?</div>&nbsp;
+											<div class="timeBox">
+												<div class="timecheck"></div>
+											</div>
+										</div>
+									</div>
+									<div class="body" oncontextmenu="return false;">
+										<div class="cellparent timingBox active" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+													<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+											<div class="timeControlContainer">
+												<div class="boxItems timeControl close">
+													<img src="img/close.png">
+												</div>
+												<div class="boxItems timeControl">
+													<img src="img/right1.png">
+												</div>
+											</div>
+										</div>
+									</div>
+										<div class="boxItems day done">MON</div>
+								</div>
+										<div class="cellparent timingBox" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+													<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+													<div class="timeControlContainer">
+														<div class="boxItems timeControl close">
+															<img src="img/close.png">
+														</div>
+														<div class="boxItems timeControl">
+															<img src="img/right1.png">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="boxItems day done">TUE</div>
+										</div>
+										<div class="cellparent timingBox" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+													<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+													<div class="timeControlContainer">
+														<div class="boxItems timeControl close">
+															<img src="img/close.png">
+													</div>
+													<div class="boxItems timeControl">
+														<img src="img/right1.png">
+													</div>
+												</div>
+											</div>
+										</div>
+											<div class="boxItems day done">WED</div>
+										</div>
+										<div class="cellparent timingBox" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+													<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+													<div class="timeControlContainer">
+														<div class="boxItems timeControl close">
+															<img src="img/close.png">
+														</div>
+														<div class="boxItems timeControl">
+															<img src="img/right1.png">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="boxItems day done">THU</div>
+										</div>
+										<div class="cellparent timingBox" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+													<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+													<div class="timeControlContainer">
+														<div class="boxItems timeControl close">
+															<img src="img/close.png">
+														</div>
+														<div class="boxItems timeControl">
+															<img src="img/right1.png">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="boxItems day done">FRI</div>
+										</div>
+										<div class="cellparent timingBox" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+											<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+											<div class="timeControlContainer">
+												<div class="boxItems timeControl close">
+													<img src="img/close.png">
+												</div>
+												<div class="boxItems timeControl">
+													<img src="img/right1.png">
+												</div>
+											</div>
+												</div>
+											</div>
+											<div class="boxItems day done">SAT</div>
+										</div>
+										<div class="cellparent timingBox" style="width: 100%">
+											<div class="box">
+												<div class="cellparent boxInner">
+													<div class="scale">
+														<span>12</span><span>3</span><span>6</span><span>9</span><span>12</span><span>3</span><span>6</span><span>9</span><span>12</span>
+													</div>
+													<div class="timingFragmentContainer">
+											<div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div><div class="fragment">
+											</div>
+										</div>
+													<div class="timeControlContainer">
+														<div class="boxItems timeControl close">
+															<img src="img/close.png">
+														</div>
+														<div class="boxItems timeControl">
+															<img src="img/right1.png">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="boxItems day done">SUN</div>
+										</div>
+								</div>
+							</div>
+								<div class="property">
+									<div class="propertyHead">
+										<span class="propertTitle">Related services</span>
+										<br />add relevant keywords so that your product appears in search results
+									</div>
+									<div class="propertyInput" style="margin: 8px 5px 8px 0">
+										<input type="text">
+									</div>
+								</div>
+							</div>
+							<div id="saveButtons" class="inlineparent">
+								<div class="button save" style="margin-right: 20px;">Save and add more</div>
+								<div class="button save">Save and close</div>
+							</div>
+						</div>
+						<div id="prodRight" style="padding-left: 40px;">
+							<div id="prodPic">Product picture & gallery</div>
+							<div id="prodPicContainer" style="margin-bottom: 10px;">
+								<div id="pic"></div>
+								<div id="anotherPic" class="inlineparent">
+									<div style="padding: 10px;">
+										<div id="apic"></div>
+									</div>
+									<div id="addpic"></div>
+								</div>
+								<div id="file" class="inlineparent">
+									<div id="choosefile" style="margin-bottom: 5px">
+										<div class="visible">Choose file</div>
+										<div class="fileHidden">
+											<input class="transparent_class" type="file" />
+										</div>
+									</div>
+									<div id="picLinks" class="inlineparent" style="float: right;padding-top: 12px;">
+										<div id="correct">
+											<img src="img/correct.gif" />
+										</div>
+										<div id="close">
+											<img src="img/close.gif" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="couponDetails">
+								<div id="couponHead">Add a new service type</div>
+								<div id="couponContent"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container inlineparent">
+				<div id="leftFoot" class="inlineparent" style="padding-left: 0">
+					<div>About</div> | <div>Contact Us</div>
+				</div>
+				<div id="rightFoot" class="inlineparent">
+					<div class="foot color">connected by</div>
+					<div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot color">2013  |  Aranoah Technologies</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+

@@ -5,10 +5,21 @@
 		<link rel="stylesheet" href="css/mail.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/mail.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+  			tinymce.init({
+  				selector: "textarea",	
+  				 menubar : false,
+				 statusbar : false,
+				   resize: false,
+				theme_advanced_statusbar_location :  "none"
+  				});
+		</script>
 	</head>
 	<body>
-		<div id="composeMail" style="display: none">
+		<div id="composeMail">
 			<div id="ctitle" class="inlineparent">
 				<div id="newMail">Compose new mail</div>
 				<div id="clink">
@@ -28,7 +39,15 @@
 				</div>
 			</div>
 			<div id="compose"></div>
-			<div class="sendButton button">Send</div>
+			<div id="composefile" class="inlineparent">
+				<div id="choosefile">
+					<div class="visible">Choose file</div>
+					<div class="fileHidden">
+						<input class="transparent_class" type="file">
+					</div>
+				</div>
+				<div class="sendButton button">Send</div>
+			</div>
 		</div>
 		<div id="header">
 			<div class="container inlineparent">
@@ -170,7 +189,11 @@
 												You have received this email. This is some text. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.													Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh														vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae													erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat												 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum												nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
 											</p>
 										</div>
-										<div class="mailViewXtra"></div>
+										<div class="mailViewXtra">
+											<form method="post" class="post">
+												<textarea></textarea>
+											</form>
+										</div>
 										<div class="mailViewReply" style="position: relative;">
 												<div class="reply button">REPLY</div>
 										</div>
@@ -218,7 +241,11 @@
 												You have received this email. This is some text. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.													Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh														vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae													erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat												 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum												nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
 											</p>
 										</div>
-										<div class="mailViewXtra"></div>
+										<div class="mailViewXtra">
+											<form method="post" class="post">
+												<textarea></textarea>
+											</form>
+										</div>
 										<div class="mailViewReply" style="position: relative;">
 												<div class="reply button">Reply</div>
 										</div>
@@ -266,7 +293,11 @@
 												You have received this email. This is some text. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.													Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh														vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae													erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat												 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum												nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
 											</p>
 										</div>
-										<div class="mailViewXtra"></div>
+										<div class="mailViewXtra">
+											<form method="post" class="post">
+												<textarea></textarea>
+											</form>
+										</div>
 										<div class="mailViewReply" style="position: relative;">
 												<div class="reply button">REPLY</div>
 										</div>

@@ -37,6 +37,7 @@
 	background: #fff;
 	border-top: 3px solid #2e8cbd;
 	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 #prodName {
@@ -101,6 +102,72 @@
 	padding: 5px 8px;
 }
 
+#sellerBuyerText {
+	font-size: 11px;
+	color: #ababab;
+}
+
+#documentDetails {
+	padding: 15px;
+}
+
+.docItems {
+	padding-right: 10px;
+}
+
+.docInput input {
+	width: 200px;
+	background: #eee;
+	padding: 5px 8px;
+	border: 1px solid #eaeaea;
+}
+
+.docText {
+	padding-bottom: 5px;
+	font-size: 11px;
+	color: #707070;
+}
+
+#docPrescription {
+	padding: 15px;
+	border-bottom: 1px solid #f6f6f6;
+}
+
+#prescription {
+	height: 70px;
+	background: #eee;
+	margin-right: 5px;
+}
+
+.blue {
+	padding: 3px;
+	margin: 8px;
+	margin-right: 0;
+	background: #cce4f0;
+	border: 1px solid #aac7d5;
+	border-radius: 5px;
+}
+
+.bluetext {
+	font-size: 11px;
+	color: #2f6986;
+	padding: 0 5px;
+}
+
+.bluextra {
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+.blueNxt {
+	padding-right: 5px;
+	color: #7ea2b3;
+}
+
+.blueclose {
+	padding:0 5px;
+}
+
 #description {
 	padding: 10px;
 }
@@ -123,69 +190,20 @@
 	padding: 15px;
 }
 
-.property span {
+.propertTitle {
 	color: #000;
 	font-size: 15px;
 }
 
+.propertyInput  {
+	border: 1px solid #eaeaea;
+	margin:5px 5px 5px 0;
+}
+
 .propertyInput input {
-	border: 1px solid #eaeaea;
 	width: 100%;
-	padding: 8px;
-	color: #d7d7d7;
-}
-
-.propertybutton {
-	border: 1px solid #eaeaea;
-	padding: 8px;
-	color: #d7d7d7;
-	display: block;
-	margin: 0 8px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	cursor: pointer;
-}
-
-.propertybutton:hover {
-	background: #d7d7d7;
-	color: #000;
-}
-
-#propertyVariants {
-	padding: 10px 0;
-}
-
-#variantHead {
-	color: #fff;
-	background: #2e8cbd;
-	font-size: 14px;
-	padding: 5px 10px;
-}
-
-#editVariant {
-	font-size: 12px;
-	width: 100%;
-}
-
-.select {
-	background: #d7d7d7;
-}
-
-.disselect {
-	background: #eee;
-}
-
-.propName {
-	color: #000;
-	padding: 5px 8px;
-}
-
-.propValue input {
-	background: #fff;
-	padding: 5px 8px;
 	border: 0;
-	color: #333;
-	width: 100%;
+	padding: 8px;
 }
 
 #saveButtons {
@@ -193,7 +211,7 @@
 	color: #fff;
 }
 
-.button.save, .button.close {
+.button.save {
 	box-shadow: 0 0 0 #000;
 }
 
@@ -230,49 +248,6 @@
 
 #file {
 	background: #a5a5a5;
-}
-
-#choosefile input {
-	border: 0;
-	position: absolute;
-	right: 0;
-	z-index: 5;
-	cursor: pointer;
-}
-
-#choosefile {
-	position: relative;
-	margin-bottom: 8px;
-	padding: 8px;
-	width: 70px;
-	overflow: hidden;
-	height: 20px;
-}
-
-.visible {
-	position: absolute;
-	color: #2e8cbd;
-	background: #fff;
-	padding: 5px;
-	cursor: pointer;
-	z-index: 1;
-}
-
-.transparent_class {
-  /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-
-  /* IE 5-7 */
-  filter: alpha(opacity=0);
-
-  /* Netscape */
-  -moz-opacity: 0;
-
-  /* Safari 1.x */
-  -khtml-opacity: 0;
-
-  /* Good browsers */
-  opacity: 0;
 }
 
 #correct, #close {
@@ -371,44 +346,150 @@
 	margin: 10px 0;
 }
 
-.pricingName, .stockName {
+.propVariants {
+	background: #ddd;
+	position: relative;
+}
+
+#addVariant {
+	position: absolute;
+	top: 10px;
+	right: -99px;
+	background: #c6c6c6;
+	padding: 10px;
+	border-radius:0 3px 3px 0;
+	cursor: pointer;
+}
+
+#addVariant:hover {
+	background: #adadad;
+}
+
+#addtext {
 	font-size: 11px;
-	color: #555;
-	padding: 0 5px;
+	color: #fff;
+	padding-left:  8px;
 }
 
-.stockInput input {
-	width: 80px;
-	padding: 3px 5px;
-	color: #555;
-	border: 1px solid #eaeaea;
+#variantDetails {
+	padding: 20px 20px 10px 20px;
 }
 
-h2 {
-	padding:10px 10px 10px 15px;
-	color: #727272;
-	margin: 0; 
+.varHead {
+	color: #686868;
+	font-size: 12px;
+	border-bottom: 1px solid #a7a7a7;
+	padding-bottom: 5px;
 }
 
-#advancedStock {
-	background: #dadada;
+.varContainer {
+	width: 500px;
+	margin: auto;
+}
+
+.varContent {
 	padding: 10px;
 }
 
-#advancedStockDetails > div {
-	margin: 0 8px;
+.varText {
+	font-size: 12px;
+	color: #848484;
+	padding: 0 10px;
+	width: 100px;
+	font-weight: bold
 }
 
-#stockAdd {
-	width: 15px;
-	height: 15px;
-	background: #fff url(../img/stockadd.png) no-repeat center center;
-	border-radius: 3px;
+.varInput {
+	padding: 0 10px;
 }
 
-.stockRef input {
+.varInput input  {
+	width: 300px;
+	background: #adadad;
+	padding: 5px 8px;
+	border: 0;
+}
+
+.stock input {
+	width: 190px;
+	background: #c6c6c6;
+	color: #999;
+}
+
+.varInput input[disabled] {
+	width: 190px;
+}
+
+.stocktext {
+	padding: 0 5px;
+	color: #000;
+	font-size: 12px;
+}
+
+.advancedStockContent {
+	padding: 20px 0 10px 0;
+}
+
+.stockButton {
+	padding: 1px 5px;
 	background: #fff;
+	border-radius: 5px;
+}
+
+.stockButton, .stockRefId, .availQuantity, .priceoStock {
+	margin-right: 10px;
+}
+
+.stockRefId input, .availQuantity input, .priceoStock input {
+	background: #fff;
+	color: #b0b0b0;
 	border: 0;
 	padding: 5px 8px;
-	color: #b0b0b0;
+	font-size: 11px;
 }
+
+.advancedStockHead {
+	font-size: 12px;
+	color: #2e8cbd;
+	padding: 0 20px;
+}
+
+.Done .refId, .Done .soldStock, .Done .mrp, .Done .pieces, .Done .sellingUnits{
+	background: #f2f2f2;
+	color: #b8b8b8;
+	font-size: 11px;
+	padding: 8px 20px;
+	margin:5px 0 3px 0 ;
+	font-weight: bold;
+}
+
+.current .refId, .current .soldStock, .current .mrp, .current .pieces, .current .sellingUnits{
+	background: #fff;
+	color: #707070;
+	font-size: 11px;
+	padding: 8px 20px;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+.current .refId {
+	background: #fff url(../img/current.jpg) no-repeat 5px center;
+}
+
+.current .mrp.color, .current .soldStock {
+	color: #2e8cbd;
+}
+
+.normal .refId, .normal .soldStock, .normal .mrp, .normal .pieces, .normal .sellingUnits{
+	background: #f2f2f2;
+	color: #707070;
+	font-size: 11px;
+	padding: 8px 20px;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+.normal .mrp.color, .normal .soldStock {
+	color: #2e8cbd;
+}
+

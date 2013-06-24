@@ -101,18 +101,6 @@ $(document).ready(function () {
 		$('#userLinks').slideToggle(300);
 	});
 
-	/*$(".bubble").click(function(){
-		
-    if ( $(".bubble").hasClass('.mailBox') )   
-		$(".bubble").addClass('.mailViewContainer').removeClass('.mailBox');
-		else if ( $(".bubble").hasClass('.mailViewContainer') )   
-		$(".bubble").addClass('.mailBox').removeClass('.mailViewContainer');
-	})
-
-	$(".bubble").on('click', function () 
-         {
-             $(".mailBox").slideUp(300); 
-             $(".mailViewContainer").slideDown(500);
-         });*/
+	
 
 });
