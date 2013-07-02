@@ -331,3 +331,127 @@
 	width: inherit;
 	background: #e4e4e4;
 }
+
+#chatBoxContainer {
+	position: fixed;
+	z-index: 350;
+	bottom: 0;
+	right:20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.45);
+}
+
+#chatBox {
+	width: 350px;
+	background: #fff;	
+}
+
+#chatTitle {
+	font-size: 13px;
+	font-weight: bold;
+	color: #2e8cbd;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+
+#chatClose img {
+	opacity:0.4;
+	cursor: pointer;
+}
+
+#chatClose img:hover {
+	opacity:1;
+}
+
+#chatClose {
+	float: right;
+	padding-right: 8px;
+}
+
+#chatArea {
+	height: 225px;
+	overflow: hidden;
+	padding: 10px 5px;
+}
+
+.chatText {
+	position: relative;
+	color: #303030;
+	background: #f4f4f4;
+	padding: 5px;
+	border: 1px solid #dfdfdf;
+	margin-bottom: 15px;
+	font-size: 12px;
+	z-index: 20;
+}
+
+.chatText.him {
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
+.chatText.me {
+	background: #fff;
+	margin-right: 40px;
+	margin-left: 10px;
+}
+
+.chatText.him:after {
+	font-size: 10px;
+	color: #828282;
+	position: absolute;
+	content: "him";
+	bottom: 7px;
+	right: -18px;
+	-webkit-transform: rotate(90deg); 
+	-moz-transform: rotate(90deg); 
+	-o-transform support in 10.50
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.chatText.him:before {
+	position: absolute;
+	content: "";
+	border-top: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid #dfdfdf;
+	border-left: 3px solid #dfdfdf;
+	bottom: -1px;
+	right: -6px;
+	z-index: 50;
+}
+
+.chatText.me:after {
+	font-size: 10px;
+	color: #828282;
+	position: absolute;
+	content: "me";
+	bottom: 7px;
+	left: -18px;
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg); 
+	-o-transform support in 10.50
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.chatText.me:before {
+	position: absolute;
+	content: "";
+	border-top: 3px solid transparent;
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid #dfdfdf;
+	border-right: 3px solid #dfdfdf;
+	bottom: -1px;
+	left: -6px;
+	z-index: 50;
+}
+
+#chatInput {
+	padding: 10px;
+}
+
+#chatInput input {
+	width: 100%;
+	padding: 5px 8px;
+	font-size: 11px;
+	border: 0;
+}

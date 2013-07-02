@@ -6,4 +6,8 @@ $(document).ready(function () {
 		$(this).next().toggle().animate(300);
 		$(this).hide();
 	});
+
+	$('.button.comp').on('click', function () {
+		$('#composeMail').slideToggle(500);
+	});
 });

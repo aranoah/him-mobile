@@ -3,11 +3,13 @@
 	<head>
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/result.css" />
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/modernizer.js"></script>
 		<script type="text/javascript" src="js/popup.js"></script>
 		<script type="text/javascript" src="js/magnific.js"></script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 		<script>
   	$(document).ready(function () {
 
@@ -20,12 +22,23 @@
 
   		$(window).scroll(function () {
   			if ($(window).scrollTop() > 337) {
-  				$("#resultRight").css({ position: "fixed" });
+  				$("#resultRight").css({ top: $(window).scrollTop() - 350 });
   			} else {
-  				$("#resultRight").css({ position: "absolute" });
+  				$("#resultRight").css({ top: "0" });
   			}
   		});
   	});
+		</script>
+		<script>
+			(function($){
+				$(window).load(function(){
+					$("#chatArea").mCustomScrollbar({
+						horizontalScroll:false,
+						theme:"light"
+					});
+				});
+			})(jQuery);
+
 		</script>
 		<style>
 			.white-popup {
@@ -42,6 +55,63 @@
 	<body>
 		<div id="test-popup" class="white-popup mfp-hide">
 			Here goes our content
+		</div>
+		<div id="chatBoxContainer">
+			<div id="chatBox">
+				<div id="chatHead" class="inlineparent" style="padding: 10px;">
+					<div id="chatTitle">Ramanujam</div>
+					<div id="chatClose">
+						<img src="img/chatclose.png">
+					</div>
+				</div>
+				<div id="chatContent" style="border-bottom: 1px solid #dfdfdf;padding:0 10px 10px 10px;">
+					<div id="chatArea">
+						<div class="chatText him">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="chatInput">
+					<input type="text" placeholder="Type here"/>
+				</div>
+			</div>
 		</div>
 		<div id="header">
 			<div class="container inlineparent">
@@ -60,7 +130,7 @@
 		</div>
 		<div>
 			<div id="mapBlur">
-				<iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 100%;border: 0;"></iframe>
+				<!--<iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 100%;border: 0;"></iframe>-->
 			</div>
 			<div class="cellparent" id="mapZoom">
 				<div class="trans">&nbsp;</div>
