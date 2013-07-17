@@ -384,6 +384,9 @@
 	z-index: 20;
 }
 
+
+
+
 .chatText.him {
 	margin-left: 30px;
 	margin-right: 20px;
@@ -426,7 +429,7 @@
 	position: absolute;
 	content: "me";
 	bottom: 7px;
-	left: -18px;
+	left: -16px;
 	-webkit-transform: rotate(-90deg); 
 	-moz-transform: rotate(-90deg); 
 	-o-transform support in 10.50

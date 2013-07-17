@@ -211,7 +211,7 @@
 	bottom: 36px;
 	position: fixed;
 	z-index: 600;
-	right:281px;
+	right:0;
 	box-shadow: 0 0 10px rgba(0,0,0,.17);
 	background: #eee;
 	color: #2e8cbd;

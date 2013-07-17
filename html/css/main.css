@@ -949,6 +949,10 @@ a:hover {
 	background: #2e8cbd url(../img/down.png) no-repeat  100px center;
 }
 
+.second {
+    margin-right:10px;   
+}
+
 .second input {
 	margin-right: 20px;
 	border: 0;
@@ -958,7 +962,8 @@ a:hover {
 	padding: 10px 40px 10px 20px;
 	text-align: left;
 	color: #fff;
-	background: #2e8cbd url(../img/search.png) no-repeat  195px center;
+	width: 100%;
+	background: #2e8cbd url(../img/search.png) no-repeat 195px center;
 }
 
 

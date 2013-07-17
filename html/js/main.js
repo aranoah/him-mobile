@@ -91,7 +91,6 @@ $(document).ready(function () {
 
 	$('.cou').on('click', function () {
 		$('#catBox').slideToggle(500);
-		
 		hilight_css = {"border":"1px solid rgba(0,0,0,.1)",
                "background-color":"#fff"};
 		$(this).css(hilight_css); 
@@ -100,7 +99,18 @@ $(document).ready(function () {
 	$('.userImg').on('click', function () {
 		$('#userLinks').slideToggle(300);
 	});
-
-	
+    
+    
+    $(".chatText.him").hover(function(){
+        $('.chatDate.him').show();
+    },function(){
+        $('.chatDate.him').hide();
+    });
+    
+     $(".chatText.me").hover(function(){
+        $('.chatDate.me').show();
+    },function(){
+        $('.chatDate.me').hide();
+    });
 
 });

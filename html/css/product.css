@@ -166,6 +166,7 @@
 
 .blueclose {
 	padding:0 5px;
+    cursor:pointer;
 }
 
 #description {
