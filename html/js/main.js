@@ -99,7 +99,10 @@ $(document).ready(function () {
 	$('.userImg').on('click', function () {
 		$('#userLinks').slideToggle(300);
 	});
-    
+
+    $('#catBar').on('click', function () {
+		$('#catbarContainer').slideToggle(300);
+	});
     
     $(".chatText.him").hover(function(){
         $('.chatDate.him').show();

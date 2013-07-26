@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="css/result.css" />
+        <link rel="stylesheet" href="css/result.css" />
         <link rel="stylesheet" href="css/result2.css" />
 		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -31,23 +31,25 @@
   	});
 		</script>
 		<script>
-			(function($){
-				$(window).load(function(){
-					$("#chatArea").mCustomScrollbar({
-						horizontalScroll:false,
-						theme:"light"
-					});
-				});
-			})(jQuery);
+  	(function ($) {
+  		$(window).load(function () {
+  			$("#chatArea").mCustomScrollbar({
+  				horizontalScroll: false,
+  				theme: "light"
+  			});
+  		});
+  	})(jQuery);
 
-			(function($){
-				$(window).load(function(){
-					$(".result").mCustomScrollbar({
-						horizontalScroll:true,
-						theme:"light"
-					});
-				});
-			})(jQuery);
+  	(function ($) {
+  		$(window).load(function () {
+  			$(".result").mCustomScrollbar({
+  				horizontalScroll: true,
+  				mouseWheelPixels:600,
+  				scrollInertia: 400,
+  				theme: "light"
+  			});
+  		});
+  		})(jQuery);
 
 		</script>
 		<style>
@@ -76,70 +78,46 @@
 				</div>
 				<div id="chatContent" style="border-bottom: 1px solid #dfdfdf;padding:0 10px 10px 10px;">
 					<div id="chatArea">
-                         <div style="position:relative;padding:10px 0;">
-                            <div class="chatDate him" style="top: -9px;">09/07/2013, 4:10pm</div>
-                            <div class="chatText him" data-after="him">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                </div>
-                            </div>
-                        </div>
-                        <div style="position:relative;padding-bottom:10px">
-                            <div class="chatDate me">09/07/2013, 1min ago</div>
-                            <div class="chatText me" data-after="me">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-                                </div>
-                            </div>
-                        </div>
-                        <div style="position:relative;padding-bottom:10px;">
-                            <div class="chatDate him" style="">09/07/2013, 5min ago</div>
-                            <div class="chatText him" data-after="him">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                </div>
-                            </div>
-                        </div>
-                        <div style="position:relative;padding-bottom:10px">
-                            <div class="chatDate me">09/07/2013, 3min ago</div>
-                            <div class="chatText me" data-after="me">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-                                </div>
-                            </div>
-                        </div>
-                         <div style="position:relative;padding-bottom:10px;">
-                            <div class="chatDate him">09/07/2013, 4:10pm</div>
-                            <div class="chatText him" data-after="him">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                </div>
-                            </div>
-                        </div>
-                        <div style="position:relative;padding-bottom:10px">
-                            <div class="chatDate me">09/07/2013, 4:12pm</div>
-                            <div class="chatText me" data-after="me">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-                                </div>
-                            </div>
-                        </div>
-                        <div style="position:relative;padding-bottom:10px;">
-                            <div class="chatDate him">09/07/2013, 4:10pm</div>
-                            <div class="chatText him" data-after="him">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                </div>
-                            </div>
-                        </div>
-                        <div style="position:relative;padding-bottom:10px">
-                            <div class="chatDate me">09/07/2013, 4:12pm</div>
-                            <div class="chatText me" data-after="me">
-                                <div class="text">
-                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-                                </div>
-                            </div>
-                        </div>
+						<div class="chatText him"  data-time="12:34pm" data-name="Aniyus">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="Vinay" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him"  data-time="12:34pm" data-name="Sushruth">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="Raghavendra" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him"  data-time="12:34pm" data-name="Naman">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="Hament" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him"  data-time="12:34pm" data-name="him">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="me" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
 					</div>
 				</div>
 				<div id="chatInput">
@@ -162,9 +140,8 @@
 				</div>
 			</div>
 		</div>
-		<div>
 			<div id="mapBlur">
-				<!-- <iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 100%;border: 0;"></iframe>-->
+				<iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 100%;border: 0;"></iframe>
 			</div>
 			<div class="cellparent" id="mapZoom">
 				<div class="trans">&nbsp;</div>
@@ -308,6 +285,30 @@
 					</div>
 				</div>
 			</div>
+			<div id="resultpopContainer">
+				<div class="resultPop">
+					<div class="popImg" style="background: url(img/reebok.png) no-repeat center center;width: 300px;">
+						<div class="popcontent">
+							<div class="pophead inlineparent">
+								<div class="popTitle">Reebok Showroom</div>
+								<div class="popClose">
+									<img src="img/popclose.png" style="padding-right: 3px;"/>
+								</div>
+							</div>
+							<div class="poptext inlineparent">
+								<div class="popTitle">
+									<div><span style="font-size: 14px;">1234</span>&nbsp;&nbsp;visits</div>
+									<div>USP here in one single line or trun...</div>
+								</div>
+								<div class="popxtra">
+									<img src="img/popxtra.png" style="vertical-align: bottom;margin-top: 20px;"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="height: 5px;width: 100%;background: #2e8cbd;"></div>
+				</div>
+			</div>
 		<div id="footer">
 			<div class="container inlineparent">
 				<div id="leftFoot" class="inlineparent" style="padding-left: 0">
@@ -321,6 +322,5 @@
 				</div>
 			</div>
 		</div>
-						
 	</body>
 </html>

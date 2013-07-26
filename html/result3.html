@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/result.css" />
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
+		<script type="text/javascript" src="js/magnific.js"></script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script>
+  	$(document).ready(function () {
+
+  		$("#resultRight").height($(window).height() - 80);
+
+  		$('.open-popup-link').magnificPopup({
+  			type: 'inline',
+  			midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  		});
+
+  		$(window).scroll(function () {
+  			if ($(window).scrollTop() > 337) {
+  				$("#resultRight").css({ top: $(window).scrollTop() - 350 });
+  			} else {
+  				$("#resultRight").css({ top: "0" });
+  			}
+  		});
+  	});
+		</script>
+		<script>
+			(function($){
+				$(window).load(function(){
+					$("#chatArea").mCustomScrollbar({
+						horizontalScroll:false,
+						theme:"light"
+					});
+				});
+			})(jQuery);
+
+		</script>
+		<script>
+			(function($){
+				$(window).load(function(){
+					$("#cateContent").mCustomScrollbar({
+						horizontalScroll:false,
+						theme:"light",
+						advanced:{
+							updateOnContentResize: true
+						}
+					});
+				});
+			})(jQuery);
+
+		</script>
+		<style>
+			.white-popup {
+			  position: relative;
+			  background: #FFF;
+			  padding: 20px;
+			  width: auto;
+			  border-radius: 5px;
+			  max-width: 400px;
+			  margin: 20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="test-popup" class="white-popup mfp-hide">
+			Here goes our content
+		</div>
+		<div id="chatBoxContainer">
+			<div id="chatBox">
+				<div id="chatHead" class="inlineparent" style="padding: 10px;">
+					<div id="chatTitle">Ramanujam</div>
+					<div id="chatClose">
+						<img src="img/chatclose.png">
+					</div>
+				</div>
+				<div id="chatContent" style="border-bottom: 1px solid #dfdfdf;padding:0 10px 10px 10px;">
+					<div id="chatArea">
+						<div class="chatText him"  data-time="12:34pm" data-name="Aniyus">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="Vinay" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him"  data-time="12:34pm" data-name="Sushruth">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="Raghavendra" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him"  data-time="12:34pm" data-name="Naman">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="Hament" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+						<div class="chatText him"  data-time="12:34pm" data-name="him">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+							</div>
+						</div>
+						<div class="chatText me" data-name="me" data-time="12:34pm">
+							<div class="text">
+								This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="chatInput">
+					<input type="text" placeholder="Type here"/>
+				</div>
+			</div>
+		</div>
+		<div id="header">
+			<div class="container inlineparent">
+				<div id="logoArea" class="inlineparent">
+					<div id="logo"></div>
+					<div id="logoText">
+						<h1 id="logoName">Here I am</h1>
+					</div>
+				</div>
+				<div id="iconArea" class="cellparent">
+					<div class="headerIcon"><img src="img/android.png" /></div>
+					<div class="headerIcon"><img src="img/phone.png" /></div>
+					<div class="headerIcon"><img src="img/cart.png" id="cart"/></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div id="mapBlur" style="top: 230px;">
+				<!--<iframe id="mapFrame" src="http://mapsengine.google.com/map/view?mid=zqM-MNu4VOTU.k6jPM-XjD9lo" style="width: 100%;height: 100%;border: 0;"></iframe>-->
+			</div>
+			<div class="cellparent" id="mapZoom">
+				<div class="trans">&nbsp;</div>
+				<div id="focus">
+					<div id="top" class="trans">&nbsp;</div>
+					<div id="middle" style="position: relative;">
+						<div id="yourPosition">YOU</div>
+					</div>
+					
+				</div>
+				<div class="trans">&nbsp;</div>
+			</div>
+			<div class="toolBar">
+				<div id="searchBar">
+					<div class="container">
+						<div id="search">
+							<input name="search" type="text" value="Orion">
+						</div>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="container inlineparent">
+						<div class="item inlineparent">
+							<div class="items active">All</div>
+							<div class="items">Restaurants</div>
+							<div class="items">Hotels</div>
+							<div class="items">Stores</div>
+							<div class="items more">More</div>
+						</div>
+						<div class="place1">Bangalore</div>
+						<div id="catBar">
+							<div id="catbarContainer">
+								<div id="cateContent">
+									<div id="catHead">
+										<div id="headtitle">Active</div>
+									</div>
+									<div id="category" style="padding: 5px 0 5px 5px;">
+										<div class="categoryItems inlineparent busy">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">Narayana stores</div>
+										</div>
+										<div class="categoryItems inlineparent away">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">sushruth sastry</div>
+										</div>
+										<div class="categoryItems inlineparent away">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">sushruth sastry</div>
+										</div>
+										<div class="categoryItems inlineparent away">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">sushruth sastry</div>
+										</div>
+										<div class="categoryItems inlineparent available">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">Raghavendra N</div>
+										</div>
+										<div class="categoryItems inlineparent available">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">Raghavendra N</div>
+										</div>
+										<div class="categoryItems inlineparent available">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">Raghavendra N</div>
+										</div>
+										<div class="categoryItems inlineparent available">
+											<div class="catCheck">&nbsp;</div>
+											<div class="catTitle">Raghavendra N</div>
+										</div>
+										<div id="catHead">
+											<div id="headtitle">online</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="place1" style="background:none;padding:3px 10px 0;margin-right:20px;height: 35px;"><img height="30px" src="img/map.png" /></div>
+					</div>
+				</div>
+			</div>
+			<div id="Content" style="position: relative">
+				<div class="container">
+					<!--<div id="contentHead" class="inlineparent">
+						<div id="message">Sort By</div>
+						<div id="linkImages">Apply Changes</div>-->
+					<div class="poolingservices inlineparent">
+						<div class="userImg" style="background-image: url(img/profile_pic.png)"></div>
+						<div class="poolContent">
+							<div class="poolTitle">Carpooling <span style="color: #adadad">by</span> <span style="color: #2e8cbd">Seetharaman Narayana</span></div>
+							<div class="poolStatus">
+								<div class="poolstate"></div>
+							</div>
+							<div class="poolxtra">
+								<span class="current">3 of 5</span>								<span class="remaining">filled : </span>								<span class="done">Shivajinagar - Koramangala - Sector C -</span>								<span class="current">Bileshivale</span>								<span class="remaining">- Malleshwaram - Missouri - Konankunte - Rameshwaram - Marathalli - Brigade road.</span>
+							</div>
+						</div>
+					</div>
+					<div class="poolingservices inlineparent">
+						<div class="userImg" style="background-image: url(img/profile_pic.png)"></div>
+						<div class="poolContent">
+							<div class="poolTitle">Carpooling <span style="color: #adadad">by</span> <span style="color: #2e8cbd">Seetharaman Narayana</span></div>
+							<div class="poolStatus">
+								<div class="poolstate"></div>
+							</div>
+							<div class="poolxtra">
+								<span class="current">3 of 5</span>								<span class="remaining">filled : </span>								<span class="done">Shivajinagar - Koramangala - Sector C -</span>								<span class="current">Bileshivale</span>								<span class="remaining">- Malleshwaram - Missouri - Konankunte - Rameshwaram - Marathalli - Brigade road.</span>
+							</div>
+						</div>
+					</div>
+					<div class="poolingservices inlineparent">
+						<div class="userImg" style="background-image: url(img/profile_pic.png)"></div>
+						<div class="poolContent">
+							<div class="poolTitle">Carpooling <span style="color: #adadad">by</span> <span style="color: #2e8cbd">Seetharaman Narayana</span></div>
+							<div class="poolStatus">
+								<div class="poolstate"></div>
+							</div>
+							<div class="poolxtra">
+								<span class="current">3 of 5</span>								<span class="remaining">filled : </span>								<span class="done">Shivajinagar - Koramangala - Sector C -</span>								<span class="current">Bileshivale</span>								<span class="remaining">- Malleshwaram - Missouri - Konankunte - Rameshwaram - Marathalli - Brigade road.</span>
+							</div>
+						</div>
+					</div>
+					<div class="poolingservices inlineparent">
+						<div class="userImg" style="background-image: url(img/profile_pic.png)"></div>
+						<div class="poolContent">
+							<div class="poolTitle">Carpooling <span style="color: #adadad">by</span> <span style="color: #2e8cbd">Seetharaman Narayana</span></div>
+							<div class="poolStatus">
+								<div class="poolstate"></div>
+							</div>
+							<div class="poolxtra">
+								<span class="current">3 of 5</span>								<span class="remaining">filled : </span>								<span class="done">Shivajinagar - Koramangala - Sector C -</span>								<span class="current">Bileshivale</span>								<span class="remaining">- Malleshwaram - Missouri</span>
+							</div>
+						</div>
+					</div>
+					<div class="poolingservices inlineparent">
+						<div class="userImg" style="background-image: url(img/profile_pic.png)"></div>
+						<div class="poolContent">
+							<div class="poolTitle">Carpooling <span style="color: #adadad">by</span> <span style="color: #2e8cbd">Seetharaman Narayana</span></div>
+							<div class="poolStatus">
+								<div class="poolstate"></div>
+							</div>
+							<div class="poolxtra">
+								<span class="current">3 of 5</span>								<span class="remaining">filled : </span>								<span class="done">Shivajinagar - Koramangala - Sector C -</span>								<span class="current">Bileshivale</span>								<span class="remaining">- Malleshwaram - Missouri - Konankunte - Rameshwaram - Marathalli - Brigade road.</span>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="container" style="position:relative;">
+					
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container inlineparent">
+				<div id="leftFoot" class="inlineparent" style="padding-left: 0">
+					<div>About</div> | <div>Contact Us</div>
+				</div>
+				<div id="rightFoot" class="inlineparent">
+					<div class="foot color">connected by</div>
+					<div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
+					<div class="foot color">2013  |  Aranoah Technologies</div>
+				</div>
+			</div>
+		</div>
+						
+	</body>
+</html>

@@ -1,5 +1,5 @@
 #mapBlur {
-    height: 70%;   
+    height: 65%;   
 }
 
 #searchinput{
@@ -95,7 +95,7 @@
 	background: #f4f4f4;
 	padding: 5px;
 	border: 1px solid #dfdfdf;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	font-size: 12px;
 	z-index: 20;
 }
@@ -115,13 +115,13 @@
 	font-size: 10px;
 	color: #828282;
 	position: absolute;
-	content: attr(data-after);
-	bottom: 7px;
-	right: -18px;
-	-webkit-transform: rotate(90deg); 
+	content: attr(data-time) " " attr(data-name);
+	bottom: -15px;
+	right: 2px;
+	/*-webkit-transform: rotate(90deg); 
 	-moz-transform: rotate(90deg); 
 	-o-transform support in 10.50
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 }
 
 .chatText.him:before {
@@ -140,13 +140,13 @@
 	font-size: 10px;
 	color: #828282;
 	position: absolute;
-	content: attr(data-after);
-	bottom: 7px;
-	left: -18px;
-	-webkit-transform: rotate(-90deg); 
+	content: attr(data-name) " " attr(data-time);	
+	bottom: -15px;
+	left: 3px;
+	/*-webkit-transform: rotate(-90deg); 
 	-moz-transform: rotate(-90deg); 
 	-o-transform support in 10.50
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 }
 
 .chatText.me:before {
@@ -172,28 +172,6 @@
 	border: 0;
 }
 
-.chatDate {
-    display:none;
-    font-size:10px;
-    color:#2e8cbd;
-    display:inline-block;
-    padding:5px;
-}
-
-.chatDate.him {
-    position:absolute;
-    top:-20px;
-    left:30px;
-    display:none;
-}
-
-.chatDate.me {
-    position:absolute;
-    top:-20px;
-    right:40px; 
-    display:none;
-}
-
 #middle {
 	background: none;
 }
@@ -214,7 +192,7 @@
 }
 
 #mapBlur {
-	top: 230px;
+	top: 240px;
 }
 
 .searchResults:nth-child(2n) {
@@ -224,6 +202,48 @@
 	display: inline-block;
 	vertical-align: middle;
 }
+
+#resultpopContainer {
+	position: relative;
+}
+
+.resultPop {
+	position: absolute;
+	right: 10%;
+	top: 100px;
+}
+
+.popcontent {
+	color: #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background: rgba(0,0,0,0.3);
+	height: 159px;
+}
+
+.pophead {
+	position: absolute;
+	top: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.popClose, .popxtra {
+	float: right;
+	cursor: pointer;
+}
+
+.poptext {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	padding: 10px;
+}
+
 
 
 

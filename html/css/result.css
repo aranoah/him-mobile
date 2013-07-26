@@ -108,12 +108,145 @@
 	background: #2e8cbd url(../img/down.png) no-repeat  100px center;
 }
 
+#catBar {
+	position: relative;
+	cursor: pointer;
+	float: right;
+	padding: 10px 40px 27px 20px;
+	background: #fff url(../img/catbar.png) no-repeat center center;
+}
+
+#catbarContainer {
+	position: absolute;
+	top: 50px;
+	right:10px;
+	display: none;
+}
+
+#cateContent {
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	font-size: 10px;
+	width: 200px;
+	height: 100px;
+	overflow: hidden;
+}
+
+#cateContent:after {
+	position: absolute;
+	content: "";
+	top: -6px;
+	right: 15px;
+	border-top: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #fff;
+}
+
+#catHead {
+	color: #dfdfdf;
+	text-transform: uppercase;
+	background: url(../img/line1.png) repeat-x center center;
+}
+
+#headtitle {
+	background: #fff;
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.categoryItems {
+	padding: 5px 0;
+}
+
+.categoryItems.busy .catCheck {
+	height: 6px;
+	width: 6px;
+	background: #bd2e2e;
+	margin-right: 5px;
+}
+.categoryItems.available .catCheck {
+	height: 6px;
+	width: 6px;
+	background: #2ebd4c;
+	margin-right: 5px;
+}
+.categoryItems.away .catCheck {
+	height: 6px;
+	width: 6px;
+	background: #bdb82e;
+	margin-right: 5px;
+}
+
+.catTitle {
+	color: #4e4e4e;
+	font-size: 11px;
+}
+
+.categoryItems.busy .catTitle {
+	color: #2e8cbd;
+}
+
 #Content {
 	margin-top: 180px;
 	background:#fff;
 	position: relative;
 	box-shadow: 0 -5px 5px rgba(0,0,0,.14);
 	padding-bottom: 60px;
+}
+
+.poolingservices {
+	padding: 20px;
+}
+
+.userImg {
+	height: 50px;
+	width: 50px;
+}
+
+.poolContent {
+	padding: 0 10px;
+	width: 350px;
+	overflow: hidden;
+}
+
+.poolTitle {
+	color: #000;
+	font-weight: bold;
+}
+
+.poolStatus {
+	position: relative;
+	height: 3px;
+	margin: 5px 0;
+	background: #e0e0e0;
+	width: 100%;
+}
+
+.poolstate {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40%;
+	background: #2e8cbd;
+	height: 3px;
+}
+
+.poolxtra {
+	font-size: 10px;
+}
+
+.poolxtra .done {
+	color: #bebebe;
+}
+
+.poolxtra .current {
+	color: #2e8cbd;
+}
+
+.pooldone .remaining {
+	color: #000;
 }
 
 .tiles {
@@ -371,6 +504,7 @@
 	height: 225px;
 	overflow: hidden;
 	padding: 10px 5px;
+	cursor: pointer;
 }
 
 .chatText {
@@ -379,13 +513,10 @@
 	background: #f4f4f4;
 	padding: 5px;
 	border: 1px solid #dfdfdf;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	font-size: 12px;
 	z-index: 20;
 }
-
-
-
 
 .chatText.him {
 	margin-left: 30px;
@@ -402,13 +533,14 @@
 	font-size: 10px;
 	color: #828282;
 	position: absolute;
-	content: "him";
-	bottom: 7px;
-	right: -18px;
-	-webkit-transform: rotate(90deg); 
+	content: attr(data-time) " " attr(data-name);
+	bottom: -15px;
+	right: 2px;
+	/*-webkit-transform: rotate(90deg); 
 	-moz-transform: rotate(90deg); 
 	-o-transform support in 10.50
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+	/* margin: 5px 0; */
 }
 
 .chatText.him:before {
@@ -427,13 +559,13 @@
 	font-size: 10px;
 	color: #828282;
 	position: absolute;
-	content: "me";
-	bottom: 7px;
-	left: -16px;
-	-webkit-transform: rotate(-90deg); 
+	content: attr(data-name) " " attr(data-time);	
+	bottom: -15px;
+	left: 3px;
+	/*-webkit-transform: rotate(-90deg); 
 	-moz-transform: rotate(-90deg); 
 	-o-transform support in 10.50
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 }
 
 .chatText.me:before {
