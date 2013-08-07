@@ -106,8 +106,8 @@
 							<div class="leftContent">
                                <div style="padding:20px;padding-bottom:10px">
                                     <div id="createCoupons" class="inlineparent">
-                                        <div id="couponText">Create New Coupons</div>
-                                       <div id="addCoupon" class="button">ADD</div>
+                                        <div class="couponText">Create New Coupons</div>
+                                       <div id="addCoupon" class="button">Create</div>
                                     </div>
                                     <div id="couponxtra">(Create New Coupons and Publish New Coupons...)</div>    
                                 </div>
@@ -131,7 +131,7 @@
                                     </div>
                                     <div class="cellparent" style="padding-bottom:20px;width:100%">
                                         <div class="discountDetails inlineparent" style="width:250px;">
-                                            <div class="disText">Validity</div>
+                                            <div class="disText">Validity From</div>
                                             <div class="disInput">
                                                 <input type="text"/>
                                             </div>
@@ -143,15 +143,23 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="inlineparent" style="padding: 8px 5px;">
+                                         <div class="couponText" style="color:#2e8cbd;">*Condition : </div>
+                                        <div class="discountDetails inlineparent" style="float:right">
+                                            <!--<div class="button addmore"> + Add More</div>-->
+                                            <div style="color:#2e8cbd;padding:0 5px;">Add More</div>
+                                            <div id="addpic"></div>
+                                        </div>
+                                    </div>
                                     <div class="cellparent" style="padding-bottom:20px;width:100%">
                                         <div class="discountDetails inlineparent" style="width:250px;">
                                             <div class="disText">Coupon rule</div>
                                             <div class="disInput">
                                                 <select id="zone1">
-                                                  <option value="volvo">GMT + 5:30 (Chennai, Kolkata, Mum...</option>
-                                                  <option value="saab">GMT + 5 (Chennai, Kolkata, Mum...</option>
-                                                  <option value="opel">GMT + 4:30 (Chennai, Kolkata, Mum...</option>
-                                                  <option value="audi">GMT + 5 (Chennai, Kolkata, Mum...</option>
+                                                  <option value="volvo">Price Above 10000</option>
+                                                  <option value="saab">Price Below 5000</option>
+                                                  <option value="opel">Price Range Between 2500-3500</option>
+                                                  <option value="audi">Price Below 2500</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -159,6 +167,152 @@
                                             <div class="disText">Amount</div>
                                             <div class="disInput">
                                                 <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                       <div class="cellparent" style="padding-bottom:20px;width:100%">
+                                        <div class="discountDetails inlineparent" style="width:250px;">
+                                            <div class="disText">Coupon rule</div>
+                                            <div class="disInput">
+                                                <select id="zone1">
+                                                  <option value="volvo">Price Above 10000</option>
+                                                  <option value="saab">Price Below 5000</option>
+                                                  <option value="opel">Price Range Between 2500-3500</option>
+                                                  <option value="audi">Price Below 2500</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="discountDetails inlineparent">
+                                            <div class="disText">Amount</div>
+                                            <div class="disInput">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="disDetails">
+                                      <span style="font-size:13px;color:#828282;">Price greater than Rs. <b>2,300</b>&nbsp;&nbsp; and&nbsp;&nbsp;                                               Price less than Rs. <b>4,000</b></span><br/>
+                                        <span style="color:#00bd04;font-size:16px;padding:5px 0;">15% OFF</span>    
+                                    </div>
+                                    <div class="inlineparent" style="padding:10px 0;">
+                                        <div></div>
+                                        <div id="done">Done</div>
+                                    </div>
+                                </div>
+                                <div id="couponContainer">
+                                    <div id="createCoupons" class="inlineparent">
+                                        <div class="couponText">Manage Coupons</div>
+                                    </div>
+                                    <div id="couponxtra">(Create New Coupons and Publish New Coupons...)</div>  
+                                </div>
+                                <div class="inlineparent" style="margin:10px 20px;">
+                                    <div class="couponbox" style="margin-right:10px;"> 
+                                        <div id="couponSearch">
+                                            <input type="text" placeholder="search coupon"/>
+                                        </div>
+                                        <div class="couDetailsContainer">
+                                            <div class="inlineparent">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couApply">Apply</div>
+                                            </div>
+                                            <div class="couOffer">
+                                                <b>15% OFF</b><br/>
+                                                <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                <span style="color:#a0a0a0;font-size:11px;">for
+                                                    <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                </span>
+                                            </div>
+                                        </div>
+                                         <div class="couDetailsContainer">
+                                            <div class="inlineparent">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couApply">Apply</div>
+                                            </div>
+                                            <div class="couOffer">
+                                                <b>15% OFF</b><br/>
+                                                <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                <span style="color:#a0a0a0;font-size:11px;">for
+                                                    <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="couDetailsContainer">
+                                            <div class="inlineparent">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couApply">Apply</div>
+                                            </div>
+                                            <div class="couOffer">
+                                                <b>15% OFF</b><br/>
+                                                <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                <span style="color:#a0a0a0;font-size:11px;">for
+                                                    <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="couponbox" style="margin-left:10px;vertical-align: top;border:0;">
+                                        <div class="couDetailsContainer" style="margin:0">
+                                            <div class="inlineparent couofferDetails">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couOffer" style="padding:0 10px;">
+                                                    <b>15% OFF</b><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                    <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">for
+                                                        <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                    </span>
+                                                </div>
+                                                <div class="couclose"></div>
+                                            </div>
+                                            <div class="inlineparent couofferDetails">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couOffer" style="padding:0 10px;">
+                                                    <b>15% OFF</b><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                    <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">for
+                                                        <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                    </span>
+                                                </div>
+                                                <div class="couclose"></div>
+                                            </div>
+                                            <div class="inlineparent couofferDetails">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couOffer" style="padding:0 10px;">
+                                                    <b>15% OFF</b><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                    <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">for
+                                                        <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                    </span>
+                                                </div>
+                                                <div class="couclose"></div>
+                                            </div>
+                                            <div class="inlineparent couofferDetails">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couOffer" style="padding:0 10px;">
+                                                    <b>15% OFF</b><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                    <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">for
+                                                        <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                    </span>
+                                                </div>
+                                                <div class="couclose"></div>
+                                            </div>
+                                            <div class="inlineparent couofferDetails">
+                                                <div class="awesome">AWESOME</div>
+                                                <div class="couOffer" style="padding:0 10px;">
+                                                    <b>15% OFF</b><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">21-06-2013 to 15-07-2013</span><br/>
+                                                    <span style="color:#2e8cbd;font-size:11px;">3 products | 4 categories</span><br/>
+                                                    <span style="color:#a0a0a0;font-size:11px;">for
+                                                        <span style="color:#00bd04;font-size:11px;">Rs. 2300</span> and above
+                                                    </span>
+                                                </div>
+                                                <div class="couclose"></div>
                                             </div>
                                         </div>
                                     </div>
