@@ -51,6 +51,7 @@
 	padding: 10px;
 	background: #fff;
 	border-bottom: 1px solid #eee;
+    display:none;
 }
 
 .sugs:last-child{
@@ -272,6 +273,7 @@
 	background: #e1e1e1;
 	text-align: center;
 }
+
 
 .calDates > span {
 	font-size: 0.8em;

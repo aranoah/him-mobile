@@ -18,19 +18,42 @@
 	width: 700px;
 }
 
-#pubDetails {
+.pubDetails {
 	color: #a7a8a8;
 	height: 25px;
 }
 	
-#pubClick {
-	float: right;
-	border-radius: 3px;
-	padding: 5px;
+.pubClick {
+	padding:5px 10px;
 	color: #848484;
 	background: #dadada;
 	font-size: 11px;
 	cursor: pointer;
+}
+
+
+
+
+
+#couponText {
+    color:#727272;
+    font-size:16px;
+}
+
+#addCoupon {
+    box-shadow:0 0 0 #000;
+    color:#fff;
+    margin-left:20px;
+}
+
+#couponxtra {
+    font-size:12px;
+    color:#dadada;
+}
+
+.pubClick.active {
+    background:#2e8cbd;   
+    color:#fff;
 }
 
 .leftContent {
@@ -222,7 +245,7 @@
 }
 
 #prodPicContainer {
-	padding: 10px 0;
+	padding: 7px 0 10px 0;
 }
 
 #pic {
@@ -381,6 +404,19 @@
 	font-size: 12px;
 	border-bottom: 1px solid #a7a7a7;
 	padding-bottom: 5px;
+    font-weight:bold;
+}
+
+#pricingContainer {
+    padding:10px;   
+}
+
+.priceInput {
+    padding:10px;   
+}
+
+.priceText {
+    padding-left:5px;   
 }
 
 .varContainer {
