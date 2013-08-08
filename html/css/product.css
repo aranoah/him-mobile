@@ -79,7 +79,7 @@
     margin-right:5px;
 }
 
-#addpic {
+.addpic {
     background: #686e71 url(../img/add.png) no-repeat center center;
     width: 20px;
     height: 20px;  
@@ -186,7 +186,7 @@
 }
 
 
-#zone1 {
+.zone1 {
     padding: 5px 5px 5px 5px;
     width: 145px;
     overflow: hidden;
