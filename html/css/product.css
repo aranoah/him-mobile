@@ -117,7 +117,7 @@
 
 #couponSearch input {
     border:0;
-    padding:8px 15px;
+    padding:7px 15px;
     width:100%;
     color:#828282;
 }
@@ -200,7 +200,6 @@
 .disInput input {
     padding:5px 8px;
     border:0;
-    margin:0 5px;
     color:#828282;
 }
 
