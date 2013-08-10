@@ -119,17 +119,6 @@ html, body {
 	margin-left: 5px;
 }
 
-#or {
-	position: absolute;
-	background: url(../img/or.png) no-repeat center center;
-	top: 50%;
-	margin-top:-26px;
-	left:-60px;
-	z-index: 50;
-	width: 52px;
-	height: 52px;
-}
-
 .tos {
 	margin-top: 30px;
 	width: 100%;
