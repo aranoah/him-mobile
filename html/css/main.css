@@ -228,7 +228,7 @@ a:hover {
 .nav {
 	background: #fff;
 	font-size: 13px;
-}
+}      
 
 .cartContainer {
 	position: absolute;
@@ -927,11 +927,39 @@ a:hover {
 
 /*  navBar ============================================ */
 
-.items {
-	padding: 10px;
-	cursor: pointer;
-	color: #a8a8a8;
+.categorydrop {
+    display:none;
 }
+
+.mainsearch {
+    width:70px;
+    height:38px;
+    background: #747474;
+    color: #fff;
+    padding-left: 10px;
+    cursor:pointer;
+}
+
+#categorySearch {
+    padding-right:10px;    
+}
+
+.items {
+    border:0;
+	padding: 10px 40px 10px 20px;
+	cursor: pointer;
+	color: #2e8cbd;
+    background:#eee url(../img/drop.png) no-repeat  110px center;
+    background-size: 8%;
+}
+
+.searchInput input {
+    padding:  8px 10px;
+    border:0;
+    width:100%;
+    color:#a5a5a5;
+}
+
 
 #mainContent {
 	height: 100%;
@@ -944,10 +972,7 @@ a:hover {
 	font-weight: bold;
 }
 
-.items:hover {
-	background: none;
-	color: #000;
-}
+
 
 
 .items.more {
@@ -955,16 +980,32 @@ a:hover {
 	padding-right: 20px;
 }
 
-.place {
+.chattingbox {
+    float:right;
 	cursor: pointer;
-	padding: 10px 40px 10px 20px;
-	text-align: left;
-	color: #fff;
-	background: #2e8cbd url(../img/down.png) no-repeat  100px center;
+	padding: 10px;
+    font-size:14px;
+	color: #b3b3b3;
+}
+
+.frnd {
+    color:#7dc12d;
+}   
+
+.frnd:before {
+    position:absolute;
+    content:attr(data-name);
+    top:10px;
+    right:140px;
+    font-size:10px;
+    color:#ccc;
 }
 
 .second {
-    margin-right:10px;   
+    background:#2e8cbd;
+    color:#fff;
+    padding:10px 15px;
+    cursor:pointer;
 }
 
 .second input {

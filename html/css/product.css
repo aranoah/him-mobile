@@ -71,15 +71,6 @@
     color:#cecece;
 }
 
-.visible {
-	position: absolute;
-	color: #fff;
-	background: #2e8cbd;
-	padding: 5px;
-	cursor: pointer;
-	z-index: 1;
-}
-
 #or {
 	position: absolute;
 	background: url(../img/or1.png) no-repeat center center;
@@ -425,8 +416,56 @@
 .property {
 	color: #b0b0b0;
 	font-size: 11px;
-	padding: 15px;
+	padding: 15px 15px 0;
 }
+
+.similarProd {
+    padding:15px;   
+}
+
+.similarTitle {
+    font-size:14px;
+    color:#000;
+    padding-right:5px;    
+}
+
+.similarbody {
+    padding:10px 15px 0 0;   
+}
+
+.similarInput input {
+    padding:8px 10px;
+    border:1px solid #eaeaea;
+    width:100%;
+}
+
+.add {
+    color:#fff;
+    box-shadow:0 0 0 #000;
+}
+
+.similarprodTable {
+    color:#2e8cbd;
+}   
+
+.tablehead {
+    font-size:14px;
+    padding:8px 15px;
+}
+
+.common {
+    color: #707070;
+    font-size: 11px;
+    padding: 8px 15px; 
+}
+
+.prodDes {
+    text-align:center;
+    color:#727272;
+    background:url(../img/pears.png) no-repeat 20px center 
+}
+
+
 
 .propertTitle {
 	color: #000;
@@ -440,6 +479,12 @@
 
 .propertyInput input {
 	width: 100%;
+	border: 0;
+	padding: 8px;
+}
+
+#similar input {
+    width: 100%;
 	border: 0;
 	padding: 8px;
 }
