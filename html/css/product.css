@@ -228,12 +228,6 @@
     cursor:pointer;
 }
 
-.couApply:hover {
-    background:#cecece;
-    color:#727272;
-}
-
-
 .zone1 {
     padding: 5px 5px 5px 5px;
     width: 145px;
@@ -272,6 +266,12 @@
 	border-bottom: 1px solid #f6f6f6;
 	padding: 10px;
 	text-indent: 5px;
+}
+
+#prodName.contact {
+    font-size:16px;
+    padding:15px 10px;
+    border:0;
 }
 
 #prodName input {
@@ -314,6 +314,32 @@
 	padding: 15px;
 }
 
+.timeBox.temp {
+    vertical-align: top;
+    margin-left:10px;
+} 
+
+
+
+
+
+.txtarea {
+    text-align:center;
+}
+
+.txtarea input {
+    width:240px;
+    padding:10px;
+    border:1px solid #e1e1e1;
+    color:#a7a8a8;
+}
+
+.temp {
+    vertical-align:top;
+}
+
+
+
 #slug input {
 	background: #eaeaea;
 	color: #848484;
@@ -339,8 +365,16 @@
 	padding: 15px;
 }
 
+#documentDetails.temp {
+    padding:15px 30px;
+}   
+
 .docItems {
 	padding-right: 10px;
+}
+
+.docItems.temp {
+    padding:10px 15px;
 }
 
 .docInput input {
@@ -348,12 +382,26 @@
 	background: #eee;
 	padding: 5px 8px;
 	border: 1px solid #eaeaea;
+    color:#a5a5a5;
+}
+
+.docInput.live input {
+    background:#fff;   
 }
 
 .docText {
 	padding-bottom: 5px;
 	font-size: 11px;
 	color: #707070;
+}
+
+
+
+.docText.temp {
+    font-size:11px;   
+    color:#a7a8a8;
+    width:70px;   
+    padding-right:10px;
 }
 
 #docPrescription {
@@ -444,6 +492,10 @@
     box-shadow:0 0 0 #000;
 }
 
+.add.res {
+    background:#747474;   
+}
+
 .similarprodTable {
     color:#2e8cbd;
 }   
@@ -494,6 +546,137 @@
 	color: #fff;
 }
 
+.prodContent {
+    padding:10px;
+    margin-left:20px;
+}   
+
+.vartitle {
+    font-size:13px;
+    color:#a7a8a8;
+    height:25px;
+}
+
+.variantContainer {
+    width:auto;
+    background:#f8f8f8; 
+    border-top:2px solid #2e8cbd;
+}
+
+.varDetails {
+    padding:15px 15px 0;   
+}
+
+.varImg {
+    width:80px;
+    height:60px;
+    background:#eee url(../img/bp.jpg) no-repeat  center center;
+    background-size:cover;
+    
+}
+
+.change  {
+    padding:5px 8px;
+    box-shadow:0 0 0 #000;
+    color:#fff; 
+    font-size:9px;
+    background:rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+.varName {
+    padding-left:10px;  
+    vertical-align: top;
+    text-align: justify;
+    height: 80px;
+    width:160px;
+    overflow: hidden;
+}
+
+.varTitle {
+    color:#747474;   
+}
+
+.varDes {
+    color:#a7a8a8;
+    padding:5px 0;
+}
+
+.variantxtra {
+    padding:5px 15px;   
+}
+
+.varxtra {
+    float:right;
+}
+
+.xtraitems {
+    color:#2e8cbd;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.variantbutton {
+    padding:8px 10px;
+    color:#fff;
+    box-shadow:0 0 0 #000;
+    text-align:center;
+}
+
+.variantlist {
+    position:relative;
+    margin:10px 0; 
+    border-top:1px solid #eee;
+}
+
+.variantlistcontent {
+    padding:15px;
+    color:#707070;
+    border-bottom:1px solid #eaeaea;
+}
+
+.variantlistcontent.active {
+    background:#e1e1e1;   
+}
+
+.variantlistcontent.live .golive {
+    text-decoration:underline;
+}
+
+.variantlistcontent.live:before {
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    border-top:22px solid #7dc12d;
+    border-right:22px solid transparent;
+    border-bottom:22px solid transparent;
+    border-left:22px solid #7dc12d;
+}
+
+.variantlistcontent.live:after {
+    position:absolute;
+    content:attr(data-name);
+    font-size: 9px;
+    letter-spacing:1px;
+    color: #fff;
+    top: 6px;
+    left: 3px;
+}   
+
+.variantlistcontent.active .golive > a {
+    color:#2e8cbd;
+    text-decoration:underline;
+}
+
+.varlistName {
+    padding-left:10px;   
+}
+
+.delete {
+    padding-left:10px;   
+}
+
 .button.save {
 	box-shadow: 0 0 0 #000;
 }
@@ -507,10 +690,19 @@
 	padding: 7px 0 10px 0;
 }
 
+#prodPicContainer.temp {
+    padding:20px;   
+}
+
 #pic {
 	width: 100%;
 	height: 250px;
 	background: #727272;
+}
+
+#pic.temp {
+    background:#e1e1e1;
+    height:150px;
 }
 
 #anotherPic {
@@ -531,6 +723,13 @@
 
 #file {
 	background: #a5a5a5;
+}
+
+#file.temp {
+    padding:10px;
+    text-align:center;
+    color:#fff;
+    cursor:pointer;
 }
 
 #correct, #close {
