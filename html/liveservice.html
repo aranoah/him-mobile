@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+  	tinymce.init({
+  		selector: "textarea",	
+  		 menubar : false,
+		 height:270,
+		 statusbar : false,
+		   resize: false,
+		theme_advanced_statusbar_location :  "none"
+  		});
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container inlineparent">
+				<div id="logoArea" class="inlineparent">
+					<div id="logo"></div>
+					<div id="logoText">
+						<h1 id="logoName">Here I am</h1>
+					</div>
+				</div>
+				<div id="iconArea" class="cellparent">
+					<div class="headerIcon"><img src="img/android.png" /></div>
+					<div class="headerIcon"><img src="img/phone.png" /></div>
+					<div class="headerIcon"><img src="img/cart.png" id="cart"/></div>
+				</div>
+			</div>
+		</div>
+		<div class="toolBar">
+			<div class="nav">
+				<div class="container inlineparent">
+                    <div class="mainsearch">
+                        <div style="line-height:24px;font-size:11px;">Search by</div>
+                        <div style="line-height:0;font-size:12px"><b>Category</b></div>
+                    </div><div id="categorySearch">
+                        <div class="items">Restaurants</div>
+                    </div>
+                    <div class="inlineparent">
+                        <div class="searchInput inlineparent">
+                            <div style="color:#EE662B;">Find</div>
+                            <div style="width:208px;">
+                                <input type="text" placeholder="Restuarants,Hotels,Malls,Stores,etc..." style="padding:10px;font-size:11px;">
+                            </div>
+                        </div>
+                        <div class="near" style="color:#EE662B;">near</div>
+                        <div class="locateme" style="padding:0 10px;">
+                            <img src="img/locateme.png" alt style="height: 15px;vertical-align: middle;"/>
+                        </div>
+                        <div style="padding:0 10px;color:#a8a8a8;width:220px;">
+                            <input type="text" placeholder="Gurgaon,Haryana,India" style="padding:10px;font-size:11px;border:0">
+                        </div>
+                    </div>
+                    <div class=" second">Search</div>
+                    <div id="catBar" class="inlineparent">
+                        <div class="chat">CHATTING</div> | 
+                        <div class="frnd" data-name="(2326)">FRIENDS</div>
+                    </div>
+				</div>
+			</div>
+        </div>
+		<div class="container">
+			<div id="mainContent">
+				<div id="contentHead" class="inlineparent">
+					<div id="message">MANAGE BUSINESS</div>
+					<div id="linkImages" class="inlineparent">
+						<div class="links">
+							<img src="img/message.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/contacts.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/diary.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/calendar.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/fav.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/history.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/settings.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/events.png" alt="M" />
+						</div>
+						<div class="links" style="padding-right: 0">
+							<img src="img/todo.png" alt="M" />
+						</div>
+					</div>
+				</div>
+				<div id="prodDetails">
+					<div id="prodTitle">
+                        <span style="color: #2e8cbd">Live Service Wizard</span>
+                    </div>
+					<div id="prodContent" class="cellparent" style="width: 100%;">
+						<div id="prodLeft">
+							<div class="publish inlineparent">
+								<div class="pubDetails">Details required</div>
+								<div class="inlineparent" style="float:right">
+                                    <div class="pubClick active">Template</div>
+                                    <div class="pubClick">Booking</div>
+                                    <div class="pubClick">Click to publish</div>
+                                </div>
+							</div>
+							<div class="leftContent">
+								<div class="cellparent" style="width:100%;box-sizing:border-box;border-bottom:1px solid #f6f6f6">
+                                    <div class="temp">
+                                        <div class="docItems inlineparent" style="padding:20px 15px 10px 15px;">
+                                            <div class="docText temp" style="width:auto;color:#747474;font-size:13px">Template Name</div>
+                                            <div class="docInput"><input type="text"/></div>
+                                        </div>
+                                        <div id="prodName" class="contact">Contact Details</div>
+                                        <div id="sellerBuyer">
+                                            <div class="docItems inlineparent temp">
+                                                <div class="docText temp">Name</div>
+                                                <div class="docInput live">
+                                                    <input type="text" style="background:#eee;"/>
+                                                </div>
+                                            </div>
+                                            <div class="docItems inlineparent temp">
+                                                <div class="docText temp">Service Name</div>
+                                                <div class="docInput live">
+                                                    <input type="text"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="sellerBuyer" style="padding-top:0;">
+                                            <div class="docItems inlineparent temp" style="padding-top:0">
+                                                <div class="docText temp">Description</div>
+                                                <div class="docInput live">
+                                                    <input type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="inlineparent">
+                                                <div class="docItems inlineparent temp">
+                                                    <div class="docText">Email ID</div>
+                                                    <div class="timeBox temp">
+                                                        <!--<div class="timecheck"></div>-->
+                                                    </div>
+                                                </div>
+                                               <div class="docItems inlineparent temp">
+                                                    <div class="docText">Phone</div>
+                                                    <div class="timeBox temp">
+                                                        <!--<div class="timecheck"></div>-->
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uploadImg" style="width:40%;">
+                                        <div id="prodPicContainer" class="temp">
+                                            <div id="pic" class="temp"></div>
+                                            <div id="file" class="inlineparent" style="margin-top:-3px;">
+                                                <div id="choosefile" style="margin-bottom: 5px">
+                                                    <div class="visible">Choose file</div>
+                                                    <div class="fileHidden">
+                                                        <input class="transparent_class" type="file" data-storeid="" data-storename="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txtarea">
+                                            <input type="text" value="Enter Description">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="prodName" class="contact">Service Info</div>
+                                <div id="documentDetails" class="inlineparent temp">
+									<div class="docItems inlineparent" style="width:20%;">
+										<div class="docText" style="color:#cdcdcd">Service location</div>
+									</div>
+                                    <div class="docItems inlineparent">
+										<div class="docText" style="padding-right:5px;color:#2e8cbd;">Single</div>
+										<div class="timeBox">
+                                            <!--<div class="timecheck"></div>-->
+                                        </div>
+									</div>
+                                    <div class="docItems inlineparent">
+										<div class="docText" style="padding-right:5px;color:#2e8cbd;">Multiple</div>
+										<div class="timeBox">
+                                            <!--<div class="timecheck"></div>-->
+                                        </div>
+									</div>
+								</div>
+                                <div id="sellerBuyer" class="cellparent" style="width:100%;box-sizing:border-box;padding-left:30px;">
+									<div class="docItems inlineparent" style="width:50%;">
+										<div class="docText temp">Address</div>
+										<div class="docInput live">
+											<input type="text"/>
+										</div>
+									</div>
+									<div class="docItems inlineparent" style="text-align:right">
+										<div class="docText temp">Destination</div>
+										<div class="docInput live">
+											<input type="text"/>
+										</div>
+									</div>
+								</div>
+                                <div id="sellerBuyer" class="inlineparent" style="padding:15px 0 20px 30px;">
+									<div class="docItems inlineparent">
+										<div class="docText temp">Source</div>
+										<div class="docInput live">
+											<input type="text"/>
+										</div>
+									</div>
+									<div class="docItems inlineparent" style="float:right;margin-right: 15px;">
+										<div class="docText temp" style="text-align: center;">Via</div>
+										<div class="docInput live">
+											<input type="text"/>
+										</div>
+									</div>
+								</div>
+                                <div id="prodName" class="contact">Restrictions</div>
+								<div class="inlineparent" style="padding:0 30px;padding-bottom:20px;border-bottom:1px solid #f6f6f6">
+									<div class="docItems inlineparent">
+										<div class="docInput">
+											<input type="text" placaeholder="Add restriction here" value="Add restriction here"/>
+										</div>
+									</div>
+                                    <div class="disInput">
+                                        <select class="zone1" style="border:1px solid #e1e1e1;">
+                                          <option value="volvo">Age Above 60</option>
+                                          <option value="saab">Age Below 50</option>
+                                          <option value="opel">Age Range Between 25-35</option>
+                                          <option value="audi">Age Below 25</option>
+                                        </select>
+                                    </div>
+                                    <div class="add button" style="margin-left:10px;">ADD</div>
+                                </div>
+								<div class="property" style="border-bottom:1px solid #f6f6f6;padding-bottom:5px;">
+									<div class="propertyHead">
+                                        <span class="propertTitle">Facilities</span> <br/>
+                                        add relevant keywords so that your product appears in search results</div>
+								    <div id="docPrescription" style="padding: 10px 0px 10px 15px;border:0;">
+                                        <div id="prescription" class="inlineparent" style="background:#fff;border:1px solid #eaeaea;height:auto;">
+                                            <div class="blue inlineparent">
+                                                <div class="bluetext">ATM</div>
+                                                <div class="blueclose">
+                                                    <img src="img/blueclose.png">
+                                                </div>
+                                            </div><div class="blue inlineparent">
+                                                <div class="bluetext">ATM</div>
+                                                <div class="blueclose">
+                                                    <img src="img/blueclose.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
+                                <div id="prodName" class="contact">More Info</div>
+                                <div class="inlineparent" style="padding:0 30px;padding-bottom:10px;">
+                                        <div class="docItems inlineparent">
+                                            <div class="docInput">
+                                                <input type="text" placaeholder="Add restriction here" value="Add restriction here"/>
+                                            </div>
+                                        </div>
+                                        <div class="disInput">
+                                            <select class="zone1" style="border:1px solid #e1e1e1;">
+                                              <option value="volvo">Age Above 60</option>
+                                              <option value="saab">Age Below 50</option>
+                                              <option value="opel">Age Range Between 25-35</option>
+                                              <option value="audi">Age Below 25</option>
+                                            </select>
+                                        </div>
+                                        <div class="add button" style="margin-left:10px;">ADD</div>
+                                    </div>
+							</div>
+							<div id="saveButtons" class="inlineparent">
+								<div class="button save" style="margin-right: 20px;">Save and add more</div>
+								<div class="button save">Save and close</div>
+							</div>
+						</div>
+						<div class="prodRight">
+                            <div class="prodContent">
+                                <div class="vartitle">Property and Variants</div>
+                                <div class="variantContainer">
+                                    <div class="varDetails inlineparent">
+                                        <div class="Imgupload">
+                                            <div class="varImg"></div><div class="change button">CHANGE</div>
+                                        </div>
+                                        <div class="varName">
+                                            <div class="varTitle">
+                                                <h4>Product Name</h4>
+                                            </div>
+                                            <div class="varDes">
+                                                <p>Pears oil clear with lemon flower extracts and Pears pure face wash.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inlineparent variantxtra">
+                                        <div>&nbsp;</div>
+                                        <div class="varxtra inlineparent">
+                                            <div class="xtraitems">
+                                                <p>Edit</p>
+                                            </div>&nbsp;
+                                            <div class="xtraitems">
+                                                <p>Delete</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding:10px 15px;">
+                                        <div class="variantbutton button">
+                                            <h4>Add New Variant</h4>
+                                        </div>
+                                    </div>
+                                    <div class="variantlist">
+                                        <div class="variantlistcontent inlineparent live" data-name="LIVE">
+                                            <div class="varImg"></div>
+                                            <div class="varlistName">
+                                                <h4 style="color:#747474">Product Name</h4>
+                                                <span style="font-size:11px;color:#b0b0b0">MRP
+                                                    <span style="font-size:11px;color:#7dc12d"> Rs.2200</span></span>
+                                                <h4>RID000345343</h4>
+                                            </div>
+                                            <div style="float:right">
+                                                 <div class="delete">
+                                                    <img src="img/delete.png"/>
+                                                </div>
+                                                <div class="golive" style="margin-top:15px;">
+                                                    <a href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="variantlistcontent inlineparent active">
+                                            <div class="varImg"></div>
+                                            <div class="varlistName">
+                                                <h4 style="color:#747474">Product Name</h4>
+                                                <span style="font-size:11px;color:#b0b0b0">MRP
+                                                    <span style="font-size:11px;color:#7dc12d"> Rs.2200</span></span>
+                                                <h4>RID000345343</h4>
+                                            </div>
+                                            <div style="float:right">
+                                                 <div class="delete">
+                                                    <img src="img/delete.png"/>
+                                                </div>
+                                                <div class="golive" style="margin-top:15px;">
+                                                    <a href="#">Go Live</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="variantlistcontent inlineparent live">
+                                            <div class="varImg"></div>
+                                            <div class="varlistName">
+                                                <h4 style="color:#747474">Product Name</h4>
+                                                <span style="font-size:11px;color:#b0b0b0">MRP
+                                                    <span style="font-size:11px;color:#7dc12d"> Rs.2200</span></span>
+                                                <h4>RID000345343</h4>
+                                            </div>
+                                            <div style="float:right">
+                                                 <div class="delete">
+                                                    <img src="img/delete.png"/>
+                                                </div>
+                                                <div class="golive" style="margin-top:15px;">
+                                                    <a href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+					</div>
+				</div>
+			</div>
+        </div>
+			</div>
+		</div>
+		<div id="footer">
+            <div class="container inlineparent">
+                <div id="leftFoot" class="inlineparent" style="padding-left: 0">
+                    <div>About</div> | <div>Contact Us</div>
+                </div>
+                <div id="rightFoot" class="inlineparent">
+                    <div class="foot color">connected by</div>
+                    <div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
+                    <div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
+                    <div class="foot color">2013  |  Aranoah Technologies</div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
