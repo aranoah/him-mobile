@@ -236,6 +236,27 @@ h4 {
 	box-shadow: 0 5px 5px rgba(0,0,0,.14);
 }
 
+.categorydropContainer {
+    position:absolute;
+    top:50px;
+    left:160px;
+    background:#fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,.14);
+    border-radius:5px;
+    border-bottom:3px solid #2e8cbd;
+}
+
+.categorydropContainer:before {
+    position:absolute;
+    content:"";
+    top: -6px;
+    left: 36px;
+    border-top: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+}
+
 .nav {
 	background: #fff;
 	font-size: 13px;
@@ -1005,7 +1026,23 @@ h4 {
 /*  navBar ============================================ */
 
 .categorydrop {
-    display:none;
+    border-right:1px solid #e1e1e1;
+    margin:0;
+    padding:10px;
+    
+}
+
+.categorydrop > li {
+    padding:6px 8px; 
+    list-style-type:none;
+    cursor:pointer;
+    font-size:12px;
+    text-transform:capitalize;
+}
+
+.categorydrop > li:hover {
+    color:#2e8cbd;
+    text-decoration:underline;
 }
 
 .mainsearch {

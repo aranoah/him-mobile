@@ -115,5 +115,11 @@ $(document).ready(function () {
     },function(){
         $('.chatDate.me').hide();
     });
+    
+    $('.mainsearch').on('click', function () {
+		$('.categorydropContainer').slideToggle(300);
+	});
+    
+
 
 });
