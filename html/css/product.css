@@ -572,7 +572,11 @@
     height:60px;
     background:#eee url(../img/bp.jpg) no-repeat  center center;
     background-size:cover;
-    
+}
+
+.varImg.temp {
+    background:#eee url(../img/images.jpg) no-repeat  center center;
+    background-size:cover;
 }
 
 .change  {
@@ -629,8 +633,13 @@
     border-top:1px solid #eee;
 }
 
+.variantlist.temp {
+    border:0;
+    margin:0;
+}
+
 .variantlistcontent {
-    padding:15px;
+    padding:10px;
     color:#707070;
     border-bottom:1px solid #eaeaea;
 }
@@ -639,25 +648,23 @@
     background:#e1e1e1;   
 }
 
-.variantlistcontent.live .golive {
-    text-decoration:underline;
-}
+
 
 .variantlistcontent.live:before {
     position:absolute;
     content:"";
     top:0;
     left:0;
-    border-top:22px solid #7dc12d;
-    border-right:22px solid transparent;
-    border-bottom:22px solid transparent;
-    border-left:22px solid #7dc12d;
+    border-top:18px solid #7dc12d;
+    border-right:18px solid transparent;
+    border-bottom:18px solid transparent;
+    border-left:18px solid #7dc12d;
 }
 
 .variantlistcontent.live:after {
     position:absolute;
     content:attr(data-name);
-    font-size: 9px;
+    font-size: 7px;
     letter-spacing:1px;
     color: #fff;
     top: 6px;
@@ -666,11 +673,18 @@
 
 .variantlistcontent.active .golive > a {
     color:#2e8cbd;
-    text-decoration:underline;
+}
+
+.golive > a {
+    text-decoration:underline;   
 }
 
 .varlistName {
     padding-left:10px;   
+}
+
+.varlistName.temp {
+    width:116px;   
 }
 
 .delete {
