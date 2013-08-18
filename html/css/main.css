@@ -40,6 +40,35 @@ a:hover {
 	color:#000;
 }
 
+/*checkbox*/
+
+input[type="checkbox"] {
+    padding:7px;   
+}
+
+.regular-checkbox {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #cacece;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-checkbox:checked {
+    border: 1px solid #adb8c0;
+    color: #7dc12d;
+}
+
+.regular-checkbox:checked:after {
+    content: "\2714";
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: #7dc12d;
+}
+
 /* General classes ================================== */
 
 .inlineparent > * {
@@ -483,6 +512,24 @@ h4 {
 	padding: 5px;
 	cursor: pointer;
 	z-index: 1;
+}
+
+
+
+.check {
+    margin:5px 0 0 10px;
+}
+
+.visible.temp {
+    color:#fff;
+    background:#2e8cbd;
+    padding:5px 8px;
+}
+
+
+#choosefile.temp {
+    width:125px;   
+    padding: 8px;
 }
 
 .transparent_class {

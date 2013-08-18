@@ -23,6 +23,10 @@
 	height: 25px;
 }
 	
+.publish {
+    position:relative;
+}
+
 .pubClick {
 	padding:5px 15px;
 	color: #848484;
@@ -79,6 +83,11 @@
 	z-index: 50;
 	width: 52px;
 	height: 52px;
+}
+
+#or.temp {
+    top: 66%;
+    left: 39%;
 }
 
 #couponDetailsContainer {
@@ -270,7 +279,7 @@
 
 #prodName.contact {
     font-size:16px;
-    padding:15px 10px;
+    padding:15px 10px 10px;
     border:0;
 }
 
@@ -336,9 +345,15 @@
     font-weight:bold;
 }
 
+.address {
+    padding:8px;
+    color:#a7a8a8;
+    border:1px solid #eaeaea; 
+}
 
-
-
+.address:focus {
+    border:1px solid #f1ca7e;
+}
 
 .txtarea {
     text-align:center;
@@ -391,7 +406,7 @@
 }
 
 .docItems.temp {
-    padding:10px 15px;
+    padding:5px 15px 10px;
 }
 
 .docInput input {
@@ -412,6 +427,14 @@
 	color: #707070;
 }
 
+.locroute {
+    width:81%;
+    height:200px;
+    margin:10px;
+    border:1px solid #eaeaea;
+    overflow:hidden;
+}
+
 
 
 .docText.temp {
@@ -419,6 +442,11 @@
     color:#a7a8a8;
     width:70px;   
     padding-right:10px;
+}
+
+.docText.temp.bs {
+    width:90px;
+    vertical-align:middle;
 }
 
 #docPrescription {
@@ -544,6 +572,16 @@
 .propertyInput  {
 	border: 1px solid #eaeaea;
 	margin:5px 5px 5px 0;
+}
+
+.restrictclose {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #727272 url(../img/couclose.png) no-repeat center center;
+    background-size: 70%;
+    cursor: pointer;
+    margin-left:20px;
 }
 
 .propertyInput input {
@@ -755,6 +793,7 @@
 #file {
 	background: #a5a5a5;
 }
+
 
 #file.temp {
     padding:10px;
