@@ -9,70 +9,6 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/modernizer.js"></script>
 		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
-        <script>
-          $(function() {
-            $( document ).tooltip({
-              position: {
-                my: "center bottom-8",
-                at: "center top",
-                using: function( position, feedback ) {
-                  $( this ).css( position );
-                  $( "<div>" )
-                    .addClass( "arrow" )
-                    .addClass( feedback.vertical )
-                    .addClass( feedback.horizontal )
-                    .appendTo( this );
-                }
-              }
-            });
-          });
-      </script>
-        <style>
-          .ui-tooltip, .arrow:after {
-            background: #FDE4E1;
-          }
-          .ui-tooltip {
-            padding: 8px 10px;
-            color: #CB4721;
-            font:500  11px "noto sans", Sans-Serif;
-            text-transform: captilize;
-            box-shadow: 0 0 0px #f5dfdf;
-            border:0;
-          }
-          .arrow {
-            width: 47px;
-            height: 13px;
-            overflow: hidden;
-            position: absolute;
-            left: 50%;
-            margin-left: -35px;
-            bottom: -8px;
-          }
-          .arrow.top {
-            top: -5px;
-            bottom: auto;
-          }
-          .arrow.left {
-            left: 10%;
-          }
-          .arrow:after {
-            content: "";
-            position: absolute;
-            left: 20px;
-            top: -20px;
-            width: 25px;
-            height: 25px;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            tranform: rotate(45deg);
-          }
-          .arrow.top:after {
-            bottom: 0px;
-            top: auto;
-          }
-    </style>
 	</head>
 	<body>
 		<div id="header">
@@ -84,9 +20,30 @@
 					</div>
 				</div>
 				<div id="iconArea" class="cellparent">
-					<div class="headerIcon"><img src="img/android.png" /></div>
-					<div class="headerIcon"><img src="img/phone.png" /></div>
-					<div class="headerIcon"><img src="img/cart.png" id="cart"/></div>
+					<div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/order.png" />
+                        </div>
+                        <div class="headerxtra">My Orders</div>
+                    </div>
+					<div class="headerIcon inlineparent" style="border:0">
+                        <div>
+                            <img src="img/mb.png" />
+                        </div>
+                        <div class="headerxtra">My Business</div>
+                    </div>
+                    <div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/acc.png" />
+                        </div>
+                        <div class="headerxtra">My Account</div>
+                    </div>
+					<div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/cart.png" />
+                        </div>
+                        <div class="headerxtra">Cart</div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -101,27 +58,35 @@
                     </div>
                     <div class="inlineparent">
                         <div class="searchInput inlineparent">
-                            <div style="color:#EE662B;">Find</div>
-                            <div style="width:208px;">
-                                <input type="text" placeholder="Restuarants,Hotels,Malls,Stores,etc..." style="padding:10px;font-size:11px;">
+                            <div class="find">Find</div>
+                            <div style="width:225px;">
+                                <input type="text" placeholder="Restuarants,Hotels,Malls,Stores,etc..." 
+                                    style="padding:10px;font-size:11px;">
                             </div>
                         </div>
                         <div class="near" style="color:#EE662B;">near</div>
-                        <div class="locateme" style="padding:0 10px;">
-                            <img src="img/locateme.png" alt style="height:15px;vertical-align: middle;"/>
+                        <div class="locateme" style="padding-left: 5px;">
+                            <img src="img/locateme.png" style="height: 15px;vertical-align: middle;"/>
                         </div>
-                        <div style="padding:0 10px;color:#a8a8a8;width:220px;">
-                            <input type="text" placeholder="Gurgaon,Haryana,India" style="padding:10px;font-size:11px;border:0">
+                        <div style="padding:0 10px;color:#a8a8a8;width:245px;">
+                            <input type="text" placeholder="Your neighbourhood/city, e.g., Colaba, Mumbai" 
+                                style="padding-right:10px;font-size:11px;border:0;width:100%;">
                         </div>
                     </div>
                     <div class=" second">Search</div>
                     <div id="catBar" class="inlineparent">
-                        <div class="chat">CHATTING</div> | 
-                        <div class="frnd" data-name="(2326)">FRIENDS</div>
+                        <!--<div class="chat">CHATTING</div> | 
+                        <div class="frnd" data-name="(2326)">FRIENDS</div>-->
+                        <div class="chat" data-name="(12)">
+                            <img src="img/chat_icon1.png"/>
+                        </div>
+                        <div class="frnd" data-name="(2326)">
+                            <img src="img/frnds.png"/>
+                        </div>
                     </div>
 				</div>
 			</div>
-        </div>
+		</div>
 		<div class="container">
 			<div id="mainContent">
 				<div id="contentHead" class="inlineparent">
@@ -174,33 +139,51 @@
 							<div class="leftContent">
                                 <div class="temp">
                                     <div id="prodName" class="contact">Contact Details</div>
-                                    <div id="sellerBuyer" style="padding-top:0;">
-                                        <div class="docItems inlineparent temp">
-                                            <div class="docText temp bs">Contact Name :</div>
-                                            <div class="docInput live">
-                                                <input type="text">
+                                    <div class="cellparent" style="width:100%;position:relative;">
+                                        <div style="width:55%;">
+                                            <div id="sellerBuyer" class="errormsg" style="padding-top:0;">
+                                                <div class="docItems inlineparent temp top">
+                                                    <div class="docText temp bs">Contact Name :</div>
+                                                    <div class="docInput live">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                                 <div class="error">
+                                                    Your Name must be a valid name
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="docItems inlineparent temp">
-                                            <div class="docText temp bs">Email ID :</div>
-                                            <div class="docInput live">
-                                                <input type="text">
+                                            <div id="sellerBuyer" class="errormsg">
+                                                <div class="docItems inlineparent temp" style="padding-top:0">
+                                                    <div class="docText temp bs">Email ID :</div>
+                                                    <div class="docInput live">
+                                                       <input type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="error">
+                                                    Your Email Address must be a valid email address
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div id="sellerBuyer" style="padding-top:0;">
-                                        <div class="docItems inlineparent temp" style="padding-top:0">
-                                            <div class="docText temp bs" style="vertical-align:middle;">Phone No. :</div>
-                                            <div class="docInput live">
-                                                <input type="text">
+                                            <div id="sellerBuyer" class="errormsg">
+                                                <div class="docItems inlineparent temp" style="padding-top:0">
+                                                    <div class="docText temp bs" style="vertical-align:middle;">Phone No. :</div>
+                                                    <div class="docInput live">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="error">
+                                                        Your Phone number must be a valid number
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div id="sellerBuyer" style="padding-top:0;">
-                                        <div class="docItems inlineparent temp" style="padding-top:0">
-                                            <div class="docText temp bs" style="vertical-align:middle;">Web URL :</div>
-                                            <div class="docInput live">
-                                                <input type="text">
+                                            <div id="sellerBuyer" class="errormsg">
+                                                <div class="docItems inlineparent temp" style="padding-top:0">
+                                                    <div class="docText temp bs" style="vertical-align:middle;">Web URL :</div>
+                                                    <div class="docInput live">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                                 <div class="error">
+                                                    Your Web Address must be a valid URL
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

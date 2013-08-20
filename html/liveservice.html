@@ -28,9 +28,30 @@
 					</div>
 				</div>
 				<div id="iconArea" class="cellparent">
-					<div class="headerIcon"><img src="img/android.png" /></div>
-					<div class="headerIcon"><img src="img/phone.png" /></div>
-					<div class="headerIcon"><img src="img/cart.png" id="cart"/></div>
+					<div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/order.png" />
+                        </div>
+                        <div class="headerxtra">My Orders</div>
+                    </div>
+					<div class="headerIcon inlineparent" style="border:0">
+                        <div>
+                            <img src="img/mb.png" />
+                        </div>
+                        <div class="headerxtra">My Business</div>
+                    </div>
+                    <div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/acc.png" />
+                        </div>
+                        <div class="headerxtra">My Account</div>
+                    </div>
+					<div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/cart.png" />
+                        </div>
+                        <div class="headerxtra">Cart</div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -45,27 +66,35 @@
                     </div>
                     <div class="inlineparent">
                         <div class="searchInput inlineparent">
-                            <div style="color:#EE662B;">Find</div>
-                            <div style="width:208px;">
-                                <input type="text" placeholder="Restuarants,Hotels,Malls,Stores,etc..." style="padding:10px;font-size:11px;">
+                            <div class="find">Find</div>
+                            <div style="width:225px;">
+                                <input type="text" placeholder="Restuarants,Hotels,Malls,Stores,etc..." 
+                                    style="padding:10px;font-size:11px;">
                             </div>
                         </div>
                         <div class="near" style="color:#EE662B;">near</div>
-                        <div class="locateme" style="padding:0 10px;">
-                            <img src="img/locateme.png" alt style="height: 15px;vertical-align: middle;"/>
+                        <div class="locateme" style="padding-left: 5px;">
+                            <img src="img/locateme.png" style="height: 15px;vertical-align: middle;"/>
                         </div>
-                        <div style="padding:0 10px;color:#a8a8a8;width:220px;">
-                            <input type="text" placeholder="Gurgaon,Haryana,India" style="padding:10px;font-size:11px;border:0">
+                        <div style="padding:0 10px;color:#a8a8a8;width:245px;">
+                            <input type="text" placeholder="Your neighbourhood/city, e.g., Colaba, Mumbai" 
+                                style="padding-right:10px;font-size:11px;border:0;width:100%;">
                         </div>
                     </div>
                     <div class=" second">Search</div>
                     <div id="catBar" class="inlineparent">
-                        <div class="chat">CHATTING</div> | 
-                        <div class="frnd" data-name="(2326)">FRIENDS</div>
+                        <!--<div class="chat">CHATTING</div> | 
+                        <div class="frnd" data-name="(2326)">FRIENDS</div>-->
+                        <div class="chat" data-name="(12)">
+                            <img src="img/chat_icon1.png"/>
+                        </div>
+                        <div class="frnd" data-name="(2326)">
+                            <img src="img/frnds.png"/>
+                        </div>
                     </div>
 				</div>
 			</div>
-        </div>
+		</div>
 		<div class="container">
 			<div id="mainContent">
 				<div id="contentHead" class="inlineparent">
@@ -126,14 +155,20 @@
                                             <div class="docItems inlineparent temp">
                                                 <div class="docText temp">Name</div>
                                                 <div class="docInput live">
-                                                    <input type="text" style="background:#eee;"/>
+                                                    <input type="text"/>
                                                 </div>
+                                            </div>
+                                            <div class="error left">
+                                                Your Phone number must be a valid number
                                             </div>
                                             <div class="docItems inlineparent temp">
                                                 <div class="docText temp">Service Name</div>
                                                 <div class="docInput live">
                                                     <input type="text"/>
                                                 </div>
+                                            </div>
+                                            <div class="error left">
+                                                Your Phone number must be a valid number
                                             </div>
                                         </div>
                                         <div id="sellerBuyer" style="padding-top:0;">
@@ -142,6 +177,9 @@
                                                 <div class="docInput live">
                                                     <input type="text"/>
                                                 </div>
+                                            </div>
+                                            <div class="error">
+                                                Your Phone number must be a valid number
                                             </div>
                                             <div class="inlineparent">
                                                 <div class="docItems inlineparent temp">
@@ -157,7 +195,7 @@
                                                         <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
                                                         <label for="checkbox-1-1"></label>
                                                     </div>
-                                                 </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -184,17 +222,17 @@
 										<div class="docText" style="color:#cdcdcd">Service location</div>
 									</div>
                                     <div class="docItems inlineparent">
-										<div class="docText" style="padding-right:5px;color:#2e8cbd;">Single</div>
-										<div>
-                                            <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
-                                            <label for="checkbox-1-1"></label>
+										<div class="inlineparent" style="padding:5px;">
+                                            <div class="docText" style="color:#2e8cbd;font-size:12px;">Single</div>
+                                            <div style="padding-left:5px;">
+                                                <input class="regular-radio" type="radio" name="type" value="male">
+                                            </div>
                                         </div>
-									</div>
-                                    <div class="docItems inlineparent">
-										<div class="docText" style="padding-right:5px;color:#2e8cbd;">Multiple</div>
-										<div>
-                                            <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
-                                            <label for="checkbox-1-1"></label>
+                                        <div class="inlineparent" style="padding:5px;">
+                                            <div class="docText" style="color:#2e8cbd;font-size:12px;">Multiple</div>
+                                            <div style="padding-left:5px;">
+                                                <input class="regular-radio" type="radio" name="type" value="male">
+                                            </div>
                                         </div>
 									</div>
 								</div>
@@ -204,35 +242,51 @@
 										<div class="docInput live">
 											<input type="text"/>
 										</div>
+                                        <div class="error left">
+                                            Your Phone number must be a valid number
+                                        </div>
 									</div>
 									<div class="docItems inlineparent" style="text-align:right">
 										<div class="docText temp">Destination</div>
 										<div class="docInput live">
 											<input type="text"/>
 										</div>
+                                        <div class="error left">
+                                            Your Phone number must be a valid number
+                                        </div>
 									</div>
 								</div>
-                                <div id="sellerBuyer" class="inlineparent" style="padding:15px 0 20px 30px;border-bottom:1px solid #f6f6f6;">
-									<div class="docItems inlineparent">
+                                <div id="sellerBuyer" class="cellparent" 
+                                    style="padding:15px 0 20px 30px;border-bottom:1px solid #f6f6f6;width:100%;box-sizing:border-box;">
+									<div class="docItems inlineparent" style="width:50%;">
 										<div class="docText temp">Source</div>
 										<div class="docInput live">
 											<input type="text"/>
 										</div>
+                                        <div class="error left">
+                                            Your Phone number must be a valid number
+                                        </div>
 									</div>
-									<div class="docItems inlineparent" style="float:right;margin-right: 15px;">
-										<div class="docText temp" style="text-align: center;">Via</div>
+									<div class="docItems inlineparent">
+										<div class="docText temp" style="text-align: center;width:96px;">Via</div>
 										<div class="docInput live">
 											<input type="text"/>
 										</div>
+                                        <div class="error">
+                                            Your Phone number must be a valid number
+                                        </div>
 									</div>
 								</div>
-                                <div class="inlineparent" style="padding-top:10px;">
+                                <div id="sellerBuyer" class="cellparent" style="padding:15px 15px 0 0">
                                     <div id="prodName" class="contact">Restrictions</div>
                                     <div class="docInput live">
 								        <input type="text"/>
 								    </div>
+                                    <div class="error" style="padding:10px;width:auto;">
+                                        Your Phone number must be a valid number
+                                    </div>
                                 </div>
-								<div class="inlineparent" style="padding:0 30px;padding-bottom:20px;border-bottom:1px solid #f6f6f6">
+								<div class="inlineparent" style="padding:15px 30px 0;padding-bottom:20px;border-bottom:1px solid #f6f6f6">
 									<div class="docItems inlineparent">
 										<div class="docInput">
 											<input type="text" placaeholder="Add restriction here" value="Add restriction here"/>
@@ -249,12 +303,15 @@
                                     <div class="add button" style="margin-left:10px;">ADD</div>
                                 </div>
 								<div class="property" style="border-bottom:1px solid #f6f6f6;padding-bottom:5px;">
-									<div class="inlineparent">
+									<div id="sellerBuyer" class="cellparent" style="padding:15px 15px 0 0">
                                         <div class="propertyHead">
                                             <span class="propertTitle">Facilities</span>
                                         </div>
                                         <div class="docInput live" style="padding-left:10px">
                                             <input type="text"/>
+                                        </div>
+                                        <div class="error" style="padding:10px;width:auto;">
+                                            Your Phone number must be a valid number
                                         </div>
                                     </div>
                                     <div>add relevant keywords so that your product appears in search results</div>

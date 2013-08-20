@@ -98,9 +98,7 @@ html, body {
 	box-shadow: 0 1px 3px rgba(0,0,0,.75);
 }
 
-.error {
-	box-shadow: 0 1px 3px #b76f6f;
-}
+
 
 .errorMsg {
 	font-size: 12px;

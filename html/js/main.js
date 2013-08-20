@@ -120,6 +120,8 @@ $(document).ready(function () {
 		$('.categorydropContainer').slideToggle(300);
 	});
     
-
+    $("#sellerBuyer .error").('show',function {
+        $(".docItems.temp").css({paddingBottom : '0px'});                             
+    });
 
 });

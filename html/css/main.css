@@ -40,9 +40,17 @@ a:hover {
 	color:#000;
 }
 
+ .docInput input:focus {
+    border:1px solid #f1ca7e;   
+}
+
 /*checkbox*/
 
 input[type="checkbox"] {
+    padding:7px;   
+}
+
+input[type="radiose"] {
     padding:7px;   
 }
 
@@ -53,6 +61,24 @@ input[type="checkbox"] {
     padding: 5px;
     display: inline-block;
     position: relative;
+}
+
+.regular-radio {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #cacece;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-radio:checked:after {
+    content: "\2714";
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: #7dc12d;
 }
 
 .regular-checkbox:checked {
@@ -250,13 +276,30 @@ h4 {
 .headerIcon {
 	position: relative;
 	height:45px;
-	width:23px;
-	padding-left: 20px;
+	padding:0 10px;
 	vertical-align: middle;
+    border:1px solid #2b2b2b;
+    cursor:pointer;
+}
+
+.headerxtra {
+    font-size:12px;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+.headerIcon > div > img {
+    vertical-align:middle;
+    opacity:0.5;
+}
+
+.headerIcon > div > img:hover {
+    opacity:1;
 }
 
 .headerIcon > img{
 	cursor: pointer;
+    vertical-align:bottom;
 }
 
 .toolBar {
@@ -364,6 +407,11 @@ h4 {
 	border-radius: 0;
 	font-size: 13px;
 	font-weight: bold;
+}
+
+.find {
+    color:#EE662B;
+    font-size: 12px;
 }
 
 /*catBar*/
@@ -1133,9 +1181,6 @@ h4 {
 	font-weight: bold;
 }
 
-
-
-
 .items.more {
 	background: url(../img/more.png) no-repeat right center;
 	padding-right: 20px;
@@ -1147,6 +1192,8 @@ h4 {
 	padding: 10px;
     font-size:14px;
 	color: #b3b3b3;
+    /* box-sizing: border-box; */
+    margin-right: 36px;
 }
 
 .frnd {
@@ -1156,10 +1203,31 @@ h4 {
 .frnd:before {
     position:absolute;
     content:attr(data-name);
-    top:10px;
-    right:140px;
+    top: 7px;
+    right: 175px;
     font-size:10px;
-    color:#ccc;
+    color:#fa3c45;
+}
+
+.chat {
+    margin-right:28px;   
+}
+
+.chat:before {
+    position:absolute;
+    content:attr(data-name);
+    top: 7px;
+    right: 237px;
+    font-size:10px;
+    color:#fa3c45;
+}
+
+.frnd > img, .chat > img {
+    opacity:0.5;
+}
+
+.frnd > img:hover, .chat > img:hover {
+    opacity:1;   
 }
 
 .second {
@@ -1572,6 +1640,35 @@ h4 {
 .navs.active {
 	border-left: 3px solid #7e7e7e;
 	background: #fff;
+}
+
+/*Error messages*/
+
+.error {
+    background: none;
+    clear: both;
+    color: #EA400E;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    line-height: normal;
+    max-width: none;
+    padding: 5px 0 0 118px;
+    position: static !important;
+    width:200px;
+}
+
+
+
+.error ul {
+    padding:10px; 
+    background:#FDE4E1;
+}
+
+.error ul li {
+    color:#CB4721;
+    padding:10px;
+    list-style-type:none;
 }
 
 

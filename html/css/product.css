@@ -207,12 +207,10 @@
     cursor:pointer;
 }
 
-
  .couOffer {
     width:140px;    
     padding: 10px 10px 10px 0;
 }
-
 
 .awesome {
     width:80px;
@@ -320,7 +318,16 @@
 }
 
 #sellerBuyer {
-	padding: 15px;
+	padding: 15px 15px 0;
+}
+
+#sellerBuyer .error {
+    display:none;
+}
+
+
+#sellerBuyer .error.left {
+    padding-left:100px;   
 }
 
 .timeBox.temp {
@@ -370,8 +377,6 @@
     vertical-align:top;
 }
 
-
-
 #slug input {
 	background: #eaeaea;
 	color: #848484;
@@ -406,19 +411,14 @@
 }
 
 .docItems.temp {
-    padding:5px 15px 10px;
+    padding:15px;
 }
 
 .docInput input {
 	width: 200px;
-	background: #eee;
 	padding: 5px 8px;
 	border: 1px solid #eaeaea;
     color:#a5a5a5;
-}
-
-.docInput.live input {
-    background:#fff;   
 }
 
 .docText {
