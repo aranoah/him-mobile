@@ -18,6 +18,11 @@
 	width: 700px;
 }
 
+#prodLeft.panel {
+    width:auto;
+    padding:0;
+}
+
 .pubDetails {
 	color: #a7a8a8;
 	height: 25px;
@@ -264,6 +269,8 @@
 	padding-bottom: 20px;
 }
 
+
+
 #gallerycontent {
     position:relative;
    border-bottom:1px solid #eaeaea; 
@@ -475,6 +482,7 @@
 	padding: 0 5px;
 }
 
+
 .bluextra {
 	cursor: pointer;
 	padding-left: 20px;
@@ -630,8 +638,12 @@
 }
 
 .varImg.temp {
-    background:#eee url(../img/images.jpg) no-repeat  center center;
-    background-size:cover;
+    background:#eee;
+}
+
+.varImg.temp > img {
+    height: 60px; 
+    width:80px;
 }
 
 .change  {

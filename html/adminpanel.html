@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+  	tinymce.init({
+  		selector: "textarea",	
+  		 menubar : false,
+		 height:270,
+		 statusbar : false,
+		   resize: false,
+		theme_advanced_statusbar_location :  "none"
+  		});
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container inlineparent">
+				<div id="logoArea" class="inlineparent">
+					<div id="logo"></div>
+					<div id="logoText">
+						<h1 id="logoName">Here I am</h1>
+					</div>
+				</div>
+				<div id="iconArea" class="cellparent">
+					<div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/order.png" />
+                        </div>
+                        <div class="headerxtra">My Orders</div>
+                    </div>
+					<div class="headerIcon inlineparent" style="border:0">
+                        <div>
+                            <img src="img/mb.png" />
+                        </div>
+                        <div class="headerxtra">My Business</div>
+                    </div>
+                    <div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/acc.png" />
+                        </div>
+                        <div class="headerxtra">My Account</div>
+                    </div>
+					<div class="headerIcon inlineparent">
+                        <div>
+                            <img src="img/cart.png" />
+                        </div>
+                        <div class="headerxtra">Cart</div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="toolBar">
+			<div class="nav">
+				<div class="container inlineparent">
+                    <div class="inlineparent panel" id="categorySearch">
+                        <div class="mainsearch panel active">
+                            <div class="nsearch">Customer</div>
+                            <div class="nsearchm"><b>Q (10)</b></div>
+                        </div>
+                        <div class="mainsearch panel">
+                            <div class="nsearch">Shipping</div>
+                            <div class="nsearchm"><b>Q (10)</b></div>
+                        </div>
+                        <div class="mainsearch panel">
+                            <div class="nsearch">Payment</div>
+                            <div class="nsearchm"><b>Q (10)</b></div>
+                        </div>
+                        <div class="mainsearch panel">
+                            <div class="nsearch">Parking</div>
+                            <div class="nsearchm"><b>Q (10)</b></div>
+                        </div>
+                    </div>
+                    <div class="searchstore inlineparent">
+                        <div class="second">Narayana Store</div>
+                        <div>
+                            <img src="img/down.png"/>
+                        </div>
+                    </div>
+                    <div id="catBar" class="inlineparent">
+                        <div class="chat" data-name="(12)">
+                            <img src="img/chat_icon1.png"/>
+                        </div>
+                        <div class="frnd" data-name="(2326)">
+                            <img src="img/frnds.png"/>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="mainContent">
+				<div id="contentHead" class="inlineparent">
+					<div id="message">ORDER MANAGEMENT</div>
+					<div id="linkImages" class="inlineparent">
+						<div class="links">
+							<img src="img/message.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/contacts.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/diary.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/calendar.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/fav.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/history.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/settings.png" alt="M" />
+						</div>
+						<div class="links">
+							<img src="img/events.png" alt="M" />
+						</div>
+						<div class="links" style="padding-right: 0">
+							<img src="img/todo.png" alt="M" />
+						</div>
+					</div>
+				</div>
+				<div id="prodDetails">
+                    <div style="padding:0 0 0 10px;">
+                        <div class="ordermanageContainer">
+                            <div class="ordermanagcontent inlineparent">
+                                <div class="orderItems">
+                                    <span class="orderTitle">Order ID</span>
+                                    <div class="orderInput panel">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="orderItems">
+                                    <span class="orderTitle">User ID</span>
+                                    <div class="orderInput panel">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="orderItems">
+                                    <span class="orderTitle">Phone Number</span>
+                                    <div class="orderInput panel">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="orderItems">
+                                    <span class="orderTitle">Start Date</span>
+                                    <div class="inlineparent" style="border: 1px solid #d6d6d6;">
+                                        <div class="cal panel">
+                                            <img src="img/cal.png"/>
+                                        </div>
+                                        <div class="orderInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orderItems">
+                                    <span class="orderTitle">End Date</span>
+                                    <div class="inlineparent" style="border: 1px solid #d6d6d6;">
+                                        <div class="cal panel">
+                                            <img src="img/cal.png"/>
+                                        </div>
+                                        <div class="orderInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="orderItems osearch button">Search</div>
+                            </div>
+                        </div>
+                        <div class="orderstatuscontainer">
+                            <div class="orderstatuscontent inlineparent">
+                                <div class="ordersTitle">Order Status :</div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Placed</span>
+                                </div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Re-Confirm</span>
+                                </div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Returned</span>
+                                </div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Error</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderstatuscontainer">
+                            <div class="orderstatuscontent inlineparent">
+                                <div class="ordersTitle">Queue Status :</div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Assigned</span>
+                                </div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Not Assigned</span>
+                                </div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">In-Progress</span>
+                                </div>
+                                <div class="orderstatusbox inlineparent">
+                                    <div class="ordercheck">
+                                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                    </div>
+                                    <span class="ostatus">Hold</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div id="prodContent" style="padding-right:0">
+						<div id="prodLeft" class="panel">
+							<div class="publish inlineparent" style="height:25px;">
+								<div>&nbsp;</div>
+								<div class="inlineparent" style="float:right;">
+                                    <div class="orderResult">Results of 12/50</div>
+                                    <div id="all" class="inlineparent" style="vertical-align:top;">
+                                        <div class="allItems panel">Prevs</div> |
+                                        <div class="allItems panel">Next</div>
+                                    </div>
+                                </div>
+							</div>
+							<div class="orderDetailsContainer">
+                                <div class="Obox">
+                                    <div class="orderDetailscontent cellparent" style="width:100%;">
+                                        <div class="orderDbox" style="width:55px;">
+                                            <div class="Dstaus">
+                                                <div class="progress"></div>
+                                                <span class="Ditems panel">IN PROCESS</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent">
+                                            <div class="Duserid">VINA9194NAY</div>
+                                        </div>
+                                        <div class="orderDbox inlineparent p">
+                                            <div class="Dprice">Rs.2100</div>
+                                            <div class="Dstaus inlineparent">
+                                                <span class="Ditems">12 ITEMS</span> 
+                                            </div>
+                                        </div>    
+                                        <div class="orderDbox inlineparent panel">
+                                            <div class="Dprice">Cash on Delivery</div>
+                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
+                                                <span class="Ditems">PENDING</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent panel">
+                                            <div class="Dprice">Aug 21,2013</div>
+                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
+                                                <span class="Ditems">HH:MM AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent">
+                                            <div class="Duserdetails inlineparent">
+                                                <div><img src="img/acc1.PNG"/></div>
+                                                <span class="Dprice">Vinay Satyanarayana</span>
+                                            </div>
+                                            <div class="Dstaus">
+                                                <span class="Ditems">706C/sector 22B,Near Anand farm,Gurgoan,Haryana,India 122021</span>
+                                                <p style="color:#747474">+91 8884 195 261</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderDxtra inlineparent">
+                                        <div class="Duser">
+                                            <div class="inlineparent">
+                                                <div style="margin-left: -4px;"><img src="img/cc.PNG"/></div>
+                                                <span class="Dname">Mr.Raghuram chana</span>
+                                            </div>
+                                            <div class="Dstaus inlineparent">
+                                                <div class="progress panel"></div>
+                                                <span class="Ditems p">In progress</span>
+                                            </div>
+                                        </div>
+                                        <div class="remarks">
+                                            <div class="Dmark">Remarks about the customer or product.</div>
+                                            <span class="Ditems">Aug 22,2013&nbsp;&nbsp;&nbsp;9:30 PM</span>
+                                        </div>
+                                        <div class="Dmore">
+                                            <span>View details</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Obox active">
+                                    <div class="orderDetailscontent cellparent" style="width:100%;">
+                                        <div class="orderDbox" style="width:55px;">
+                                            <div class="Dstaus">
+                                                <div class="progress"></div>
+                                                <span class="Ditems panel">IN PROCESS</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent">
+                                            <div class="Duserid">VINA9194NAY</div>
+                                        </div>
+                                        <div class="orderDbox inlineparent p">
+                                            <div class="Dprice">Rs.2100</div>
+                                            <div class="Dstaus inlineparent">
+                                                <span class="Ditems">12 ITEMS</span> 
+                                            </div>
+                                        </div>    
+                                        <div class="orderDbox inlineparent panel">
+                                            <div class="Dprice">Cash on Delivery</div>
+                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
+                                                <span class="Ditems">PENDING</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent panel">
+                                            <div class="Dprice">Aug 21,2013</div>
+                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
+                                                <span class="Ditems">HH:MM AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent">
+                                            <div class="Duserdetails inlineparent">
+                                                <div><img src="img/acc1.PNG"/></div>
+                                                <span class="Dprice">Vinay Satyanarayana</span>
+                                            </div>
+                                            <div class="Dstaus">
+                                                <span class="Ditems">706C/sector 22B,Near Anand farm,Gurgoan,Haryana,India 122021</span>
+                                                <p style="color:#747474">+91 8884 195 261</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderDxtra inlineparent">
+                                        <div class="Duser">
+                                            <div class="inlineparent">
+                                                <div style="margin-left: -4px;"><img src="img/cc.PNG"/></div>
+                                                <span class="Dname">Mr.Raghuram chana</span>
+                                            </div>
+                                            <div class="Dstaus inlineparent">
+                                                <div class="progress panel"></div>
+                                                <span class="Ditems p">In progress</span>
+                                            </div>
+                                        </div>
+                                        <div class="remarks">
+                                            <div class="Dmark">Remarks about the customer or product.</div>
+                                            <span class="Ditems">Aug 22,2013&nbsp;&nbsp;&nbsp;9:30 PM</span>
+                                        </div>
+                                        <div class="Dmore">
+                                            <span>View details</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Obox" style="border:0">
+                                    <div class="orderDetailscontent cellparent" style="width:100%;">
+                                        <div class="orderDbox" style="width:55px;">
+                                            <div class="Dstaus">
+                                                <div class="progress"></div>
+                                                <span class="Ditems panel">IN PROCESS</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent">
+                                            <div class="Duserid">VINA9194NAY</div>
+                                        </div>
+                                        <div class="orderDbox inlineparent p">
+                                            <div class="Dprice">Rs.2100</div>
+                                            <div class="Dstaus inlineparent">
+                                                <span class="Ditems">12 ITEMS</span> 
+                                            </div>
+                                        </div>    
+                                        <div class="orderDbox inlineparent panel">
+                                            <div class="Dprice">Cash on Delivery</div>
+                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
+                                                <span class="Ditems">PENDING</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent panel">
+                                            <div class="Dprice">Aug 21,2013</div>
+                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
+                                                <span class="Ditems">HH:MM AM</span>
+                                            </div>
+                                        </div>
+                                        <div class="orderDbox inlineparent">
+                                            <div class="Duserdetails inlineparent">
+                                                <div><img src="img/acc1.PNG"/></div>
+                                                <span class="Dprice">Vinay Satyanarayana</span>
+                                            </div>
+                                            <div class="Dstaus">
+                                                <span class="Ditems">706C/sector 22B,Near Anand farm,Gurgoan,Haryana,India 122021</span>
+                                                <p style="color:#747474">+91 8884 195 261</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderDxtra inlineparent">
+                                        <div class="Duser">
+                                            <div class="inlineparent">
+                                                <div style="margin-left: -4px;"><img src="img/cc.PNG"/></div>
+                                                <span class="Dname">Mr.Raghuram chana</span>
+                                            </div>
+                                            <div class="Dstaus inlineparent">
+                                                <div class="progress panel"></div>
+                                                <span class="Ditems p">In progress</span>
+                                            </div>
+                                        </div>
+                                        <div class="remarks">
+                                            <div class="Dmark">Remarks about the customer or product.</div>
+                                            <span class="Ditems">Aug 22,2013&nbsp;&nbsp;&nbsp;9:30 PM</span>
+                                        </div>
+                                        <div class="Dmore">
+                                            <span>View details</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<!--<div id="saveButtons" class="inlineparent">
+								<div class="button save" style="margin-right: 20px;">Save and add more</div>
+								<div class="button save">Save and close</div>
+							</div>-->
+						</div>
+			         </div>
+                </div>
+			</div>
+		</div>
+		<div id="footer">
+            <div class="container inlineparent">
+                <div id="leftFoot" class="inlineparent" style="padding-left: 0">
+                    <div>About</div> | <div>Contact Us</div>
+                </div>
+                <div id="rightFoot" class="inlineparent">
+                    <div class="foot color">connected by</div>
+                    <div class="foot" style="background: url(img/face.png) no-repeat center center;height: 20px;width: 30px;"></div>
+                    <div class="foot" style="background: url(img/tweet.png) no-repeat center center;height: 20px;width: 30px;"></div>
+                    <div class="foot color">2013  |  Aranoah Technologies</div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
