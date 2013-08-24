@@ -4,19 +4,16 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/product.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <link rel="stylesheet" href="css/cal.css" />
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/modernizer.js"></script>
 		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
-		<script type="text/javascript">
-  	tinymce.init({
-  		selector: "textarea",	
-  		 menubar : false,
-		 height:270,
-		 statusbar : false,
-		   resize: false,
-		theme_advanced_statusbar_location :  "none"
-  		});
-		</script>
+        <script>
+          $(function() {
+            $( ".datepicker" ).datepicker();
+          });
+      </script>
 	</head>
 	<body>
 		<div id="header">
@@ -77,9 +74,9 @@
                         </div>
                     </div>
                     <div class="searchstore inlineparent">
-                        <div class="second">Narayana Store</div>
-                        <div>
-                            <img src="img/down.png"/>
+                        <div>Atlantic City Harley Davidson Mall Store </div>
+                        <div style="float:right;">
+                            <img src="img/down.png">
                         </div>
                     </div>
                     <div id="catBar" class="inlineparent">
@@ -151,30 +148,20 @@
                                 </div>
                                 <div class="orderItems">
                                     <span class="orderTitle">Start Date</span>
-                                    <div class="inlineparent" style="border: 1px solid #d6d6d6;">
-                                        <div class="cal panel">
-                                            <img src="img/cal.png"/>
-                                        </div>
-                                        <div class="orderInput">
-                                            <input type="text">
-                                        </div>
+                                     <div class="orderInput">
+                                        <input type="text" class="datepicker">
                                     </div>
                                 </div>
                                 <div class="orderItems">
                                     <span class="orderTitle">End Date</span>
-                                    <div class="inlineparent" style="border: 1px solid #d6d6d6;">
-                                        <div class="cal panel">
-                                            <img src="img/cal.png"/>
-                                        </div>
-                                        <div class="orderInput">
-                                            <input type="text">
-                                        </div>
+                                    <div class="orderInput">
+                                        <input type="text" class="datepicker">
                                     </div>
                                 </div>
                                  <div class="orderItems osearch button">Search</div>
                             </div>
                         </div>
-                        <div class="orderstatuscontainer">
+                        <div class="orderstatuscontainer" style="padding-bottom:0">
                             <div class="orderstatuscontent inlineparent">
                                 <div class="ordersTitle">Order Status :</div>
                                 <div class="orderstatusbox inlineparent">
@@ -203,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="orderstatuscontainer">
+                        <div class="orderstatuscontainer" style="padding-bottom:15px;">
                             <div class="orderstatuscontent inlineparent">
                                 <div class="ordersTitle">Queue Status :</div>
                                 <div class="orderstatusbox inlineparent">
@@ -289,7 +276,7 @@
                                     <div class="orderDxtra inlineparent">
                                         <div class="Duser">
                                             <div class="inlineparent">
-                                                <div style="margin-left: -4px;"><img src="img/cc.PNG"/></div>
+                                                <div style="margin-left: -4px;"><img src="img/cc.gif"/></div>
                                                 <span class="Dname">Mr.Raghuram chana</span>
                                             </div>
                                             <div class="Dstaus inlineparent">
@@ -298,131 +285,225 @@
                                             </div>
                                         </div>
                                         <div class="remarks">
-                                            <div class="Dmark">Remarks about the customer or product.</div>
+                                            <div class="Dmark">Remarks about the customer or product Remarks about the customer or product.</div>
                                             <span class="Ditems">Aug 22,2013&nbsp;&nbsp;&nbsp;9:30 PM</span>
+                                        </div>
+                                         <div class="highlightmsg">
+                                            <div class="hmsg">Source Q foodpanda Actions: Reveriify orders...</div>
                                         </div>
                                         <div class="Dmore">
                                             <span>View details</span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="Obox active">
-                                    <div class="orderDetailscontent cellparent" style="width:100%;">
-                                        <div class="orderDbox" style="width:55px;">
-                                            <div class="Dstaus">
-                                                <div class="progress"></div>
-                                                <span class="Ditems panel">IN PROCESS</span>
-                                            </div>
+                                    <div class="orderhidecontainer inlineparent">
+                                       <div class="orderhideHead inlineparent">
+                                            <div class="usernote">
+                                                <input type="text" placeholder="User note" value="User note"/>
+                                           </div>
+                                           <div class="orderheadItems">Add product</div>
+                                           <div class="orderheadItems">Cancel order</div>
+                                           <div class="orderheadItems">Order history</div>
                                         </div>
-                                        <div class="orderDbox inlineparent">
-                                            <div class="Duserid">VINA9194NAY</div>
-                                        </div>
-                                        <div class="orderDbox inlineparent p">
-                                            <div class="Dprice">Rs.2100</div>
-                                            <div class="Dstaus inlineparent">
-                                                <span class="Ditems">12 ITEMS</span> 
+                                        <div class="orderhidebody cellparent" style="width:100%;">
+                                            <div class="olcontent">
+                                                <div class="orderhideleft">
+                                                    <div class="olefthead inlineparent">
+                                                        <div class="oltitle">Required Actions</div>
+                                                        <div class="olclose inlineparent">
+                                                            <span class="olq">Quit ?</span>&nbsp;
+                                                            <span class="olyes">YES</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="oltaskcontainer">
+                                                        <div class="oltasks inlineparent">
+                                                            <div class="ordercheck olcheck">
+                                                                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                            </div>
+                                                            <span class="oltasktext">
+                                                                This user has been submitted all the docs.This statement is too big read. 
+                                                            </span>
+                                                        </div>
+                                                        <div class="oltasks inlineparent">
+                                                            <div class="ordercheck olcheck">
+                                                                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                            </div>
+                                                            <span class="oltasktext">
+                                                                This user has been submitted all the docs.This statement is too big read. 
+                                                            </span>
+                                                        </div>
+                                                        <div class="oltasks inlineparent">
+                                                            <div class="ordercheck olcheck">
+                                                                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                            </div>
+                                                            <span class="oltasktext">
+                                                                This user has been submitted all the docs.This statement is too big read. 
+                                                            </span>
+                                                        </div>
+                                                        <div class="oltasks inlineparent">
+                                                            <div class="ordercheck olcheck">
+                                                                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                            </div>
+                                                            <span class="oltasktext">
+                                                                This user has been submitted all the docs.This statement is too big read. 
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="olremarks">
+                                                        <span class="oltitle">Remarks</span>
+                                                        <div class="olrinput inlineparent">
+                                                            <div class="rinput">
+                                                                <textarea type="text" placeholder="Enter comments about the products or customers."></textarea>
+                                                            </div>
+                                                            <div class="olrsave button">SAVE</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="olxtra inlineparent">
+                                                        <div class="oltitle">Move To</div>
+                                                        <div class="olmove inlineparent">
+                                                            <select class="olmoveItems">
+                                                              <option value="volvo">whatsoever</option>
+                                                              <option value="saab">whatsoever</option>
+                                                              <option value="opel">whatsoever</option>
+                                                              <option value="audi">whatsoever</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="olcoupondocContanier inlineparent">
+                                                    <div class="ocoubox">
+                                                        <span class="oltitle">Coupon Details</span>
+                                                        <div class="olcidbox">
+                                                            <div class="olcouid inlineparent">
+                                                                <div class="ordercheck olcheck">
+                                                                    <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                                </div>
+                                                                <span class="olcouidt">DIS4312458</span>
+                                                            </div>
+                                                            <div class="olcouid inlineparent">
+                                                                <div class="ordercheck olcheck">
+                                                                    <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                                </div>
+                                                                <span class="olcouidt">DIS4312458</span>
+                                                            </div>
+                                                            <div class="olcouid inlineparent">
+                                                                <div class="ordercheck olcheck">
+                                                                    <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                                </div>
+                                                                <span class="olcouidt">DIS4312458</span>
+                                                            </div>
+                                                            <div class="olcouid inlineparent">
+                                                                <div class="ordercheck olcheck">
+                                                                    <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                                </div>
+                                                                <span class="olcouidt">DIS4312458</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="olcouinput">
+                                                                <input type="text" placeholder="Enter coupon code"/>
+                                                            </div>
+                                                            <span class="olcsave button">SAVE</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ocoubox" style="margin-left:10px;width:200px;">
+                                                        <span class="oltitle">Documents upload</span>
+                                                        <div class="olcidbox">
+                                                            <span class="olcouidt">(0) Files present</span>
+                                                            <div class="inlineparent">
+                                                                <div id="choosefile" style="padding-left:0">
+                                                                    <div class="visible oldocu">Upload file</div>
+                                                                    <div class="fileHidden">
+                                                                        <input class="transparent_class" type="file" data-storeid="" data-storename="">
+                                                                    </div>
+                                                                </div>
+                                                                <span class="oldno">No file chosen</span>
+                                                            </div>
+                                                            <div>
+                                                                <div class="oldocfile inlineparent">
+                                                                    <span class="olcouidt">Prescription.pdf</span>
+                                                                    <div class="oldocClose"></div>
+                                                                </div>
+                                                                 <div class="oldocfile inlineparent">
+                                                                    <span class="olcouidt">Prescription.pdf</span>
+                                                                    <div class="oldocClose"></div>
+                                                                </div>
+                                                                 <div class="oldocfile inlineparent">
+                                                                    <span class="olcouidt">Prescription.pdf</span>
+                                                                    <div class="oldocClose"></div>
+                                                                </div>
+                                                                 <div class="oldocfile inlineparent">
+                                                                    <span class="olcouidt">Prescription.pdf</span>
+                                                                    <div class="oldocClose"></div>
+                                                                </div>
+                                                                <div class="oldocfile inlineparent">
+                                                                    <span class="olcouidt">Prescription.pdf</span>
+                                                                    <div class="oldocClose"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>    
-                                        <div class="orderDbox inlineparent panel">
-                                            <div class="Dprice">Cash on Delivery</div>
-                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
-                                                <span class="Ditems">PENDING</span>
+                                            <div class="orderhideright">
+                                                <div class="olcoupondocContanier inlineparent" style="margin:0;">
+                                                    <div class="olrcourbox">
+                                                        <span class="oltitle">Courier options</span>
+                                                        <div class="olrmove inlineparent">
+                                                            <select class="olmoveItems">
+                                                              <option value="volvo">whatsoever</option>
+                                                              <option value="saab">whatsoever</option>
+                                                              <option value="opel">whatsoever</option>
+                                                              <option value="audi">whatsoever</option>
+                                                            </select>
+                                                        </div>
+                                                        <span class="olrcourId">TR ID : 125638</span>
+                                                        <div class="olrcouritem inlineparent">
+                                                            <div class="ordercheck olcheck">
+                                                                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                            </div>
+                                                            <span class="couritems">Free</span>
+                                                        </div>
+                                                        <div class="inlineparent">
+                                                            <div class="ordercheck olcheck">
+                                                                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox panel">
+                                                            </div>
+                                                            <span class="couritems">
+                                                                <input type="text" placeholder="RS."/>
+                                                            </span>
+                                                        </div>
+                                                        <div class="olrnote">
+                                                            <textarea placeholder="Note"></textarea>
+                                                         </div>
+                                                        <span class="olcsave button">SAVE</span>
+                                                    </div>
+                                                    <div class="olrcourbox p">
+                                                        <div class="olrpaybox inlineparent" style="padding-top:0">
+                                                            <span class="olrtitle p">Payment details</span>
+                                                            <span class="olrtitle">Payment received</span>
+                                                        </div>
+                                                        <div class="olrpaybox inlineparent">
+                                                            <span class="olrtitle p item">Payment method</span>
+                                                            <span class="olrtitle item">Online</span>
+                                                        </div>
+                                                        <div class="olrpaybox inlineparent">
+                                                            <span class="olrtitle p item">Transcation code</span>
+                                                            <span class="olrtitle item">xxxxx</span>
+                                                        </div>
+                                                        <div class="olrpaybox inlineparent">
+                                                            <span class="olrtitle p item">Product total</span>
+                                                            <span class="olrtitle item">Rs. 19,000</span>
+                                                        </div>
+                                                        <div class="olrpaybox inlineparent">
+                                                            <span class="olrtitle p item">Courier fee</span>
+                                                            <span class="olrtitle item">Rs. 1000</span>
+                                                        </div>
+                                                        <div class="olrpaybox inlineparent">
+                                                            <span class="olrtitle p item">Tax</span>
+                                                            <span class="olrtitle item">4.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="orderDbox inlineparent panel">
-                                            <div class="Dprice">Aug 21,2013</div>
-                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
-                                                <span class="Ditems">HH:MM AM</span>
-                                            </div>
-                                        </div>
-                                        <div class="orderDbox inlineparent">
-                                            <div class="Duserdetails inlineparent">
-                                                <div><img src="img/acc1.PNG"/></div>
-                                                <span class="Dprice">Vinay Satyanarayana</span>
-                                            </div>
-                                            <div class="Dstaus">
-                                                <span class="Ditems">706C/sector 22B,Near Anand farm,Gurgoan,Haryana,India 122021</span>
-                                                <p style="color:#747474">+91 8884 195 261</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="orderDxtra inlineparent">
-                                        <div class="Duser">
-                                            <div class="inlineparent">
-                                                <div style="margin-left: -4px;"><img src="img/cc.PNG"/></div>
-                                                <span class="Dname">Mr.Raghuram chana</span>
-                                            </div>
-                                            <div class="Dstaus inlineparent">
-                                                <div class="progress panel"></div>
-                                                <span class="Ditems p">In progress</span>
-                                            </div>
-                                        </div>
-                                        <div class="remarks">
-                                            <div class="Dmark">Remarks about the customer or product.</div>
-                                            <span class="Ditems">Aug 22,2013&nbsp;&nbsp;&nbsp;9:30 PM</span>
-                                        </div>
-                                        <div class="Dmore">
-                                            <span>View details</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Obox" style="border:0">
-                                    <div class="orderDetailscontent cellparent" style="width:100%;">
-                                        <div class="orderDbox" style="width:55px;">
-                                            <div class="Dstaus">
-                                                <div class="progress"></div>
-                                                <span class="Ditems panel">IN PROCESS</span>
-                                            </div>
-                                        </div>
-                                        <div class="orderDbox inlineparent">
-                                            <div class="Duserid">VINA9194NAY</div>
-                                        </div>
-                                        <div class="orderDbox inlineparent p">
-                                            <div class="Dprice">Rs.2100</div>
-                                            <div class="Dstaus inlineparent">
-                                                <span class="Ditems">12 ITEMS</span> 
-                                            </div>
-                                        </div>    
-                                        <div class="orderDbox inlineparent panel">
-                                            <div class="Dprice">Cash on Delivery</div>
-                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
-                                                <span class="Ditems">PENDING</span>
-                                            </div>
-                                        </div>
-                                        <div class="orderDbox inlineparent panel">
-                                            <div class="Dprice">Aug 21,2013</div>
-                                            <div class="Dstaus inlineparent" style="padding-left:10px;">
-                                                <span class="Ditems">HH:MM AM</span>
-                                            </div>
-                                        </div>
-                                        <div class="orderDbox inlineparent">
-                                            <div class="Duserdetails inlineparent">
-                                                <div><img src="img/acc1.PNG"/></div>
-                                                <span class="Dprice">Vinay Satyanarayana</span>
-                                            </div>
-                                            <div class="Dstaus">
-                                                <span class="Ditems">706C/sector 22B,Near Anand farm,Gurgoan,Haryana,India 122021</span>
-                                                <p style="color:#747474">+91 8884 195 261</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="orderDxtra inlineparent">
-                                        <div class="Duser">
-                                            <div class="inlineparent">
-                                                <div style="margin-left: -4px;"><img src="img/cc.PNG"/></div>
-                                                <span class="Dname">Mr.Raghuram chana</span>
-                                            </div>
-                                            <div class="Dstaus inlineparent">
-                                                <div class="progress panel"></div>
-                                                <span class="Ditems p">In progress</span>
-                                            </div>
-                                        </div>
-                                        <div class="remarks">
-                                            <div class="Dmark">Remarks about the customer or product.</div>
-                                            <span class="Ditems">Aug 22,2013&nbsp;&nbsp;&nbsp;9:30 PM</span>
-                                        </div>
-                                        <div class="Dmore">
-                                            <span>View details</span>
                                         </div>
                                     </div>
                                 </div>

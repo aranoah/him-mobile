@@ -40,7 +40,7 @@ a:hover {
 	color:#000;
 }
 
- .docInput input:focus {
+ .docInput input:focus, .orderInput input:focus {
     border:1px solid #f1ca7e;   
 }
 
@@ -179,15 +179,12 @@ h4 {
 	width:300px;
 }
 
-#logoArea > * {
-	vertical-align:top;
-}
-
 #logo {
 	background:url(../img/logo.png) no-repeat center center;
 	background-size:25px 25px;
 	height:45px;
 	width:45px;
+	vertical-align:top;
 }
 
 #logoName {
@@ -207,7 +204,7 @@ h4 {
 
 .userDetails {
 	position: relative;
-	margin:5px 10px 0 0;
+	margin: 5px 0 0 10px;
 	float:right;
 }
 
@@ -1185,7 +1182,7 @@ h4 {
 }
 
 #categorySearch.panel {
-    width:700px;   
+    width: 523px;   
 }
 
 .items {
@@ -1289,14 +1286,11 @@ h4 {
     color:#fff;
     padding:9px 15px;
     cursor:pointer;   
+    width: 319px;
 }
 
-
-
-
-
 .searchstore > div > img  {
-    margin:0 0 1px 12px;
+    margin: 0px 0 -2px 12px;
 }
 
 .second input {
@@ -1729,7 +1723,7 @@ h4 {
 }
 
 .orderItems {
-   padding-right:25px;   
+   padding-right:38px;   
 }
 
 .orderTitle {
@@ -1753,7 +1747,7 @@ h4 {
 
 .orderInput input {
     padding:2px 8px;
-    border:0;
+    border: 1px solid #d6d6d6; 
     color: #a5a5a5; 
     width:120px;
     font-size:11px;
@@ -1761,7 +1755,7 @@ h4 {
 }
 
 .orderInput.panel input {
-    border: 1px solid #d6d6d6; 
+    
     width:150px;
 }
 
@@ -1802,7 +1796,7 @@ h4 {
 }
 
 .orderResult {
-    font-size:15px;
+    font-size:13px;
     color:#2e8cbd;
     padding:0 30px;
     text-transform:uppercase;
@@ -1874,14 +1868,12 @@ h4 {
 
 .Ditems {
     font-size:11px;
-    color:#a7a8a8;
+    color:#747474;
 }
 
 .Ditems.p {
     font-size:10px;   
 }
-
->
 
 .Ditems.panel {
     margin-left:-3px;   
@@ -1895,7 +1887,7 @@ h4 {
 
 .Dprice {
     font-size:15px;
-    color:rgba(0,0,0,0.7);
+    color:#3b3938;
 }
 
 .Dname {
@@ -1911,6 +1903,10 @@ h4 {
     border:1px solid rgba(0,0,0,0.05);
     padding:5px 8px;
     color:#313131;
+    width:250px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
 }
 
 .Dmore {
@@ -1922,8 +1918,291 @@ h4 {
     color:#2e8cbd;
     font-size:12px;
     text-decoration:underline;
+    cursor:pointer;
 }
 
+.second {
+    background: #2e8cbd;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;   
+}
+
+.highlightmsg {
+    color: #393b38;
+    background: #dbfed4;
+    font-size: 13px;
+    padding: 5px 8px;
+    width: 250px;
+    vertical-align: top;
+    margin: 0 40px;
+    border:1px solid rgba(0,0,0,0.08);
+}
+
+.orderhidecontainer {
+    padding:60px 20px 15px;
+}
+
+.orderhideHead {
+    padding:10px 0;   
+}
+
+.usernote {
+    padding-right:5px;   
+}
+
+.usernote input {
+    padding:5px 8px;
+    width:668px;
+    background:#e7e7e7;
+    color:#393b38;
+    border:0;
+}
+
+.orderheadItems {
+    color:#fff;
+    background:#c45151;
+    font-size:12px;
+    padding:5px 8px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+.orderhidebody {
+    padding:10px 0; 
+    overflow:hidden;
+}
+
+.olcontent {
+    vertical-align:top;
+    width: 450px;  
+    padding-right: 10px;
+}
+
+.orderhideleft {
+    padding:10px 15px;
+    border:1px solid #f6f6f6;
+}
+
+.oltitle  {
+    font-size:14px;
+    color:#000;
+}
+
+.olclose  {
+    float:right;
+}
+
+.olq {
+    font-size:14px;
+    color:#000;
+}
+
+.olyes {
+    font-size:11px;
+    padding:2px 5px;
+    background:#c45151;
+    color:#fff;
+    cursor:pointer;
+}
+
+.oltaskcontainer {
+    padding:10px 0;   
+}
+
+.oltasks {
+    padding-bottom:10px;   
+}
+
+.olcheck {
+    margin-top: 4px;
+    vertical-align: top;   
+}
+
+.oltasktext {
+    color:#636363;
+    width:300px;
+}
+
+.olrinput {
+    padding-top:10px;   
+}
+
+.rinput {
+    margin-right:10px;
+}
+
+.rinput textarea {
+    border:1px solid #eaeaea;
+    color:#a7a8a8;
+    font-size:12px;
+    padding:5px 8px;
+    width:343px;
+    height:100px;
+}
+
+.olrsave {
+    color:#fff;
+    box-shadow:0 0 0 #000;
+    padding:5px 8px;
+    vertical-align:bottom;
+}
+
+.olxtra {
+    padding-top:15px;   
+}
+
+.olmove {
+    padding:0 20px;   
+}
+
+.olmoveItems {
+    padding:5px 8px;
+    width:150px;
+    color:#555;
+    border:1px solid #eaeaea;
+}
+
+.olcoupondocContanier {
+    margin-top:10px;
+}
+
+.ocoubox {
+    width: 173px;   
+    height:225px;
+    padding: 10px 15px;
+    border: 1px solid #f6f6f6;
+}
+
+.olcidbox {
+    padding-top:10px;   
+}
+
+.olcouid {
+    padding-bottom:8px;   
+}
+
+.olcouidt {
+    color:#9b9b9b;   
+}
+
+.olcouinput {
+    padding:10px 0;   
+    margin-right:11px;
+}
+
+.olcouinput input {
+    font-size:11px;
+    padding:3px 8px;
+    border:1px solid #eaeaea;
+}
+
+.olcsave {
+    font-size: 10px;
+    color:#fff;
+    padding: 4px 5px;
+    box-shadow:0 0 0 #000;
+    float:right;
+}
+
+#file.oldocu {
+    display:inline;
+}
+
+.visible.oldocu {
+    background:#a5a5a5;
+    color:#fff;
+}
+
+.oldno {
+    padding-left:10px;
+    color:#393b38;
+}
+
+.oldocfile {
+    padding:5px 0;   
+}
+
+.oldocClose {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #727272 url(../img/couclose.png) no-repeat center center;
+    background-size: 70%;
+    cursor: pointer;   
+    float:right;
+}
+
+.olrcourbox {
+    width:205px;
+    height:250px;
+    padding:10px 15px;
+    border:1px solid #f6f6f6;
+    margin-right:10px;
+}
+
+.olrmove {
+    padding:10px 10px 10px 0;   
+}
+
+.olrcourId {
+    color:#af8d16;   
+}
+
+.olrcouritem {
+    padding:10px 0;   
+}
+
+.couritems {
+    color:#383b39;
+    padding-left:5px;
+}
+
+.couritems input {
+    padding:2px 5px;
+    width:80px;
+    border:1px solid #eaeaea;
+}
+
+.olrnote {
+    padding:10px 0;   
+}
+
+.olrnote textarea {
+    border:1px solid #eaeaea;
+    color:#a7a8a8;
+    font-size:12px;
+    padding:5px 8px;
+    height:50px;
+    width:205px;
+}
+
+.olrcourbox.p {
+    background:#F8F7CE;   /* #fffca5*/
+    margin:0;
+    width: 232px;
+    border:1px solid rgba(0,0,0,0.2);
+}
+
+.olrpaybox {
+    padding:8px 0;   
+}
+
+.olrtitle {
+    font-size:13px;
+    color:#a6a6a6;
+   
+}
+
+.olrtitle.p {
+    padding-right:16px; 
+     
+    width: 106px;
+}
+
+.olrtitle.item {
+    color:#383b39;   
+}
 
 /*  RESPONSIVENES ============================================ */
 
