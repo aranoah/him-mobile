@@ -1,4 +1,4 @@
-angular.module('hereiam.controllers', ['hereiam.services'])
+angular.module('business.controllers', ['business.services'])
 
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
     // if the user is already logged in, take him to his hereiam

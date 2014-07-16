@@ -1,4 +1,4 @@
-angular.module('hereiam.services', [])
+angular.module('user.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
        var base = "http://bucketlistapplication.herokuapp.com";
         
