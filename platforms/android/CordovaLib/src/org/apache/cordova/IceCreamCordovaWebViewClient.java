@@ -75,7 +75,11 @@ public class IceCreamCordovaWebViewClient extends CordovaWebViewClient {
     }
 
     private static boolean needsKitKatContentUrlFix(Uri uri) {
+<<<<<<< HEAD
         return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT && "content".equals(uri.getScheme());
+=======
+        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH && "content".equals(uri.getScheme());
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
     }
 
     private static boolean needsSpecialsInAssetUrlFix(Uri uri) {

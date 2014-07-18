@@ -344,7 +344,11 @@ public final class HttpsURLConnectionImpl extends HttpsURLConnection {
   }
 
   @SuppressLint("NewApi")
+<<<<<<< HEAD
   @Override public void setFixedLengthStreamingMode(long contentLength) {
+=======
+  public void setFixedLengthStreamingMode(long contentLength) {
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
     delegate.setFixedLengthStreamingMode(contentLength);
   }
 

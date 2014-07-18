@@ -14,6 +14,10 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="phonegap-version" value="3.3.0" />
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
     <feature name="StatusBar">
       <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>

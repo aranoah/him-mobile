@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
+=======
+angular.module('hereiam', ['ionic', 'hereiam.controllers', 'hereiam.services'])
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {

@@ -294,9 +294,15 @@ public class CordovaWebView extends WebView {
             appInfo = pm.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
             
             if((appInfo.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0 &&  
+<<<<<<< HEAD
                 android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT)
             {
                 setWebContentsDebuggingEnabled(true);
+=======
+                android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+            {
+             //   setWebContentsDebuggingEnabled(true);
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
             }
         } catch (IllegalArgumentException e) {
             Log.d(TAG, "You have one job! To turn on Remote Web Debugging! YOU HAVE FAILED! ");

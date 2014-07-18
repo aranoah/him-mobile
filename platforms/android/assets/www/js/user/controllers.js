@@ -1,5 +1,14 @@
 angular.module('user.controllers', ['user.services'])
 
+// Wait for Cordova to load
+.addEventListener("deviceready", onDeviceReady, false);
+
+// Cordova is ready
+function onDeviceReady() {
+  var db = window.sqlitePlugin.openDatabase({name: "my.db"});
+  // ...
+}
+
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
     // if the user is already logged in, take him to his hereiam
     if ($rootScope.isSessionActive()) {

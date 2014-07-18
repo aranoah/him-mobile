@@ -13,6 +13,16 @@ module.exports = [
         "clobbers": [
             "device"
         ]
+<<<<<<< HEAD
+=======
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.sqlite/www/SQLitePlugin.js",
+        "id": "com.phonegap.plugins.sqlite.SQLitePlugin",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
     }
 ];
 module.exports.metadata = 
@@ -20,7 +30,12 @@ module.exports.metadata =
 {
     "com.ionic.keyboard": "1.0.2",
     "org.apache.cordova.console": "0.2.9",
+<<<<<<< HEAD
     "org.apache.cordova.device": "0.2.10"
+=======
+    "org.apache.cordova.device": "0.2.10",
+    "com.phonegap.plugins.sqlite": "0.7.0"
+>>>>>>> 9b7f812330147a6299dbeb2ba682572dfb98f9cb
 }
 // BOTTOM OF METADATA
 });
