@@ -1,0 +1,19 @@
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes.dex : \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard$1.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard$2.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\BuildConfig.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\myapp.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R$attr.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R$drawable.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R$string.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R$xml.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$1.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$Action.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$DBQuery.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$DBRunner.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$QueryType.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\dexedLibs\classes-ea38fe793d604a8aed157857d0f6568c.jar \
