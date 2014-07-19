@@ -1,7 +1,22 @@
-angular.module('business.services', [])
-    .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
+angular.module('business.services', ['ngResource'])
+
+
+    .factory('DASHBOARD', function ($rootScope, $http, $cordovaSQLite, $window) {
        var base = "http://bucketlistapplication.herokuapp.com";
         
+$scope.prepopulateDB = function(){
+
+  var dbName = 'test.db';
+  var source = cordova.file.applicationDirectory + 'www/db/' + dbName;
+  var filePath = cordova.file.documentsDirectory + dbName;
+
+$cordovaFile.downloadFile(source, filePath, true).then(function(result) {
+    var db = $cordovaSQLite.openDB(dbName);
+  }, function(err) {
+    console.log(err);
+  });
+  };
+
         $rootScope.show = function (text) {
             $rootScope.loading = $ionicLoading.show({
                 content: text ? text : 'Loading',

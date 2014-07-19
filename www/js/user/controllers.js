@@ -3,7 +3,8 @@ angular.module('user.controllers', ['user.services'])
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
     // if the user is already logged in, take him to his hereiam
     if ($rootScope.isSessionActive()) {
-        $window.location.href = ('#/bucket/list');
+        
+        $window.location.href = ('#/dashboard/view');
     }
 
     $scope.user = {

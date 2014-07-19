@@ -9,6 +9,10 @@ angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
     })
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
+            /*** 
+            Routing for user module
+            ***/
+
             .state('auth', {
                 url: "/auth",
                 abstract: true,
@@ -32,6 +36,29 @@ angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
                     }
                 }
             })
+
+                                    /*** 
+            Routing for business module
+            ***/
+
+            .state('dashboard', {
+                url: "/dashboard",
+                abstract: true,
+                templateUrl: "templates/dashboard.html"
+            })
+            .state('dashboard.view', {
+                url: '/view',
+                views: {
+                    'dashboard-view': {
+                        templateUrl: 'templates/dashboard-view.html',
+                        controller: 'DashBoardCtrl'
+                    }
+                }
+            })
+                        /*** 
+            Routing for bucket module
+            ***/
+
             .state('bucket', {
                 url: "/bucket",
                 abstract: true,
@@ -55,5 +82,7 @@ angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
                     }
                 }
             })
+
+
         $urlRouterProvider.otherwise('/auth/signin');
     });
