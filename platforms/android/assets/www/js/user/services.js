@@ -1,6 +1,6 @@
 angular.module('user.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
-       var base = "http://bucketlistapplication.herokuapp.com";
+       var base = "http://localhost:8100/";
         
         $rootScope.show = function (text) {
             $rootScope.loading = $ionicLoading.show({
@@ -13,7 +13,7 @@ angular.module('user.services', [])
         };
 
         $rootScope.hide = function () {
-            $ionicLoading.hide();
+           $rootScope.loading.hide();
         };
 
         $rootScope.logout = function () {
@@ -51,7 +51,7 @@ angular.module('user.services', [])
 
         return {
             signin: function (form) {
-                return $http.post(base+'/api/v1/bucketList/auth/login', form);
+                return $http.post(base+'svc/login', form);
             },
             signup: function (form) {
                 return $http.post(base+'/api/v1/bucketList/auth/register', form);

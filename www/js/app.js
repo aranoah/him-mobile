@@ -1,4 +1,4 @@
-angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
+angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.services'])
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {
@@ -15,13 +15,14 @@ angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
 
             .state('auth', {
                 url: "/auth",
-                abstract: true,
-                templateUrl: "templates/auth.html"
+                views:{
+                   'body':{templateUrl: "templates/auth.html"}
+                }     
             })
             .state('auth.signin', {
                 url: '/signin',
                 views: {
-                    'auth-signin': {
+                    'signIn': {
                         templateUrl: 'templates/auth-signin.html',
                         controller: 'SignInCtrl'
                     }
@@ -30,7 +31,7 @@ angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
             .state('auth.signup', {
                 url: '/signup',
                 views: {
-                    'auth-signup': {
+                    'signUp': {
                         templateUrl: 'templates/auth-signup.html',
                         controller: 'SignUpCtrl'
                     }
@@ -82,7 +83,5 @@ angular.module('hereiam', ['ionic', 'user.controllers', 'user.services'])
                     }
                 }
             })
-
-
-        $urlRouterProvider.otherwise('/auth/signin');
+        $urlRouterProvider.otherwise('/auth');
     });

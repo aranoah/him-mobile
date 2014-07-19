@@ -1,3 +1,4 @@
+<<<<<<< HEAD:platforms/android/assets/www/js/user/controllers.js
 angular.module('user.controllers', ['user.services'])
 
 // Wait for Cordova to load
@@ -9,6 +10,9 @@ function onDeviceReady() {
   // ...
 }
 
+=======
+angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
+>>>>>>> f0b71677bd47ee9b524a278dbb1c230d1f189939:www/js/controllers.js
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
     // if the user is already logged in, take him to his hereiam
     if ($rootScope.isSessionActive()) {
@@ -29,7 +33,7 @@ function onDeviceReady() {
         }
         $rootScope.show('Please wait.. Authenticating');
         API.signin({
-            email: email,
+            userId: email,
             password: password
         }).success(function (data) {
             $rootScope.setToken(email); // create a session kind of thing on the client side
@@ -38,6 +42,7 @@ function onDeviceReady() {
         }).error(function (error) {
             $rootScope.hide();
             $rootScope.notify("Invalid Username or password");
+            return false;
         });
     }
 
