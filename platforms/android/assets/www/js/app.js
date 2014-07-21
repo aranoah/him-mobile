@@ -1,4 +1,4 @@
-angular.module('hereiam', ['ionic', 'hereiam.controllers', 'hereiam.services'])
+angular.module('hereiam', ['ionic', 'hereiam.controllers', 'ui.router','hereiam.services'])
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {

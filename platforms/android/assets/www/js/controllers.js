@@ -1,19 +1,17 @@
 angular.module('hereiam.controllers', ['hereiam.services'])
 
-// Wait for Cordova to load
-.addEventListener("deviceready", onDeviceReady, false);
-
-// Cordova is ready
-function onDeviceReady() {
-  var db = window.sqlitePlugin.openDatabase({name: "my.db"});
-  // ...
-}
-
+.controller('splashCtrl', function ($window){
+	alert("hi");
+	 navigator.splashscreen.show();
+                setTimeout(function() {
+                	 navigator.splashscreen.hide();
+                	$window.location.href ="#/signin";
+                    //document.g$window.location.href = ('#/bucket/list');etElementId("splashimage").show();
+                   
+                }, 10000);
+})
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
-    // if the user is already logged in, take him to his hereiam
-    if ($rootScope.isSessionActive()) {
-        $window.location.href = ('#/bucket/list');
-    }
+   alert("controller");
 
     $scope.user = {
         email: "",

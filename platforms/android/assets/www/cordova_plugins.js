@@ -20,6 +20,13 @@ module.exports = [
         "clobbers": [
             "SQLitePlugin"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+        "id": "org.apache.cordova.splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -28,7 +35,8 @@ module.exports.metadata =
     "com.ionic.keyboard": "1.0.2",
     "org.apache.cordova.console": "0.2.9",
     "org.apache.cordova.device": "0.2.10",
-    "com.phonegap.plugins.sqlite": "0.7.0"
+    "com.phonegap.plugins.sqlite": "0.7.0",
+    "org.apache.cordova.splashscreen": "0.3.1"
 }
 // BOTTOM OF METADATA
 });

@@ -24,14 +24,20 @@ import org.apache.cordova.*;
 
 public class myapp extends CordovaActivity 
 {
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         super.init();
-        // Set by <content src="index.html" /> in config.xml
+       
+        super.setIntegerProperty("splashscreen", R.drawable.splashscreen);
+        super.setIntegerProperty("splashscreendDelay",10000);
         super.loadUrl(Config.getStartUrl());
-        //super.loadUrl("file:///android_asset/www/index.html");
+
+        // Set by <content src="index.html" /> in config.xml
+        
+       // super.loadUrl("file:///android_asset/www/index.html");
     }
 }
 

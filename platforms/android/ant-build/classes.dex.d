@@ -10,6 +10,7 @@ c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\cla
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R$xml.class \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\com\ionicframework\myapp628688\R.class \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\apache\cordova\splashscreen\SplashScreen.class \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$1.class \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$Action.class \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\classes\org\pgsqlite\SQLitePlugin$DBQuery.class \

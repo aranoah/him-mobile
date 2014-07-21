@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"org.pgsqlite.SQLitePlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -46,6 +50,9 @@
             "PACKAGE_NAME": "com.ionicframework.myapp628688"
         },
         "com.phonegap.plugins.sqlite": {
+            "PACKAGE_NAME": "com.ionicframework.myapp628688"
+        },
+        "org.apache.cordova.splashscreen": {
             "PACKAGE_NAME": "com.ionicframework.myapp628688"
         }
     },

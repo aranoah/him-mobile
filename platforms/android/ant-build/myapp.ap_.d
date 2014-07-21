@@ -1,7 +1,9 @@
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\myapp.ap_ \
  : c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable\icon.png \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable\splashscreen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-hdpi\icon.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-land-hdpi\screen.png \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-land-hdpi\splashscreen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-land-ldpi\screen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-land-mdpi\screen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-land-xhdpi\screen.png \
@@ -15,8 +17,10 @@ c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\drawable-
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\values\strings.xml \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\res\xml\config.xml \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable\icon.png \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable\splashscreen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable-hdpi\icon.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable-land-hdpi\splashscreen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
@@ -113,12 +117,15 @@ c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\li
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\com.ionic.keyboard \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\com.phonegap.plugins.sqlite \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\org.apache.cordova.device \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\com.ionic.keyboard\www \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\com.ionic.keyboard\www\keyboard.js \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\com.phonegap.plugins.sqlite\www \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\com.phonegap.plugins.sqlite\www\SQLitePlugin.js \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen\www \
+c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen\www\splashscreen.js \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\templates\auth-signin.html \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\templates\auth-signup.html \
 c:\Users\Vinay\Documents\vinay-branch\him-mobile\platforms\android\assets\www\templates\auth.html \
