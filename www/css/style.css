@@ -7,7 +7,19 @@
     font-size: 23px;
 }
 
+.middleTabs> a {
+	line-height:inherit;
+}
+.scroll { 
+  min-width: 100%;
+}
 
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
+ 
+
+}
 .checkbox {
     vertical-align: middle;
 }
@@ -23,4 +35,18 @@
 .ion-checkmark-circled.icon-actions.margin
 {
 	margin-right: 35px;
+}
+
+.tabitems {
+	position: absolute;
+	bottom: 690px;
+
+line-height: 49px;
+}
+
+.slide, .slide.ng-enter.ng-enter-active {
+  -webkit-transform: scaleX(1);
+       -o-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
 }

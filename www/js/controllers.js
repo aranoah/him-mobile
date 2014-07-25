@@ -1,5 +1,8 @@
 angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
-.controller('SignInCtrl', function ($rootScope, $scope, API, $window) {
+ 
+
+
+.controller('SignInCtrl', function ($rootScope, $scope, API, $window,$ionicSideMenuDelegate) {
     // if the user is already logged in, take him to his hereiam
     if ($rootScope.isSessionActive()) {
         $window.location.href = ('#/bucket/list');
@@ -9,6 +12,11 @@ angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
         email: "",
         password: ""
     };
+ 
+
+    $scope.toggleLeftSideMenu = function() {
+    	$ionicSideMenuDelegate.toggleLeft();
+  };
 
     $scope.validateUser = function () {
         var email = this.user.email;
@@ -32,7 +40,17 @@ angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
         });
     }
 
+
+/**
+ * HEADER - handle menu toggle
+ */
+ 
 })
+
+
+
+
+
 
 .controller('SignUpCtrl', function ($rootScope, $scope, API, $window) {
     $scope.user = {
@@ -71,6 +89,8 @@ angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
             
         });
     }
+
+
 })
 
 .controller('myListCtrl', function ($rootScope, $scope, API, $timeout, $ionicModal, $window) {

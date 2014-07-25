@@ -12,19 +12,72 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
             .state('auth', {
                 url: "/auth",
                 views:{
-                   'body':{templateUrl: "templates/auth.html"}
+                   'body': {
+                   	       templateUrl: 'templates/auth.html',
+                     
+                           
+                       }
                 }     
             })
+
+           .state('auth.storelanding', {
+                url: '/storelanding',
+                views: {
+                    'storelanding': {
+                        templateUrl: 'templates/storelanding.html',
+                       
+                    }
+                }
+            })
+
             .state('auth.signin', {
                 url: '/signin',
                 views: {
                     'signIn': {
                         templateUrl: 'templates/auth-signin.html',
-                        controller: 'SignInCtrl'
+                        
                     }
                 }
             })
-            .state('auth.signup', {
+
+
+           .state('auth.storelanding.contactus', {
+           	 views: {
+             'contactus': { 
+               url: '/contactus',
+               templateUrl: 'templates/contactus.html'
+                       }
+                    }
+                 })
+
+            
+                 
+
+               .state('auth.productlisting', {
+                url: '/productlisting',
+                views: {
+                    'productListing': {
+                        templateUrl: 'templates/productlisting.html'
+                        
+                    }
+                }
+                  })
+
+               .state('auth.offerslisting', {
+                url: '/offerslisting',
+                views: {
+                    'offersListing': {
+                        templateUrl: 'templates/offerslisting.html'
+                        
+                    }
+                }
+                  })
+
+              
+                        
+             
+
+               .state('auth.signup', {
                 url: '/signup',
                 views: {
                     'signUp': {
@@ -32,7 +85,9 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                         controller: 'SignUpCtrl'
                     }
                 }
-            })
+                  })
+
+
             .state('bucket', {
                 url: "/bucket",
                 abstract: true,
@@ -56,5 +111,7 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                     }
                 }
             })
+
+
         $urlRouterProvider.otherwise('/auth');
     });

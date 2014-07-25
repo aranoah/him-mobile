@@ -2956,12 +2956,34 @@ a.subdued {
     bottom:none;
     top:0
 }
+.tabbar>.tabs{
+    bottom:none;
+    top:0
+}
+
+.tabbar>.tabs{
+    bottom:none;
+    top:0
+}
+.tabsbar>.tabs{
+    bottom:none;
+    top:6%;
+}
+
+.minitabsbar>.tabs{
+    bottom:none;
+    background:#72A19F;
+    top:47%
+
+}
 /* Allow parent element to have tabs-top */
 .tabs-top > .tabs, .tabs.tabs-top {
   top: 44px;
   padding-top: 0;
   padding-bottom: 2px;
   background-position: bottom; }
+
+
 
 .tab-item {
   -webkit-box-flex: 1;
@@ -2991,12 +3013,17 @@ a.subdued {
 
 .tabs-icon-top .tab-item, .tabs-icon-bottom .tab-item {
   font-size: 12px;
-  line-height: 14px; }
+  line-height: 14px;
+  }
+
+
+
+  
 
 .tab-item .icon {
   display: block;
   margin: 0 auto;
-  height: 32px;
+  height: 16px;
   font-size: 32px; }
 
 .tabs-icon-left .tab-item, .tabs-icon-right .tab-item {
@@ -3033,7 +3060,9 @@ a.subdued {
 /* Navigational tab */
 /* Active state for tab */
 .tab-item.tab-item-active {
-  opacity: 1; }
+  opacity: 1; 
+  color:#fff;
+  background:#896753;}
   .tab-item.tab-item-active.tab-item-light {
     color: #fff; }
   .tab-item.tab-item-active.tab-item-stable {
@@ -3481,7 +3510,7 @@ a.item-content {
 .item-icon-left {
   padding-left: 45px; }
   .item-icon-left .icon {
-    left: 7.5px; }
+    left: -0.5px; }
 
 .item-complex.item-icon-left {
   padding-left: 0; }
@@ -3582,6 +3611,11 @@ a.item-content {
  * By default, if an .item is created out of an <a> or <button>
  * then a arrow will be added to the right side of the item.
  */
+ a._itemslist
+ {
+ 	
+ 	margin-bottom:0px;
+ }
 a.item, button.item, .item[href] .item-content, .item[ng-click] .item-content {
   padding-right: 40px; }
   a.item:after, button.item:after, .item[href] .item-content:after, .item[ng-click] .item-content:after {
@@ -3688,8 +3722,8 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
 
 .item-note {
   float: right;
-  color: #aaa;
-  font-size: 14px; }
+  color: #fff; 
+  font-size: 15px; }
 
 .item-left-editable .item-content, .item-right-editable .item-content {
   -webkit-transition-duration: 250ms;
@@ -3874,6 +3908,7 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
 .card {
   padding-top: 1px;
   padding-bottom: 1px;
+
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
 .card .item:first-child, .list-inset .item:first-child, .padding > .list .item:first-child {
@@ -6187,7 +6222,8 @@ a.button {
     content: "."; }
 
 .full-image {
-  width: 100%; }
+  width: 100%;
+  }
 
 .clearfix {
   *zoom: 1; }
