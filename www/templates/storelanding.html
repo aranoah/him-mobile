@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html data-ng-app="App">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>HereIAm</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+   
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->  
+   
+    <!-- your app's js -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+ </head>
+  <body>  
+  <div class="bar bar-header">
+    <button class="button button-icon icon ion-navicon" ng-click="toggleLeftSideMenu()"></button>
+    <div class="h1 title">Big Bazar</div>
+    <button class="button ion-android-settings "></button>
+ </div> 
+ <ion-side-menus style="margin:40px 0px 0px 0px;" >
+    <ion-side-menu-content >
+       <ion-content >
+        <div class="item item-body">
+         <img class="full-image" src="img/bigbazar.jpg">
+       </div>
+        <ion-scroll direction="x" width="500px;" class="wide-as-needed" style:"margin:40px 0px 0px 0px;">
+        <a class="button inline-button">Parking</a>
+        <a class="button">Hotels</a>
+        <a class="button">ATM</a>
+        <a class="button">Shops</a>
+        <a class="button">Booking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>
+        <a class="button">Parking</a>              
+        </ion-scroll>
+        
+          
+           <p>
+         <a href="#" class="subdued">1 Like</a>
+         </p>
+        
+       </div>
+       <div class="item tabs tabs-secondary tabs-icon-left" >
+        <a class="tab-item " href="#">
+      <i class="icon ion-thumbsup "></i>
+      Like
+        </a>
+        <a class="tab-item " href="#">
+        <i class="icon ion-ios7-checkmark-empty"></i>
+        Subscribe
+        </a>
+        <a class="tab-item tab-item-active"  ui-sref=".contactus" </a>
+        <i class="icon ion-iphone"></i>
+        ContactUs
+        </a>
+        <a class="tab-item "  ui-sref=".reviews" </a>
+        <i class="icon ion-iphone"></i>
+        Reviews
+        </a>
+       </div>
+     <div class=" item item-body">
+      <p>
+      At Big Bazaar, we understand the soul of Indian consumers. Operating in more than 90 cities pan India and attracting over 250 million customer footfalls every year, Big Bazaar has been a part of the growing consumption economy of India. It is ranked 3rd amongst India’s service sector brands in Most Trusted Brands 2012 Survey by Brand Equity.
+    </p>
+    </div>  
+ </div>
+</ion-content>
+<div ui-view="contactus"></div>
+<div ui-view="reviews"></div>
+    </ion-side-menu-content>
+    <ion-side-menu side="left"  >
+         <a class="item item-icon-left" href="#">
+    <i class="icon ion-android-arrow-back"></i>
+    Home
+    </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-star"></i>
+      Favourites
+    </a>
+     <a class="item item-icon-left" href="#">
+     <i class="icon ion-android-mail"></i>
+     Feedback
+     </a>
+    <a class="item item-icon-left" href="#">
+    <i class="icon ion-android-information"></i>
+    Support
+    </a>
+    <a class="item item-icon-left" href="#">
+    <i class="icon ion-android-close"></i>
+    Sign out
+    </a>
+      <ion-side-menu>
+    </ion-side-menus>
+</body>
+</html>

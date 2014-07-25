@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html data-ng-app="App">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>HereIAm</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+   
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    
+   
+    <!-- your app's js -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+     <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+    
+  </head>
+  <body>
+
+
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-navicon" ng-click="toggle()"></button>
+  <div class="h1 title">Offers Zone</div>
+  <button class="button ion-android-settings "></button>
+</div> 
+<ion-content >
+
+<div class="list card" style="margin:50px 10px 10px 10px;">
+
+  <div class="item item-avatar">
+    <img src="img/slipper.jpeg">
+    <h2>Men's Flip Flops</h2>
+    <p>Flat Rs. 399</p>
+  </div>
+
+  <div class="item item-image">
+    <img src="img/slipper.jpeg">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+       GET MINIMUM Rs.50 off <i class="button button-positive" style="margin:-10px 7px -14px 90px">Shop Now</i>
+  </a>
+
+</div>
+<div class="list card" style="margin:50px 10px 10px 10px;">
+
+  <div class="item item-avatar">
+    <img src="img/tv.jpeg">
+    <h2>Philips 39 Inch TV</h2>
+    <p>Flat Rs. 399</p>
+  </div>
+
+  <div class="item item-image">
+    <img src="img/tv.jpeg">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+       GET MINIMUM Rs.50 off <i class="button button-positive" style="margin:-10px 7px -14px 90px">Shop Now</i>
+  </a>
+
+</div>
+
+
+
+
+</ion-content>
+</body>
+</html>
