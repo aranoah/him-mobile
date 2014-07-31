@@ -15,6 +15,7 @@ angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
  
 
     $scope.toggleLeftSideMenu = function() {
+    	
     	$ionicSideMenuDelegate.toggleLeft();
   };
 

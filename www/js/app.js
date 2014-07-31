@@ -25,6 +25,7 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                 views: {
                     'storelanding': {
                         templateUrl: 'templates/storelanding.html',
+                        controller:'SignInCtrl'
                        
                     }
                 }
@@ -35,6 +36,7 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                 views: {
                     'signIn': {
                         templateUrl: 'templates/auth-signin.html',
+                         controller: 'SignInCtrl'
                         
                     }
                 }
@@ -57,7 +59,8 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                 url: '/productlisting',
                 views: {
                     'productListing': {
-                        templateUrl: 'templates/productlisting.html'
+                        templateUrl: 'templates/productlisting.html',
+                         controller:'SignInCtrl'
                         
                     }
                 }
@@ -67,7 +70,8 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                 url: '/offerslisting',
                 views: {
                     'offersListing': {
-                        templateUrl: 'templates/offerslisting.html'
+                        templateUrl: 'templates/offerslisting.html',
+                        controller:'SignInCtrl'
                         
                     }
                 }

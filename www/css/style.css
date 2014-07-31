@@ -12,14 +12,20 @@
 }
 .scroll { 
   min-width: 100%;
+  
 }
 
 .wide-as-needed {
   overflow: scroll;
   white-space: nowrap;
- 
+  
 
 }
+
+.inlineparent > * {
+	display: inline-block;
+}
+
 .checkbox {
     vertical-align: middle;
 }

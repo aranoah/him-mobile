@@ -27,15 +27,15 @@
 
 
 <div class="bar bar-header">
-  <button class="button button-icon icon ion-navicon" ng-click="toggle()"></button>
-  <div class="h1 title">Offers Zone</div>
-  <button class="button ion-android-settings "></button>
-</div> 
-<ion-content >
-
-<div class="list card" style="margin:50px 10px 10px 10px;">
-
-  <div class="item item-avatar">
+    <button class="button button-icon icon ion-navicon" ng-click="toggleLeftSideMenu()"></button>
+    <div class="h1 title">Offers Listing</div>
+    <button class="button ion-android-settings "></button>
+  </div> 
+<ion-side-menus style="margin:40px 0px 0px 0px;" >
+    <ion-side-menu-content>
+     <ion-content>
+    <div class="list card" style="margin:5px 10px 10px 10px;">
+     <div class="item item-avatar">
     <img src="img/slipper.jpeg">
     <h2>Men's Flip Flops</h2>
     <p>Flat Rs. 399</p>
@@ -45,7 +45,7 @@
     <img src="img/slipper.jpeg">
   </div>
 
-  <a class="item item-icon-left assertive" href="#">
+  <a class="item item-icon-left assertive" href="#" style="font-size:10px;" >
        GET MINIMUM Rs.50 off <i class="button button-positive" style="margin:-10px 7px -14px 90px">Shop Now</i>
   </a>
 
@@ -62,7 +62,7 @@
     <img src="img/tv.jpeg">
   </div>
 
-  <a class="item item-icon-left assertive" href="#">
+  <a class="item item-icon-left assertive" href="#"  style="font-size:10px;">
        GET MINIMUM Rs.50 off <i class="button button-positive" style="margin:-10px 7px -14px 90px">Shop Now</i>
   </a>
 
@@ -72,5 +72,30 @@
 
 
 </ion-content>
+ </ion-side-menu-content>
+     <ion-side-menu side="left" >
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-arrow-back"></i>
+      Home
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-star"></i>
+      Favourites
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-mail"></i>
+      Feedback
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-information"></i>
+      Support
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-close"></i>
+      Sign out
+      </a>
+      </ion-side-menu>
+    </ion-side-menus>
+
 </body>
 </html>

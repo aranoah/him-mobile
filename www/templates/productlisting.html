@@ -25,36 +25,68 @@
   </head>
   <body>
   <div class="bar bar-header">
-  <button class="button button-icon icon ion-navicon" ng-click="toggle()"></button>
-  <div class="h1 title">Product Listing</div>
-  <button class="button ion-android-settings "></button>
-</div> 
+    <button class="button button-icon icon ion-navicon" ng-click="toggleLeftSideMenu()"></button>
+    <div class="h1 title">Product Listing</div>
+    <button class="button ion-android-settings "></button>
+  </div> 
 
-  <ion-content style="padding-top: 45px;" >
-    <div class="list">
-    <a class="item item-avatar" href="#">
-      <img src="img/bigbazar.jpg">
-      <h2>Laptops</h2>
-      <p>Back off, man. I'm a scientist.</p>
-    </a>
+ 
+  <ion-side-menus style="margin:40px 0px 0px 0px;" >
+    <ion-side-menu-content>
+     <ion-content>
+       <div class="list">
+        <a class="item item-avatar" href="#">
+        <img src="img/bigbazar.jpg">
+        <h2>Clothes</h2><span class="badge badge-assertive">4000 RS</span><span class="scratchbadge">4000 RS</span>
+        <p>Back off, man. I'm a scientist.</p>
+        </a>
 
-     <a class="item item-avatar" href="#">
-      <img src="img/bigbazar.jpg">
-      <h2>Mobile and accessories</h2>
-      <p>Back off, man. I'm a scientist.</p>
-    </a>
-     <a class="item item-avatar" href="#">
-      <img src="img/bigbazar.jpg">
-      <h2>Clothes</h2>
-      <p>Back off, man. I'm a scientist.</p>
-    </a>
-     <a class="item item-avatar" href="#">
-      <img src="img/bigbazar.jpg">
-      <h2>Shoes and Slipers</h2>
-      <p>Back off, man. I'm a scientist.</p>
-    </a>
-    </div>
-  </ion-content>
+        <a class="item item-avatar" href="#">
+        <img src="img/bigbazar.jpg">
+        <h2>Mobile and accessories</h2><span class="scratchbadge">4000 RS</span>
+        <p>Back off, man. I'm a scientist.
+        Back off, man. I'm a scientist</p><span class="badge badge-assertive">4000 RS</span>
+        </a>
+
+        <a class="item item-avatar" href="#">
+        <img src="img/bigbazar.jpg">
+        <h2>Clothes</h2><span class="badge badge-assertive">4000 RS</span><span class="scratchbadge">4000 RS</span>
+        <p>Back off, man. I'm a scientist.</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+        <img src="img/bigbazar.jpg">
+        <h2>Shoes and Slipers</h2><span class="badge badge-assertive">4000 RS</span><span class="scratchbadge">4000 RS</span>
+        <p>Back off, man. I'm a scientist.</p>
+        </a>
+        </div>
+
+   </ion-content>
+  
+   </ion-side-menu-content>
+     <ion-side-menu side="left" >
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-arrow-back"></i>
+      Home
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-star"></i>
+      Favourites
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-mail"></i>
+      Feedback
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-information"></i>
+      Support
+      </a>
+      <a class="item item-icon-left" href="#">
+      <i class="icon ion-android-close"></i>
+      Sign out
+      </a>
+      </ion-side-menu>
+    </ion-side-menus>
 
 </body>
 </html>
