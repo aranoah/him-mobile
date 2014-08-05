@@ -1953,6 +1953,9 @@ textarea {
 img {
   -webkit-user-drag: none; }
 
+
+
+
 /* ==========================================================================
    Tables
    ========================================================================== */
@@ -3349,7 +3352,7 @@ a.subdued {
     font-size: 10px; }
   .item p {
     color: #666;
-    font-size: 14px; }
+    font-size: 11px; }
   .item h1:last-child, .item h2:last-child, .item h3:last-child, .item h4:last-child, .item h5:last-child, .item h6:last-child, .item p:last-child {
     margin-bottom: 0; }
   .item .badge {
@@ -3672,6 +3675,19 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
     width: 100%;
     border-radius: 4px; }
 
+
+    .item-reviews, .item-reviews .item-content {
+  padding-left: 70px;
+  min-height: 70px; }
+  .item-reviews > img:first-child, .item-reviews .item-image, .item-reviews .item-content > img:first-child, .item-reviews .item-content .item-image {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    border-radius: 4px; }
+
 .item-thumbnail-left, .item-thumbnail-left .item-content {
   padding-left: 105px;
   min-height: 100px; }
@@ -3913,6 +3929,13 @@ a.item-icon-right:after, button.item-icon-right:after, a.item-button-right:after
   padding-top: 1px;
   padding-bottom: 1px;
 
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+  .aboutitem {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width:370px;
+  margin-left:1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
 .card .item:first-child, .list-inset .item:first-child, .padding > .list .item:first-child {

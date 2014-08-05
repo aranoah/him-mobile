@@ -5,6 +5,7 @@ angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
 .controller('SignInCtrl', function ($rootScope, $scope, API, $window,$ionicSideMenuDelegate) {
     // if the user is already logged in, take him to his hereiam
     if ($rootScope.isSessionActive()) {
+
         $window.location.href = ('#/bucket/list');
     }
 

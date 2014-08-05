@@ -31,6 +31,9 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                 }
             })
 
+
+           
+
             .state('auth.signin', {
                 url: '/signin',
                 views: {

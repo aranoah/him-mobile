@@ -15,11 +15,38 @@
   
 }
 
+.scrollcontainer img 
+{
+width:75px;
+}
+
+
+
+.container {
+	margin:0  auto;
+	width:390px;
+}
 .wide-as-needed {
   overflow: scroll;
   white-space: nowrap;
   
 
+}
+.shopbutton {
+	float:right;
+}
+
+.deliverydetails {
+	color:#45826A;
+}
+
+.productimage {
+	text-align:center;
+	padding:em;
+}
+
+.shopcarticon {
+	margin-left:auto;
 }
 
 .inlineparent > * {
