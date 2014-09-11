@@ -1,10 +1,11 @@
-*.class
-bin/
-platforms/android/gen
+node_modules/
+platforms/android/.settings
+platforms/android/ant-build
+platforms/android/ant-gen
+platforms/android/assets
 platforms/android/bin
-
-# Package Files #
-*.jar
-*.war
-*.ear
-/Hereiam/nbproject/private/
+platforms/android/build.xml
+platforms/android/CordovaLib
+*.class
+.project
+*.apk

@@ -18,7 +18,7 @@ angular.module('hereiam.controllers', ['hereiam.services','ui.router'])
     $scope.toggleLeftSideMenu = function() {
     	
     	$ionicSideMenuDelegate.toggleLeft();
-  };
+     };
 
     $scope.validateUser = function () {
         var email = this.user.email;

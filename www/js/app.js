@@ -13,7 +13,7 @@ angular.module('hereiam', ['ionic', 'ui.router','hereiam.controllers', 'hereiam.
                 url: "/auth",
                 views:{
                    'body': {
-                   	       templateUrl: 'templates/auth.html',
+                   	       templateUrl: 'templates/storelandingindex.html',
                      
                            
                        }

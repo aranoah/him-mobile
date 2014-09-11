@@ -20,17 +20,149 @@
 width:75px;
 }
 
+.servicedetails h2{
+    margin:50px 4px 8px 15px;
+   font-size:12px;
 
+}
+
+.facilities h2{
+    margin:40px 4px 8px 15px;
+   font-size:12px;
+
+}
+
+.restriction h2{
+    margin:30px 4px 8px 15px;
+   font-size:12px;
+
+}
+
+.menuphotos img {
+	margin:10px 0px 0px 0px;
+	 position: absolute;
+    top: -15px;
+    right: 0px;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+}
+ .additionalphotos img {
+ 	margin:10px 0px 0px 0px;
+	 position: absolute;
+    top: -12px;
+    right: -3px;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+ }
+
+
+.restrictions h2{
+    margin:40px 4px 8px 15px;
+   font-size:12px;
+
+}
 
 .container {
 	margin:0  auto;
 	width:390px;
 }
+
+
+.reviewcontainer 
+{
+	margin:0px 8px 0px 11px;
+}
+
+.menuadditionalphotos p
+{
+
+}
+ .item-addphotos-left  {
+    position: absolute;
+    top: 438px;
+    left: 269px;
+    max-width: 53px;
+    max-height: 33px;
+    width: 100%; }
+
+      .item-menu-right  {
+    position: absolute;
+    top:438px;
+    background:#FCFBFB;
+    left: 11px;
+    max-width: 53px;
+    max-height: 80px;
+    width: 100%; }
+
+     .item-menu-right-second  {
+    position: absolute;
+    top: 438px;
+     background:#FCFBFB;
+    left: 63px;
+    max-width: 53px;
+    max-height: 80px;
+    width: 100%; }
+
+     .item-addphotos-left-second {
+    position: absolute;
+    top: 438px;
+     background:#FCFBFB;
+    left: 319px;
+    max-width: 53px;
+    max-height: 33px;
+    width: 100%; }
+
+
+    .addressstyle 
+ {
+  border-color: #EFEDED;
+  background-color: #F4E9E9;
+  color: #444;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  padding: 15px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 14px; }
+ }
 .wide-as-needed {
   overflow: scroll;
   white-space: nowrap;
-  
 
+}
+
+.item-facilites {
+  padding-left: 58px; }
+  .item-facilites.active {
+    box-shadow: none; }
+
+
+
+.item-restrictions {
+  padding-left: 58px; }
+  .item-facilites.active {
+    box-shadow: none; }
+
+.menuaddphotos {
+
+ margin:20px 0px 0px 0px;
+}
+
+.menuaddphotos  p {
+	margin:-13px 2px 3px 11px;
+}
+ 
+ .menuadditionalphotos  p {
+	margin:-75px -12px -12px 271px;
+}
+ 
+
+.addphotos h2{
+	margin:-45px 0px 0px 0px;
 }
 .shopbutton {
 	float:right;
@@ -64,6 +196,8 @@ width:75px;
 .item-text-wrap {
     overflow: auto;
 }
+
+
 
 .ion-checkmark-circled.icon-actions.margin
 {
